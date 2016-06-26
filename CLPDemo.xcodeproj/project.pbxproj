@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29525C831D1B848600303F1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29525C821D1B848600303F1D /* main.m */; };
+		29525C861D1B848600303F1D /* NKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29525C851D1B848600303F1D /* NKAppDelegate.m */; };
+		29525C8E1D1B848600303F1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29525C8D1D1B848600303F1D /* Assets.xcassets */; };
+		29525C911D1B848600303F1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29525C8F1D1B848600303F1D /* LaunchScreen.storyboard */; };
+		29525C9C1D1B848600303F1D /* CLPDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29525C9B1D1B848600303F1D /* CLPDemoTests.m */; };
+		29525CA91D1B94E000303F1D /* NKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29525CA81D1B94E000303F1D /* NKBaseViewController.m */; };
+		2955B0961D1BBEB6002AC741 /* NKHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2955B0951D1BBEB6002AC741 /* NKHomeView.m */; };
+		2955B0981D1BC26B002AC741 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2955B0971D1BC26B002AC741 /* Podfile */; };
+		296468191D1FF635004C4C74 /* NKLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 296468181D1FF635004C4C74 /* NKLocationService.m */; };
+		2964681B1D1FF67C004C4C74 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2964681A1D1FF67C004C4C74 /* CoreLocation.framework */; };
+		298246501D1B957700D2054C /* NKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2982464F1D1B957700D2054C /* NKHomeViewController.m */; };
+		298246531D1B95C700D2054C /* NKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298246521D1B95C700D2054C /* NKNavigationController.m */; };
+		29827C8E1D1BCF7A00D4133D /* NKCommonDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 29827C8D1D1BCF7A00D4133D /* NKCommonDefine.m */; };
+		29827C921D1BD11B00D4133D /* NKSiriViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29827C911D1BD11B00D4133D /* NKSiriViewController.m */; };
+		298F3BAC1D1D51CC008069E7 /* NKServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 298F3BAB1D1D51CC008069E7 /* NKServiceManager.m */; };
+		298F3BAF1D1D5818008069E7 /* NKSiriService.m in Sources */ = {isa = PBXBuildFile; fileRef = 298F3BAE1D1D5818008069E7 /* NKSiriService.m */; };
+		29BD145F1D1BB6D40008F283 /* NKSectionedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD145C1D1BB6D40008F283 /* NKSectionedTableView.m */; };
+		29BD14601D1BB6D40008F283 /* NKSectionedTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD145E1D1BB6D40008F283 /* NKSectionedTableViewAdapter.m */; };
+		29BD14631D1BBB370008F283 /* NKUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD14621D1BBB370008F283 /* NKUtil.m */; };
+		29BD14681D1BBDD40008F283 /* NKHomeTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD14671D1BBDD40008F283 /* NKHomeTableViewAdapter.m */; };
+		29BD146B1D1BBDF40008F283 /* NKCommonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD146A1D1BBDF40008F283 /* NKCommonView.m */; };
+		29EA8B0D1D20047C00CF2837 /* IntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EA8B0C1D20047C00CF2837 /* IntentHandler.m */; };
+		29EA8B221D20047D00CF2837 /* CLPSiriIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 29EA8B091D20047C00CF2837 /* CLPSiriIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		74121507FEE14809D60AB9F5 /* libPods-CLPDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA65F81D481DF20CCF6508B /* libPods-CLPDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29525C981D1B848600303F1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29525C761D1B848600303F1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29525C7D1D1B848600303F1D;
+			remoteInfo = CLPDemo;
+		};
+		29EA8B201D20047D00CF2837 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29525C761D1B848600303F1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29EA8B081D20047C00CF2837;
+			remoteInfo = CLPSiriIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		29827CB81D1C009D00D4133D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				29EA8B221D20047D00CF2837 /* CLPSiriIntent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		291911E51D1B971700BA3913 /* CLPDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CLPDemo-Prefix.pch"; sourceTree = "<group>"; };
+		292D9B1C1D1FD17300277A22 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		292D9B1E1D1FE5C700277A22 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		29525C7E1D1B848600303F1D /* CLPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29525C821D1B848600303F1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29525C841D1B848600303F1D /* NKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKAppDelegate.h; sourceTree = "<group>"; };
+		29525C851D1B848600303F1D /* NKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NKAppDelegate.m; sourceTree = "<group>"; };
+		29525C8D1D1B848600303F1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29525C901D1B848600303F1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		29525C921D1B848600303F1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29525C971D1B848600303F1D /* CLPDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLPDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29525C9B1D1B848600303F1D /* CLPDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLPDemoTests.m; sourceTree = "<group>"; };
+		29525C9D1D1B848600303F1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29525CA71D1B94E000303F1D /* NKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKBaseViewController.h; sourceTree = "<group>"; };
+		29525CA81D1B94E000303F1D /* NKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKBaseViewController.m; sourceTree = "<group>"; };
+		2955B0941D1BBEB6002AC741 /* NKHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKHomeView.h; sourceTree = "<group>"; };
+		2955B0951D1BBEB6002AC741 /* NKHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKHomeView.m; sourceTree = "<group>"; };
+		2955B0971D1BC26B002AC741 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		296468171D1FF635004C4C74 /* NKLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKLocationService.h; sourceTree = "<group>"; };
+		296468181D1FF635004C4C74 /* NKLocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKLocationService.m; sourceTree = "<group>"; };
+		2964681A1D1FF67C004C4C74 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2982464E1D1B957700D2054C /* NKHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKHomeViewController.h; sourceTree = "<group>"; };
+		2982464F1D1B957700D2054C /* NKHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKHomeViewController.m; sourceTree = "<group>"; };
+		298246511D1B95C700D2054C /* NKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKNavigationController.h; sourceTree = "<group>"; };
+		298246521D1B95C700D2054C /* NKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKNavigationController.m; sourceTree = "<group>"; };
+		29827C8D1D1BCF7A00D4133D /* NKCommonDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKCommonDefine.m; sourceTree = "<group>"; };
+		29827C8F1D1BCF8A00D4133D /* NKCommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKCommonDefine.h; sourceTree = "<group>"; };
+		29827C901D1BD11B00D4133D /* NKSiriViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSiriViewController.h; sourceTree = "<group>"; };
+		29827C911D1BD11B00D4133D /* NKSiriViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSiriViewController.m; sourceTree = "<group>"; };
+		29827CA21D1C009C00D4133D /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		298F3BAA1D1D51CC008069E7 /* NKServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKServiceManager.h; sourceTree = "<group>"; };
+		298F3BAB1D1D51CC008069E7 /* NKServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKServiceManager.m; sourceTree = "<group>"; };
+		298F3BAD1D1D5818008069E7 /* NKSiriService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSiriService.h; sourceTree = "<group>"; };
+		298F3BAE1D1D5818008069E7 /* NKSiriService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSiriService.m; sourceTree = "<group>"; };
+		29BD145B1D1BB6D40008F283 /* NKSectionedTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSectionedTableView.h; sourceTree = "<group>"; };
+		29BD145C1D1BB6D40008F283 /* NKSectionedTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSectionedTableView.m; sourceTree = "<group>"; };
+		29BD145D1D1BB6D40008F283 /* NKSectionedTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSectionedTableViewAdapter.h; sourceTree = "<group>"; };
+		29BD145E1D1BB6D40008F283 /* NKSectionedTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSectionedTableViewAdapter.m; sourceTree = "<group>"; };
+		29BD14611D1BBB370008F283 /* NKUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKUtil.h; sourceTree = "<group>"; };
+		29BD14621D1BBB370008F283 /* NKUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKUtil.m; sourceTree = "<group>"; };
+		29BD14661D1BBDD40008F283 /* NKHomeTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKHomeTableViewAdapter.h; sourceTree = "<group>"; };
+		29BD14671D1BBDD40008F283 /* NKHomeTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKHomeTableViewAdapter.m; sourceTree = "<group>"; };
+		29BD14691D1BBDF40008F283 /* NKCommonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKCommonView.h; sourceTree = "<group>"; };
+		29BD146A1D1BBDF40008F283 /* NKCommonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKCommonView.m; sourceTree = "<group>"; };
+		29EA8B091D20047C00CF2837 /* CLPSiriIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CLPSiriIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		29EA8B0B1D20047C00CF2837 /* IntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentHandler.h; sourceTree = "<group>"; };
+		29EA8B0C1D20047C00CF2837 /* IntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentHandler.m; sourceTree = "<group>"; };
+		29EA8B0E1D20047C00CF2837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A6EA71FC0B0B423623AFC72 /* Pods-CLPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLPDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CLPDemo/Pods-CLPDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B9169BA8FF89C533BAEBE78D /* Pods-CLPDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLPDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CLPDemo/Pods-CLPDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FEA65F81D481DF20CCF6508B /* libPods-CLPDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CLPDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29525C7B1D1B848600303F1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2964681B1D1FF67C004C4C74 /* CoreLocation.framework in Frameworks */,
+				74121507FEE14809D60AB9F5 /* libPods-CLPDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29525C941D1B848600303F1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29EA8B061D20047C00CF2837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29525C751D1B848600303F1D = {
+			isa = PBXGroup;
+			children = (
+				2955B0971D1BC26B002AC741 /* Podfile */,
+				29525C801D1B848600303F1D /* CLPDemo */,
+				29525C9A1D1B848600303F1D /* CLPDemoTests */,
+				29EA8B0A1D20047C00CF2837 /* CLPSiriIntent */,
+				29525C7F1D1B848600303F1D /* Products */,
+				CFC14CB7B5A8885D3127AD4A /* Pods */,
+				EC9D336AB0AEE3B7758D036B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		29525C7F1D1B848600303F1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29525C7E1D1B848600303F1D /* CLPDemo.app */,
+				29525C971D1B848600303F1D /* CLPDemoTests.xctest */,
+				29EA8B091D20047C00CF2837 /* CLPSiriIntent.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29525C801D1B848600303F1D /* CLPDemo */ = {
+			isa = PBXGroup;
+			children = (
+				29BD14651D1BBD940008F283 /* View */,
+				29BD14641D1BBD760008F283 /* Module */,
+				29BD14591D1BB6D40008F283 /* Common */,
+				29525CA61D1B94E000303F1D /* ViewController */,
+				29525C841D1B848600303F1D /* NKAppDelegate.h */,
+				298F3BA91D1D51CC008069E7 /* Service */,
+				29525C851D1B848600303F1D /* NKAppDelegate.m */,
+				29525C8D1D1B848600303F1D /* Assets.xcassets */,
+				29525C8F1D1B848600303F1D /* LaunchScreen.storyboard */,
+				29525C921D1B848600303F1D /* Info.plist */,
+				29525C811D1B848600303F1D /* Supporting Files */,
+				291911E51D1B971700BA3913 /* CLPDemo-Prefix.pch */,
+				29827C8D1D1BCF7A00D4133D /* NKCommonDefine.m */,
+				29827C8F1D1BCF8A00D4133D /* NKCommonDefine.h */,
+			);
+			path = CLPDemo;
+			sourceTree = "<group>";
+		};
+		29525C811D1B848600303F1D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				29525C821D1B848600303F1D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		29525C9A1D1B848600303F1D /* CLPDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				29525C9B1D1B848600303F1D /* CLPDemoTests.m */,
+				29525C9D1D1B848600303F1D /* Info.plist */,
+			);
+			path = CLPDemoTests;
+			sourceTree = "<group>";
+		};
+		29525CA61D1B94E000303F1D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				29525CA71D1B94E000303F1D /* NKBaseViewController.h */,
+				29525CA81D1B94E000303F1D /* NKBaseViewController.m */,
+				2982464E1D1B957700D2054C /* NKHomeViewController.h */,
+				2982464F1D1B957700D2054C /* NKHomeViewController.m */,
+				298246511D1B95C700D2054C /* NKNavigationController.h */,
+				298246521D1B95C700D2054C /* NKNavigationController.m */,
+				29827C901D1BD11B00D4133D /* NKSiriViewController.h */,
+				29827C911D1BD11B00D4133D /* NKSiriViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		298F3BA91D1D51CC008069E7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				298F3BAA1D1D51CC008069E7 /* NKServiceManager.h */,
+				298F3BAB1D1D51CC008069E7 /* NKServiceManager.m */,
+				298F3BAD1D1D5818008069E7 /* NKSiriService.h */,
+				298F3BAE1D1D5818008069E7 /* NKSiriService.m */,
+				296468171D1FF635004C4C74 /* NKLocationService.h */,
+				296468181D1FF635004C4C74 /* NKLocationService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		29BD14591D1BB6D40008F283 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				29BD145A1D1BB6D40008F283 /* NKSectionedTable */,
+				29BD14611D1BBB370008F283 /* NKUtil.h */,
+				29BD14621D1BBB370008F283 /* NKUtil.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		29BD145A1D1BB6D40008F283 /* NKSectionedTable */ = {
+			isa = PBXGroup;
+			children = (
+				29BD145B1D1BB6D40008F283 /* NKSectionedTableView.h */,
+				29BD145C1D1BB6D40008F283 /* NKSectionedTableView.m */,
+				29BD145D1D1BB6D40008F283 /* NKSectionedTableViewAdapter.h */,
+				29BD145E1D1BB6D40008F283 /* NKSectionedTableViewAdapter.m */,
+			);
+			path = NKSectionedTable;
+			sourceTree = "<group>";
+		};
+		29BD14641D1BBD760008F283 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		29BD14651D1BBD940008F283 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29BD14661D1BBDD40008F283 /* NKHomeTableViewAdapter.h */,
+				29BD14671D1BBDD40008F283 /* NKHomeTableViewAdapter.m */,
+				29BD14691D1BBDF40008F283 /* NKCommonView.h */,
+				29BD146A1D1BBDF40008F283 /* NKCommonView.m */,
+				2955B0941D1BBEB6002AC741 /* NKHomeView.h */,
+				2955B0951D1BBEB6002AC741 /* NKHomeView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		29EA8B0A1D20047C00CF2837 /* CLPSiriIntent */ = {
+			isa = PBXGroup;
+			children = (
+				29EA8B0B1D20047C00CF2837 /* IntentHandler.h */,
+				29EA8B0C1D20047C00CF2837 /* IntentHandler.m */,
+				29EA8B0E1D20047C00CF2837 /* Info.plist */,
+			);
+			path = CLPSiriIntent;
+			sourceTree = "<group>";
+		};
+		CFC14CB7B5A8885D3127AD4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A6EA71FC0B0B423623AFC72 /* Pods-CLPDemo.debug.xcconfig */,
+				B9169BA8FF89C533BAEBE78D /* Pods-CLPDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC9D336AB0AEE3B7758D036B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2964681A1D1FF67C004C4C74 /* CoreLocation.framework */,
+				292D9B1E1D1FE5C700277A22 /* Contacts.framework */,
+				292D9B1C1D1FD17300277A22 /* Intents.framework */,
+				FEA65F81D481DF20CCF6508B /* libPods-CLPDemo.a */,
+				29827CA21D1C009C00D4133D /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29525C7D1D1B848600303F1D /* CLPDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29525CA01D1B848600303F1D /* Build configuration list for PBXNativeTarget "CLPDemo" */;
+			buildPhases = (
+				92B3CCF5AB5074C535A997F6 /* Check Pods Manifest.lock */,
+				29525C7A1D1B848600303F1D /* Sources */,
+				29525C7B1D1B848600303F1D /* Frameworks */,
+				29525C7C1D1B848600303F1D /* Resources */,
+				B7A6C3E9981B3E2C118BF6DF /* Embed Pods Frameworks */,
+				3756391A57427EF788D1DD0C /* Copy Pods Resources */,
+				29827CB81D1C009D00D4133D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29EA8B211D20047D00CF2837 /* PBXTargetDependency */,
+			);
+			name = CLPDemo;
+			productName = CLPDemo;
+			productReference = 29525C7E1D1B848600303F1D /* CLPDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		29525C961D1B848600303F1D /* CLPDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29525CA31D1B848600303F1D /* Build configuration list for PBXNativeTarget "CLPDemoTests" */;
+			buildPhases = (
+				29525C931D1B848600303F1D /* Sources */,
+				29525C941D1B848600303F1D /* Frameworks */,
+				29525C951D1B848600303F1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29525C991D1B848600303F1D /* PBXTargetDependency */,
+			);
+			name = CLPDemoTests;
+			productName = CLPDemoTests;
+			productReference = 29525C971D1B848600303F1D /* CLPDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		29EA8B081D20047C00CF2837 /* CLPSiriIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29EA8B261D20047D00CF2837 /* Build configuration list for PBXNativeTarget "CLPSiriIntent" */;
+			buildPhases = (
+				29EA8B051D20047C00CF2837 /* Sources */,
+				29EA8B061D20047C00CF2837 /* Frameworks */,
+				29EA8B071D20047C00CF2837 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CLPSiriIntent;
+			productName = CLPSiriIntent;
+			productReference = 29EA8B091D20047C00CF2837 /* CLPSiriIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29525C761D1B848600303F1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = KyleWong;
+				TargetAttributes = {
+					29525C7D1D1B848600303F1D = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 97279NM794;
+						DevelopmentTeamName = "Wong Kyle (Personal Team)";
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					29525C961D1B848600303F1D = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 29525C7D1D1B848600303F1D;
+					};
+					29EA8B081D20047C00CF2837 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 97279NM794;
+						DevelopmentTeamName = "Wong Kyle (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 29525C791D1B848600303F1D /* Build configuration list for PBXProject "CLPDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29525C751D1B848600303F1D;
+			productRefGroup = 29525C7F1D1B848600303F1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29525C7D1D1B848600303F1D /* CLPDemo */,
+				29525C961D1B848600303F1D /* CLPDemoTests */,
+				29EA8B081D20047C00CF2837 /* CLPSiriIntent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29525C7C1D1B848600303F1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2955B0981D1BC26B002AC741 /* Podfile in Resources */,
+				29525C911D1B848600303F1D /* LaunchScreen.storyboard in Resources */,
+				29525C8E1D1B848600303F1D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29525C951D1B848600303F1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29EA8B071D20047C00CF2837 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3756391A57427EF788D1DD0C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CLPDemo/Pods-CLPDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92B3CCF5AB5074C535A997F6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B7A6C3E9981B3E2C118BF6DF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CLPDemo/Pods-CLPDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29525C7A1D1B848600303F1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29827C8E1D1BCF7A00D4133D /* NKCommonDefine.m in Sources */,
+				29827C921D1BD11B00D4133D /* NKSiriViewController.m in Sources */,
+				29525CA91D1B94E000303F1D /* NKBaseViewController.m in Sources */,
+				29BD145F1D1BB6D40008F283 /* NKSectionedTableView.m in Sources */,
+				298F3BAC1D1D51CC008069E7 /* NKServiceManager.m in Sources */,
+				2955B0961D1BBEB6002AC741 /* NKHomeView.m in Sources */,
+				29BD14631D1BBB370008F283 /* NKUtil.m in Sources */,
+				29BD14681D1BBDD40008F283 /* NKHomeTableViewAdapter.m in Sources */,
+				29525C861D1B848600303F1D /* NKAppDelegate.m in Sources */,
+				298246531D1B95C700D2054C /* NKNavigationController.m in Sources */,
+				29BD14601D1BB6D40008F283 /* NKSectionedTableViewAdapter.m in Sources */,
+				296468191D1FF635004C4C74 /* NKLocationService.m in Sources */,
+				298246501D1B957700D2054C /* NKHomeViewController.m in Sources */,
+				298F3BAF1D1D5818008069E7 /* NKSiriService.m in Sources */,
+				29BD146B1D1BBDF40008F283 /* NKCommonView.m in Sources */,
+				29525C831D1B848600303F1D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29525C931D1B848600303F1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29525C9C1D1B848600303F1D /* CLPDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29EA8B051D20047C00CF2837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29EA8B0D1D20047C00CF2837 /* IntentHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29525C991D1B848600303F1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29525C7D1D1B848600303F1D /* CLPDemo */;
+			targetProxy = 29525C981D1B848600303F1D /* PBXContainerItemProxy */;
+		};
+		29EA8B211D20047D00CF2837 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29EA8B081D20047C00CF2837 /* CLPSiriIntent */;
+			targetProxy = 29EA8B201D20047D00CF2837 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		29525C8F1D1B848600303F1D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29525C901D1B848600303F1D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29525C9E1D1B848600303F1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		29525C9F1D1B848600303F1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29525CA11D1B848600303F1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A6EA71FC0B0B423623AFC72 /* Pods-CLPDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: kang.wang1988@gmail.com (Q46TB99BQ8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CLPDemo/CLPDemo-Prefix.pch";
+				INFOPLIST_FILE = CLPDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wecoop.CLPDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		29525CA21D1B848600303F1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9169BA8FF89C533BAEBE78D /* Pods-CLPDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: kang.wang1988@gmail.com (Q46TB99BQ8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CLPDemo/CLPDemo-Prefix.pch";
+				INFOPLIST_FILE = CLPDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wecoop.CLPDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		29525CA41D1B848600303F1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CLPDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wecoop.CLPDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CLPDemo.app/CLPDemo";
+			};
+			name = Debug;
+		};
+		29525CA51D1B848600303F1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CLPDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wecoop.CLPDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CLPDemo.app/CLPDemo";
+			};
+			name = Release;
+		};
+		29EA8B271D20047D00CF2837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: kang.wang1988@gmail.com (Q46TB99BQ8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = CLPSiriIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wecoop.CLPDemo.CLPSiriIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		29EA8B281D20047D00CF2837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: kang.wang1988@gmail.com (Q46TB99BQ8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = CLPSiriIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wecoop.CLPDemo.CLPSiriIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29525C791D1B848600303F1D /* Build configuration list for PBXProject "CLPDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29525C9E1D1B848600303F1D /* Debug */,
+				29525C9F1D1B848600303F1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29525CA01D1B848600303F1D /* Build configuration list for PBXNativeTarget "CLPDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29525CA11D1B848600303F1D /* Debug */,
+				29525CA21D1B848600303F1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29525CA31D1B848600303F1D /* Build configuration list for PBXNativeTarget "CLPDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29525CA41D1B848600303F1D /* Debug */,
+				29525CA51D1B848600303F1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29EA8B261D20047D00CF2837 /* Build configuration list for PBXNativeTarget "CLPSiriIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29EA8B271D20047D00CF2837 /* Debug */,
+				29EA8B281D20047D00CF2837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29525C761D1B848600303F1D /* Project object */;
+}
