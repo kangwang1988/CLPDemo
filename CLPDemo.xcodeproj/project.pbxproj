@@ -49,6 +49,7 @@
 		298246501D1B957700D2054C /* NKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2982464F1D1B957700D2054C /* NKHomeViewController.m */; };
 		298246531D1B95C700D2054C /* NKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298246521D1B95C700D2054C /* NKNavigationController.m */; };
 		29827C921D1BD11B00D4133D /* NKSiriViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29827C911D1BD11B00D4133D /* NKSiriViewController.m */; };
+		299BC24C1D212F88009B81B7 /* NKContactService.m in Sources */ = {isa = PBXBuildFile; fileRef = 299BC24B1D212F88009B81B7 /* NKContactService.m */; };
 		29AC84791D20083900EF9B18 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29827CA21D1C009C00D4133D /* IntentsUI.framework */; };
 		29AC84801D20083900EF9B18 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29AC847E1D20083900EF9B18 /* MainInterface.storyboard */; };
 		29AC84841D20083900EF9B18 /* CLPSiriIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 29AC84781D20083900EF9B18 /* CLPSiriIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -149,6 +150,8 @@
 		29827C901D1BD11B00D4133D /* NKSiriViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSiriViewController.h; sourceTree = "<group>"; };
 		29827C911D1BD11B00D4133D /* NKSiriViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSiriViewController.m; sourceTree = "<group>"; };
 		29827CA21D1C009C00D4133D /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		299BC24A1D212F88009B81B7 /* NKContactService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKContactService.h; sourceTree = "<group>"; };
+		299BC24B1D212F88009B81B7 /* NKContactService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKContactService.m; sourceTree = "<group>"; };
 		29AC84781D20083900EF9B18 /* CLPSiriIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CLPSiriIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		29AC847F1D20083900EF9B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		29AC84811D20083900EF9B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -280,6 +283,8 @@
 				2930C9261D20DD4200EB0292 /* NKServiceManager.m */,
 				2930C9271D20DD4200EB0292 /* NKSiriService.h */,
 				2930C9281D20DD4200EB0292 /* NKSiriService.m */,
+				299BC24A1D212F88009B81B7 /* NKContactService.h */,
+				299BC24B1D212F88009B81B7 /* NKContactService.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -748,6 +753,7 @@
 				2930C91B1D20D2FF00EB0292 /* NKHomeView.m in Sources */,
 				2930C8FD1D20D2FF00EB0292 /* NKCommonDefine.m in Sources */,
 				2930C9091D20D2FF00EB0292 /* NKMessageUIController.m in Sources */,
+				299BC24C1D212F88009B81B7 /* NKContactService.m in Sources */,
 				2930C9031D20D2FF00EB0292 /* NKSectionedTableViewAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

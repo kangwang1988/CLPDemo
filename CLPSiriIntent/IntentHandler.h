@@ -8,6 +8,8 @@
 
 #import <Intents/Intents.h>
 
+typedef void (^IntentHandlerBlock)(NSArray<INPerson *> *);
+
 @interface IntentHandler : INExtension
 
 @end

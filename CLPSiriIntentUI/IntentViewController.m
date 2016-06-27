@@ -17,7 +17,7 @@
 // "Start my workout using <myApp>"
 #import <Intents/Intents.h>
 
-@interface IntentViewController ()
+@interface IntentViewController ()<INUIHostedViewSiriProviding>
 @property (nonatomic,strong) IBOutlet UITextView *textView;
 @end
 
@@ -44,6 +44,8 @@
     // Do configuration here, including preparing views and calculating a desired size for presentation.
     CGSize size = CGSizeZero;
     if([interaction.intent isKindOfClass:[INSendMessageIntent class]]){
+        INSendMessageIntent *intent = (INSendMessageIntent *) interaction.intent;
+        [self.textView setText:intent.content];
         size = [self desiredSize];
     }
     if (completion) {
@@ -53,5 +55,9 @@
 
 - (CGSize)desiredSize {
     return self.extensionContext.hostedViewMinimumAllowedSize;
+}
+
+- (BOOL)displaysMessage{
+    return TRUE;
 }
 @end

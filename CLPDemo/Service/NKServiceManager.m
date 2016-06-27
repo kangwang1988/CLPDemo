@@ -23,6 +23,7 @@ static NKServiceManager *sServiceManager  = nil;
     if(self = [super init]){
         _siriService = [NKSiriService new];
         _locationService = [NKLocationService new];
+        _contactService = [NKContactService new];
     }
     return self;
 }

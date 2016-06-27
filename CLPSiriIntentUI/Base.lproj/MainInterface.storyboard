@@ -19,7 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bbh-iw-Srn">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bbh-iw-Srn">
+                                <frame key="frameInset" minX="26" minY="9" width="271" height="183"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -27,14 +28,17 @@
                             </textView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Bbh-iw-Srn" firstAttribute="height" secondItem="zMn-AG-sqS" secondAttribute="height" id="1w3-Ub-bNr"/>
-                            <constraint firstItem="Bbh-iw-Srn" firstAttribute="width" secondItem="zMn-AG-sqS" secondAttribute="width" id="AdA-3m-L6e"/>
-                            <constraint firstItem="Bbh-iw-Srn" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" constant="-16" id="ejW-BB-E9j"/>
-                            <constraint firstItem="Bbh-iw-Srn" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" constant="-20" id="lwE-cX-KR3"/>
+                            <constraint firstItem="Bbh-iw-Srn" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" id="bgw-CB-WDe"/>
+                            <constraint firstItem="Bbh-iw-Srn" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" constant="10" id="ejW-BB-E9j"/>
+                            <constraint firstItem="Bbh-iw-Srn" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" constant="10" id="lwE-cX-KR3"/>
+                            <constraint firstItem="Bbh-iw-Srn" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="phA-Sp-zky"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="200"/>
+                    <connections>
+                        <outlet property="textView" destination="Bbh-iw-Srn" id="Cp7-c6-mAk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

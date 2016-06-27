@@ -8,9 +8,11 @@
 
 #import "NKSiriService.h"
 #import "NKLocationService.h"
+#import "NKContactService.h"
 
 @interface NKServiceManager : NSObject
 @property (nonatomic,strong) NKSiriService *siriService;
 @property (nonatomic,strong) NKLocationService *locationService;
+@property (nonatomic,strong) NKContactService *contactService;
 + (instancetype)sharedManager;
 @end

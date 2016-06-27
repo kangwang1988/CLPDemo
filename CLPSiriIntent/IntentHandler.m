@@ -7,6 +7,7 @@
 //
 
 #import "IntentHandler.h"
+#import <Contacts/Contacts.h>
 
 // As an example, this class is set up to handle the Workout intents.
 // You will want to replace this or add other intents as appropriate.
@@ -31,11 +32,11 @@
 
 #pragma mark - INSendMessageIntentHandling
 - (void)handleSendMessage:(INSendMessageIntent *)intent completion:(void (^)(INSendMessageIntentResponse * _Nonnull))completion{
-    [[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:@"https://www.baidu.com"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        [defaults setObject:@"KyleWong" forKey:@"abbr"];
-        [defaults synchronize];
-    }] resume];
+//    [[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:@"https://www.baidu.com"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+//        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//        [defaults setObject:@"KyleWong" forKey:@"abbr"];
+//        [defaults synchronize];
+//    }] resume];
     completion([[INSendMessageIntentResponse alloc] initWithCode:INSendMessageIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@"activityType"]]);
 }
 
@@ -45,11 +46,43 @@
 
 - (void)resolveRecipientsForSendMessage:(INSendMessageIntent *)intent
                          withCompletion:(void (^)(NSArray<INPersonResolutionResult *> *resolutionResults))completion NS_SWIFT_NAME(resolveRecipients(forSendMessage:with:)){
-    completion(@[[INPersonResolutionResult successWithResolvedPerson:[[INPerson alloc] initWithHandle:@"小伙伴" displayName:@"小新" contactIdentifier:nil]]]);
+    [self searchContactWithName:((INPerson *)intent.recipients.firstObject).displayName completionBlock:^(NSArray<INPerson *> *aPersons){
+            completion(@[[INPersonResolutionResult successWithResolvedPerson:aPersons.firstObject]]);
+    }];
+
 }
 
 - (void)resolveContentForSendMessage:(INSendMessageIntent *)intent
                       withCompletion:(void (^)(INStringResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveContent(forSendMessage:with:)){
-    completion([INStringResolutionResult successWithResolvedString:@"小新，我在利用Siri开发一些代码，收到请忽略。"]);
+    completion([INStringResolutionResult successWithResolvedString:intent.content]);
+}
+
+- (void)searchContactWithName:(NSString *)aName completionBlock:(IntentHandlerBlock)aCompletionBlock{
+    CNContactStore *store = [[CNContactStore alloc] init];
+    [store requestAccessForEntityType:CNEntityTypeContacts completionHandler:^(BOOL granted, NSError * _Nullable error) {
+        NSMutableArray *array = [NSMutableArray array];
+        // make sure the user granted us access
+        if (!granted) {
+            return;
+        }
+        // build array of contacts
+        NSMutableArray *contacts = [NSMutableArray array];
+        NSError *fetchError;
+        CNContactFetchRequest *request = [[CNContactFetchRequest alloc] initWithKeysToFetch:@[CNContactIdentifierKey, [CNContactFormatter descriptorForRequiredKeysForStyle:CNContactFormatterStyleFullName]]];
+         [store enumerateContactsWithFetchRequest:request error:&fetchError usingBlock:^(CNContact *contact, BOOL *stop) {
+            [contacts addObject:contact];
+        }];
+        // you can now do something with the list of contacts, for example, to show the names
+        CNContactFormatter *formatter = [[CNContactFormatter alloc] init];
+        for (CNContact *contact in contacts) {
+            NSString *string = [formatter stringFromContact:contact];
+            NSLog(@"contact = %@", string);
+            if([string isEqualToString:aName]){
+                [array addObject:[[INPerson alloc] initWithHandle:@"" displayName:string contactIdentifier:contact.identifier]];
+            }
+            if(aCompletionBlock)
+                aCompletionBlock(array);
+        }
+    }];
 }
 @end
