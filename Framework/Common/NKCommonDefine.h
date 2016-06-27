@@ -9,6 +9,8 @@
 #ifndef NKCommonDefine_h
 #define NKCommonDefine_h
 
+#import <Foundation/Foundation.h>
+
 FOUNDATION_EXPORT NSString *kFeatureSiri;
 
 #endif /* NKCommonDefine_h */

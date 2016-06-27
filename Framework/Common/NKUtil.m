@@ -17,8 +17,4 @@
         return nil;
     }
 }
-
-+ (NKNavigationController *)rootNav{
-    return (NKNavigationController*)[[[[UIApplication sharedApplication] delegate] window] rootViewController];
-}
 @end

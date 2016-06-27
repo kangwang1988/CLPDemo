@@ -49,7 +49,7 @@
     [INPreferences requestSiriAuthorization:^(INSiriAuthorizationStatus status) {
         if(status != INSiriAuthorizationStatusAuthorized){
             UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"权限被禁止" message:@"请打开Siri权限以便为您更好提供服务" preferredStyle:UIAlertControllerStyleAlert];
-            [[NKUtil rootNav] presentViewController:alert animated:YES completion:^{
+            [[[[[UIApplication sharedApplication] delegate] window] rootViewController] presentViewController:alert animated:YES completion:^{
                 
             }];
         }
@@ -61,7 +61,7 @@
     if (status == CNAuthorizationStatusDenied || status == CNAuthorizationStatusRestricted) {
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"This app previously was refused permissions to contacts; Please go to settings and grant permission to this app so it can use contacts" preferredStyle:UIAlertControllerStyleAlert];
         [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
-        [[NKUtil rootNav] presentViewController:alert animated:YES completion:^{
+        [[[[[UIApplication sharedApplication] delegate] window] rootViewController] presentViewController:alert animated:YES completion:^{
             
         }];
         return;

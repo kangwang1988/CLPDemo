@@ -1,27 +1,4 @@
 PODS:
-  - AFDownloadRequestOperation (2.0.1):
-    - AFNetworking (~> 2.0)
-  - AFNetworking (2.5.4):
-    - AFNetworking/NSURLConnection (= 2.5.4)
-    - AFNetworking/NSURLSession (= 2.5.4)
-    - AFNetworking/Reachability (= 2.5.4)
-    - AFNetworking/Security (= 2.5.4)
-    - AFNetworking/Serialization (= 2.5.4)
-    - AFNetworking/UIKit (= 2.5.4)
-  - AFNetworking/NSURLConnection (2.5.4):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.5.4):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.5.4)
-  - AFNetworking/Security (2.5.4)
-  - AFNetworking/Serialization (2.5.4)
-  - AFNetworking/UIKit (2.5.4):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
   - Mantle (2.0.5):
     - Mantle/extobjc (= 2.0.5)
   - Mantle/extobjc (2.0.5)
@@ -29,15 +6,11 @@ PODS:
   - MSWeakTimer (1.1.0)
 
 DEPENDENCIES:
-  - AFDownloadRequestOperation (= 2.0.1)
-  - AFNetworking (= 2.5.4)
   - Mantle (= 2.0.5)
   - Masonry (= 0.6.3)
   - MSWeakTimer (~> 1.1.0)
 
 SPEC CHECKSUMS:
-  AFDownloadRequestOperation: 748a1643423e1ddb23f2178f778087d4f0ae8ac7
-  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   Mantle: 1912395033f601de5adc8ee91e48f46e4c7051ad
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   MSWeakTimer: 9426150f933b80ed3acf3f6d228e4b61f0e303c8
