@@ -47,7 +47,10 @@
 - (void)resolveRecipientsForSendMessage:(INSendMessageIntent *)intent
                          withCompletion:(void (^)(NSArray<INPersonResolutionResult *> *resolutionResults))completion NS_SWIFT_NAME(resolveRecipients(forSendMessage:with:)){
     [self searchContactWithName:((INPerson *)intent.recipients.firstObject).displayName completionBlock:^(NSArray<INPerson *> *aPersons){
-            completion(@[[INPersonResolutionResult successWithResolvedPerson:aPersons.firstObject]]);
+            if(aPersons.count)
+                completion(@[[INPersonResolutionResult successWithResolvedPerson:aPersons.firstObject]]);
+            else
+                completion(nil);
     }];
 
 }
@@ -80,9 +83,9 @@
             if([string isEqualToString:aName]){
                 [array addObject:[[INPerson alloc] initWithHandle:@"" displayName:string contactIdentifier:contact.identifier]];
             }
-            if(aCompletionBlock)
-                aCompletionBlock(array);
         }
+        if(aCompletionBlock)
+            aCompletionBlock(array);
     }];
 }
 @end

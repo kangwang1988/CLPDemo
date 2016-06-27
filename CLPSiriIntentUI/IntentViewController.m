@@ -45,7 +45,7 @@
     CGSize size = CGSizeZero;
     if([interaction.intent isKindOfClass:[INSendMessageIntent class]]){
         INSendMessageIntent *intent = (INSendMessageIntent *) interaction.intent;
-        [self.textView setText:intent.content];
+        [self.textView setText:[NSString stringWithFormat:@"%@\n  %@",((INPerson *)intent.recipients.firstObject).displayName,intent.content]];
         size = [self desiredSize];
     }
     if (completion) {
