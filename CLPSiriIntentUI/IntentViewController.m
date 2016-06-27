@@ -62,6 +62,6 @@
 }
 
 - (CGSize)desiredSize {
-    return self.extensionContext.hostedViewMaximumAllowedSize;
+    return self.extensionContext.hostedViewMinimumAllowedSize;
 }
 @end
