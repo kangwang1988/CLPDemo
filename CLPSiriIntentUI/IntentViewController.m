@@ -8,8 +8,6 @@
 
 #import "IntentViewController.h"
 #import "NKMessageUIController.h"
-#import "UCChatViewController.h"
-#import "INInteraction+UnicornCore.h"
 
 // As an example, this extension's Info.plist has been configured to handle interactions for INStartWorkoutIntent.
 // You will want to replace this or add other intents as appropriate.
@@ -18,10 +16,9 @@
 // You can test this example integration by saying things to Siri like:
 // "Start my workout using <myApp>"
 #import <Intents/Intents.h>
-#import "UCChatViewController.h"
-#import "UCContact.h"
 
 @interface IntentViewController ()
+@property (nonatomic,strong) IBOutlet UITextView *textView;
 @end
 
 @implementation IntentViewController
@@ -47,13 +44,6 @@
     // Do configuration here, including preparing views and calculating a desired size for presentation.
     CGSize size = CGSizeZero;
     if([interaction.intent isKindOfClass:[INSendMessageIntent class]]){
-        UCChatViewController * chatViewController = [UCChatViewController new];
-        [chatViewController setMessageContent:@"内容"];
-        UCContact *contact  = [UCContact new];
-        contact.name = interaction.recipientName;
-        chatViewController.recipient = contact;
-        [chatViewController setSent:false];
-        [self presentViewController:chatViewController animated:false completion:nil];
         size = [self desiredSize];
     }
     if (completion) {

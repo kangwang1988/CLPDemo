@@ -38,30 +38,6 @@
 		2930C9291D20DD4200EB0292 /* NKLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C9241D20DD4200EB0292 /* NKLocationService.m */; };
 		2930C92A1D20DD4200EB0292 /* NKServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C9261D20DD4200EB0292 /* NKServiceManager.m */; };
 		2930C92B1D20DD4200EB0292 /* NKSiriService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C9281D20DD4200EB0292 /* NKSiriService.m */; };
-		2930C93D1D20FAF400EB0292 /* chatmock.png in Resources */ = {isa = PBXBuildFile; fileRef = 2930C92D1D20FAF400EB0292 /* chatmock.png */; };
-		2930C93E1D20FAF400EB0292 /* chatmock.png in Resources */ = {isa = PBXBuildFile; fileRef = 2930C92D1D20FAF400EB0292 /* chatmock.png */; };
-		2930C93F1D20FAF400EB0292 /* chatmock.png in Resources */ = {isa = PBXBuildFile; fileRef = 2930C92D1D20FAF400EB0292 /* chatmock.png */; };
-		2930C9401D20FAF400EB0292 /* chatmockdraft.png in Resources */ = {isa = PBXBuildFile; fileRef = 2930C92E1D20FAF400EB0292 /* chatmockdraft.png */; };
-		2930C9411D20FAF400EB0292 /* chatmockdraft.png in Resources */ = {isa = PBXBuildFile; fileRef = 2930C92E1D20FAF400EB0292 /* chatmockdraft.png */; };
-		2930C9421D20FAF400EB0292 /* chatmockdraft.png in Resources */ = {isa = PBXBuildFile; fileRef = 2930C92E1D20FAF400EB0292 /* chatmockdraft.png */; };
-		2930C9461D20FAF400EB0292 /* INInteraction+UnicornCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C9311D20FAF400EB0292 /* INInteraction+UnicornCore.m */; };
-		2930C9471D20FAF400EB0292 /* INInteraction+UnicornCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C9311D20FAF400EB0292 /* INInteraction+UnicornCore.m */; };
-		2930C9481D20FAF400EB0292 /* INInteraction+UnicornCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C9311D20FAF400EB0292 /* INInteraction+UnicornCore.m */; };
-		2930C9491D20FAF400EB0292 /* UCAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C9331D20FAF400EB0292 /* UCAccount.m */; };
-		2930C94A1D20FAF400EB0292 /* UCAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C9331D20FAF400EB0292 /* UCAccount.m */; };
-		2930C94B1D20FAF400EB0292 /* UCAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C9331D20FAF400EB0292 /* UCAccount.m */; };
-		2930C94C1D20FAF400EB0292 /* UCAddressBookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C9351D20FAF400EB0292 /* UCAddressBookManager.m */; };
-		2930C94D1D20FAF400EB0292 /* UCAddressBookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C9351D20FAF400EB0292 /* UCAddressBookManager.m */; };
-		2930C94E1D20FAF400EB0292 /* UCAddressBookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C9351D20FAF400EB0292 /* UCAddressBookManager.m */; };
-		2930C94F1D20FAF400EB0292 /* UCChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C9371D20FAF400EB0292 /* UCChatView.m */; };
-		2930C9501D20FAF400EB0292 /* UCChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C9371D20FAF400EB0292 /* UCChatView.m */; };
-		2930C9511D20FAF400EB0292 /* UCChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C9371D20FAF400EB0292 /* UCChatView.m */; };
-		2930C9521D20FAF400EB0292 /* UCChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C9391D20FAF400EB0292 /* UCChatViewController.m */; };
-		2930C9531D20FAF400EB0292 /* UCChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C9391D20FAF400EB0292 /* UCChatViewController.m */; };
-		2930C9541D20FAF400EB0292 /* UCChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C9391D20FAF400EB0292 /* UCChatViewController.m */; };
-		2930C9551D20FAF400EB0292 /* UCContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C93B1D20FAF400EB0292 /* UCContact.m */; };
-		2930C9561D20FAF400EB0292 /* UCContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C93B1D20FAF400EB0292 /* UCContact.m */; };
-		2930C9571D20FAF400EB0292 /* UCContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930C93B1D20FAF400EB0292 /* UCContact.m */; };
 		29525C831D1B848600303F1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29525C821D1B848600303F1D /* main.m */; };
 		29525C861D1B848600303F1D /* NKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29525C851D1B848600303F1D /* NKAppDelegate.m */; };
 		29525C8E1D1B848600303F1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29525C8D1D1B848600303F1D /* Assets.xcassets */; };
@@ -152,21 +128,6 @@
 		2930C9261D20DD4200EB0292 /* NKServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKServiceManager.m; sourceTree = "<group>"; };
 		2930C9271D20DD4200EB0292 /* NKSiriService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSiriService.h; sourceTree = "<group>"; };
 		2930C9281D20DD4200EB0292 /* NKSiriService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSiriService.m; sourceTree = "<group>"; };
-		2930C92D1D20FAF400EB0292 /* chatmock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chatmock.png; sourceTree = "<group>"; };
-		2930C92E1D20FAF400EB0292 /* chatmockdraft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chatmockdraft.png; sourceTree = "<group>"; };
-		2930C9301D20FAF400EB0292 /* INInteraction+UnicornCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "INInteraction+UnicornCore.h"; sourceTree = "<group>"; };
-		2930C9311D20FAF400EB0292 /* INInteraction+UnicornCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "INInteraction+UnicornCore.m"; sourceTree = "<group>"; };
-		2930C9321D20FAF400EB0292 /* UCAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCAccount.h; sourceTree = "<group>"; };
-		2930C9331D20FAF400EB0292 /* UCAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCAccount.m; sourceTree = "<group>"; };
-		2930C9341D20FAF400EB0292 /* UCAddressBookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCAddressBookManager.h; sourceTree = "<group>"; };
-		2930C9351D20FAF400EB0292 /* UCAddressBookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCAddressBookManager.m; sourceTree = "<group>"; };
-		2930C9361D20FAF400EB0292 /* UCChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCChatView.h; sourceTree = "<group>"; };
-		2930C9371D20FAF400EB0292 /* UCChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCChatView.m; sourceTree = "<group>"; };
-		2930C9381D20FAF400EB0292 /* UCChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCChatViewController.h; sourceTree = "<group>"; };
-		2930C9391D20FAF400EB0292 /* UCChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCChatViewController.m; sourceTree = "<group>"; };
-		2930C93A1D20FAF400EB0292 /* UCContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCContact.h; sourceTree = "<group>"; };
-		2930C93B1D20FAF400EB0292 /* UCContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCContact.m; sourceTree = "<group>"; };
-		2930C93C1D20FAF400EB0292 /* UnicornCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnicornCore.h; sourceTree = "<group>"; };
 		29525C7E1D1B848600303F1D /* CLPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29525C821D1B848600303F1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29525C841D1B848600303F1D /* NKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKAppDelegate.h; sourceTree = "<group>"; };
@@ -323,33 +284,9 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		2930C92C1D20FAF400EB0292 /* UnicornCore */ = {
-			isa = PBXGroup;
-			children = (
-				2930C92D1D20FAF400EB0292 /* chatmock.png */,
-				2930C92E1D20FAF400EB0292 /* chatmockdraft.png */,
-				2930C9301D20FAF400EB0292 /* INInteraction+UnicornCore.h */,
-				2930C9311D20FAF400EB0292 /* INInteraction+UnicornCore.m */,
-				2930C9321D20FAF400EB0292 /* UCAccount.h */,
-				2930C9331D20FAF400EB0292 /* UCAccount.m */,
-				2930C9341D20FAF400EB0292 /* UCAddressBookManager.h */,
-				2930C9351D20FAF400EB0292 /* UCAddressBookManager.m */,
-				2930C9361D20FAF400EB0292 /* UCChatView.h */,
-				2930C9371D20FAF400EB0292 /* UCChatView.m */,
-				2930C9381D20FAF400EB0292 /* UCChatViewController.h */,
-				2930C9391D20FAF400EB0292 /* UCChatViewController.m */,
-				2930C93A1D20FAF400EB0292 /* UCContact.h */,
-				2930C93B1D20FAF400EB0292 /* UCContact.m */,
-				2930C93C1D20FAF400EB0292 /* UnicornCore.h */,
-			);
-			name = UnicornCore;
-			path = Framework/UnicornCore;
-			sourceTree = "<group>";
-		};
 		29525C751D1B848600303F1D = {
 			isa = PBXGroup;
 			children = (
-				2930C92C1D20FAF400EB0292 /* UnicornCore */,
 				2930C8D81D20D18700EB0292 /* Framework */,
 				2955B0971D1BC26B002AC741 /* Podfile */,
 				29525C801D1B848600303F1D /* CLPDemo */,
@@ -621,9 +558,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2930C9401D20FAF400EB0292 /* chatmockdraft.png in Resources */,
 				2955B0981D1BC26B002AC741 /* Podfile in Resources */,
-				2930C93D1D20FAF400EB0292 /* chatmock.png in Resources */,
 				29525C911D1B848600303F1D /* LaunchScreen.storyboard in Resources */,
 				29525C8E1D1B848600303F1D /* Assets.xcassets in Resources */,
 			);
@@ -641,8 +576,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				29AC84801D20083900EF9B18 /* MainInterface.storyboard in Resources */,
-				2930C93F1D20FAF400EB0292 /* chatmock.png in Resources */,
-				2930C9421D20FAF400EB0292 /* chatmockdraft.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,8 +583,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2930C93E1D20FAF400EB0292 /* chatmock.png in Resources */,
-				2930C9411D20FAF400EB0292 /* chatmockdraft.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,23 +734,17 @@
 				2930C9061D20D2FF00EB0292 /* NKUtil.m in Sources */,
 				2930C9291D20DD4200EB0292 /* NKLocationService.m in Sources */,
 				29827C921D1BD11B00D4133D /* NKSiriViewController.m in Sources */,
-				2930C9461D20FAF400EB0292 /* INInteraction+UnicornCore.m in Sources */,
 				2930C92B1D20DD4200EB0292 /* NKSiriService.m in Sources */,
 				2930C91E1D20D2FF00EB0292 /* NKMessageUIView.m in Sources */,
 				2930C9151D20D2FF00EB0292 /* NKCommonView.m in Sources */,
 				29525CA91D1B94E000303F1D /* NKBaseViewController.m in Sources */,
 				2930C92A1D20DD4200EB0292 /* NKServiceManager.m in Sources */,
 				29525C861D1B848600303F1D /* NKAppDelegate.m in Sources */,
-				2930C94C1D20FAF400EB0292 /* UCAddressBookManager.m in Sources */,
 				2930C9001D20D2FF00EB0292 /* NKSectionedTableView.m in Sources */,
 				298246531D1B95C700D2054C /* NKNavigationController.m in Sources */,
 				2930C9181D20D2FF00EB0292 /* NKHomeTableViewAdapter.m in Sources */,
 				298246501D1B957700D2054C /* NKHomeViewController.m in Sources */,
 				29525C831D1B848600303F1D /* main.m in Sources */,
-				2930C9521D20FAF400EB0292 /* UCChatViewController.m in Sources */,
-				2930C94F1D20FAF400EB0292 /* UCChatView.m in Sources */,
-				2930C9551D20FAF400EB0292 /* UCContact.m in Sources */,
-				2930C9491D20FAF400EB0292 /* UCAccount.m in Sources */,
 				2930C91B1D20D2FF00EB0292 /* NKHomeView.m in Sources */,
 				2930C8FD1D20D2FF00EB0292 /* NKCommonDefine.m in Sources */,
 				2930C9091D20D2FF00EB0292 /* NKMessageUIController.m in Sources */,
@@ -843,18 +768,12 @@
 				2930C9201D20D2FF00EB0292 /* NKMessageUIView.m in Sources */,
 				29BD84D51D20FC040015B2F1 /* IntentViewController.m in Sources */,
 				2930C90B1D20D2FF00EB0292 /* NKMessageUIController.m in Sources */,
-				2930C9481D20FAF400EB0292 /* INInteraction+UnicornCore.m in Sources */,
 				2930C9081D20D2FF00EB0292 /* NKUtil.m in Sources */,
 				2930C8FF1D20D2FF00EB0292 /* NKCommonDefine.m in Sources */,
-				2930C9511D20FAF400EB0292 /* UCChatView.m in Sources */,
-				2930C94E1D20FAF400EB0292 /* UCAddressBookManager.m in Sources */,
 				2930C9021D20D2FF00EB0292 /* NKSectionedTableView.m in Sources */,
 				2930C91A1D20D2FF00EB0292 /* NKHomeTableViewAdapter.m in Sources */,
-				2930C9571D20FAF400EB0292 /* UCContact.m in Sources */,
 				2930C9171D20D2FF00EB0292 /* NKCommonView.m in Sources */,
 				2930C9051D20D2FF00EB0292 /* NKSectionedTableViewAdapter.m in Sources */,
-				2930C9541D20FAF400EB0292 /* UCChatViewController.m in Sources */,
-				2930C94B1D20FAF400EB0292 /* UCAccount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -865,19 +784,13 @@
 				2930C91C1D20D2FF00EB0292 /* NKHomeView.m in Sources */,
 				2930C91F1D20D2FF00EB0292 /* NKMessageUIView.m in Sources */,
 				2930C90A1D20D2FF00EB0292 /* NKMessageUIController.m in Sources */,
-				2930C9471D20FAF400EB0292 /* INInteraction+UnicornCore.m in Sources */,
 				2930C9071D20D2FF00EB0292 /* NKUtil.m in Sources */,
 				2930C8FE1D20D2FF00EB0292 /* NKCommonDefine.m in Sources */,
-				2930C9501D20FAF400EB0292 /* UCChatView.m in Sources */,
-				2930C94D1D20FAF400EB0292 /* UCAddressBookManager.m in Sources */,
 				2930C9011D20D2FF00EB0292 /* NKSectionedTableView.m in Sources */,
 				2930C9191D20D2FF00EB0292 /* NKHomeTableViewAdapter.m in Sources */,
-				2930C9561D20FAF400EB0292 /* UCContact.m in Sources */,
 				29EA8B0D1D20047C00CF2837 /* IntentHandler.m in Sources */,
 				2930C9161D20D2FF00EB0292 /* NKCommonView.m in Sources */,
 				2930C9041D20D2FF00EB0292 /* NKSectionedTableViewAdapter.m in Sources */,
-				2930C9531D20FAF400EB0292 /* UCChatViewController.m in Sources */,
-				2930C94A1D20FAF400EB0292 /* UCAccount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
