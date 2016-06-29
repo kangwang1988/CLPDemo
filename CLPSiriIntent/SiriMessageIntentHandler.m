@@ -14,11 +14,6 @@ typedef void (^SiriIntentHandlerBlock)(NSArray<INPerson *> *);
 @implementation SiriMessageIntentHandler
 #pragma mark - INSendMessageIntentHandling
 - (void)handleSendMessage:(INSendMessageIntent *)intent completion:(void (^)(INSendMessageIntentResponse * _Nonnull))completion{
-    [[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:@"https://api.heweather.com/x3/weather?cityid=CN101210101&key=fa61e51709b440eb8f342408b073a958"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        [defaults setObject:@"KyleWong" forKey:@"abbr"];
-        [defaults synchronize];
-    }] resume];
     completion([[INSendMessageIntentResponse alloc] initWithCode:INSendMessageIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@"activityType"]]);
 }
 
