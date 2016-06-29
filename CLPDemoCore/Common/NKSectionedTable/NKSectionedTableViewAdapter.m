@@ -7,6 +7,7 @@
 //
 
 #import "NKSectionedTableViewAdapter.h"
+#import "NKUtil.h"
 
 NSString * kKeySectionedAdapterDataSource = @"dataSource";
 NSString * kKeySectionedAdapterSortedKeys = @"sortedKeys";

@@ -1,23 +1,17 @@
 platform:ios,'8.0'
-#use_frameworks!
+use_frameworks!
 inhibit_all_warnings!
 
 target 'CLPDemo' do
     pod 'Masonry', '0.6.3'
-    pod 'Mantle', '2.0.5'
-    pod 'MSWeakTimer', '~> 1.1.0'
 end
 
 target 'CLPSiriIntent' do
     pod 'Masonry', '0.6.3'
-    pod 'Mantle', '2.0.5'
-    pod 'MSWeakTimer', '~> 1.1.0'
 end
 
 target 'CLPSiriIntentUI' do
     pod 'Masonry', '0.6.3'
-    pod 'Mantle', '2.0.5'
-    pod 'MSWeakTimer', '~> 1.1.0'
 end
 
 post_install do |installer|

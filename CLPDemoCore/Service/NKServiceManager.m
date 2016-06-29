@@ -7,6 +7,7 @@
 //
 
 #import "NKServiceManager.h"
+#import "NKSiriService.h"
 
 static NKServiceManager *sServiceManager  = nil;
 

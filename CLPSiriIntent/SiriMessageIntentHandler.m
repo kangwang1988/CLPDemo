@@ -1,42 +1,24 @@
 //
-//  IntentHandler.m
-//  CLPSiriIntent
+//  SiriMessageIntentHandler.m
+//  CLPDemo
 //
-//  Created by KyleWong on 6/23/16.
+//  Created by KyleWong on 6/29/16.
 //  Copyright © 2016 KyleWong. All rights reserved.
 //
 
-#import "IntentHandler.h"
+#import "SiriMessageIntentHandler.h"
 #import <Contacts/Contacts.h>
 
-// As an example, this class is set up to handle the Workout intents.
-// You will want to replace this or add other intents as appropriate.
-// The intents you wish to handle must be declared in the extension's Info.plist.
+typedef void (^SiriIntentHandlerBlock)(NSArray<INPerson *> *);
 
-
-@interface IntentHandler () <INSendMessageIntentHandling>
-
-@end
-
-@implementation IntentHandler
-- (id)handlerForIntent:(INIntent *)intent {
-    // This is the default implementation.  If you want different objects to handle different intents,
-    // you can override this and return the handler you want for that particular intent.
-    id handler = nil;
-    // You can substitute other objects for self based on the specific intent.
-    if ([intent isKindOfClass:[INSendMessageIntent class]]) {
-        handler = self;
-    }
-    return handler;
-}
-
+@implementation SiriMessageIntentHandler
 #pragma mark - INSendMessageIntentHandling
 - (void)handleSendMessage:(INSendMessageIntent *)intent completion:(void (^)(INSendMessageIntentResponse * _Nonnull))completion{
-//    [[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:@"https://www.baidu.com"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-//        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-//        [defaults setObject:@"KyleWong" forKey:@"abbr"];
-//        [defaults synchronize];
-//    }] resume];
+    [[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:@"https://api.heweather.com/x3/weather?cityid=CN101210101&key=fa61e51709b440eb8f342408b073a958"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setObject:@"KyleWong" forKey:@"abbr"];
+        [defaults synchronize];
+    }] resume];
     completion([[INSendMessageIntentResponse alloc] initWithCode:INSendMessageIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@"activityType"]]);
 }
 
@@ -47,12 +29,12 @@
 - (void)resolveRecipientsForSendMessage:(INSendMessageIntent *)intent
                          withCompletion:(void (^)(NSArray<INPersonResolutionResult *> *resolutionResults))completion NS_SWIFT_NAME(resolveRecipients(forSendMessage:with:)){
     [self searchContactWithName:((INPerson *)intent.recipients.firstObject).displayName completionBlock:^(NSArray<INPerson *> *aPersons){
-            if(aPersons.count)
-                completion(@[[INPersonResolutionResult successWithResolvedPerson:aPersons.firstObject]]);
-            else
-                completion(nil);
+        if(aPersons.count)
+            completion(@[[INPersonResolutionResult successWithResolvedPerson:aPersons.firstObject]]);
+        else
+            completion(nil);
     }];
-
+    
 }
 
 - (void)resolveContentForSendMessage:(INSendMessageIntent *)intent
@@ -60,7 +42,7 @@
     completion([INStringResolutionResult successWithResolvedString:intent.content]);
 }
 
-- (void)searchContactWithName:(NSString *)aName completionBlock:(IntentHandlerBlock)aCompletionBlock{
+- (void)searchContactWithName:(NSString *)aName completionBlock:(SiriIntentHandlerBlock)aCompletionBlock{
     CNContactStore *store = [[CNContactStore alloc] init];
     [store requestAccessForEntityType:CNEntityTypeContacts completionHandler:^(BOOL granted, NSError * _Nullable error) {
         NSMutableArray *array = [NSMutableArray array];
@@ -72,7 +54,7 @@
         NSMutableArray *contacts = [NSMutableArray array];
         NSError *fetchError;
         CNContactFetchRequest *request = [[CNContactFetchRequest alloc] initWithKeysToFetch:@[CNContactIdentifierKey, [CNContactFormatter descriptorForRequiredKeysForStyle:CNContactFormatterStyleFullName]]];
-         [store enumerateContactsWithFetchRequest:request error:&fetchError usingBlock:^(CNContact *contact, BOOL *stop) {
+        [store enumerateContactsWithFetchRequest:request error:&fetchError usingBlock:^(CNContact *contact, BOOL *stop) {
             [contacts addObject:contact];
         }];
         // you can now do something with the list of contacts, for example, to show the names

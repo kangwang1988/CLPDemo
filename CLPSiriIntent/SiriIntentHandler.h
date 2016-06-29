@@ -1,5 +1,5 @@
 //
-//  IntentHandler.h
+//  SiriIntentHandler.h
 //  CLPSiriIntent
 //
 //  Created by KyleWong on 6/26/16.
@@ -7,9 +7,5 @@
 //
 
 #import <Intents/Intents.h>
-
-typedef void (^IntentHandlerBlock)(NSArray<INPerson *> *);
-
-@interface IntentHandler : INExtension
-
+@interface SiriIntentHandler : INExtension
 @end

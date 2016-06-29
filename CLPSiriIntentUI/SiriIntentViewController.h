@@ -1,5 +1,5 @@
 //
-//  IntentViewController.h
+//  SiriIntentViewController.h
 //  CLPSiriIntentUI
 //
 //  Created by KyleWong on 6/26/16.
@@ -8,6 +8,5 @@
 
 #import <IntentsUI/IntentsUI.h>
 
-@interface IntentViewController : UIViewController <INUIHostedViewControlling>
-
+@interface SiriIntentViewController : UIViewController <INUIHostedViewControlling>
 @end

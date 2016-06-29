@@ -10,6 +10,7 @@
 #import "NKHomeView.h"
 #import "NKHomeTableViewAdapter.h"
 #import "NKSiriViewController.h"
+#import "CLPDemoCore.h"
 
 @interface NKHomeViewController ()<NKSectionedTableViewAdapterDelegate>
 @property (nonatomic,strong) NKHomeView *homeView;

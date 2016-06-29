@@ -2,7 +2,7 @@
 //  CLPDemo-Prefix.pch
 //  CLPDemo
 //
-//  Created by KyleWong on 6/23/16.
+//  Created by KyleWong on 6/28/16.
 //  Copyright © 2016 KyleWong. All rights reserved.
 //
 
@@ -11,20 +11,5 @@
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
-
-#import <Foundation/Foundation.h>
-#import <Contacts/Contacts.h>
-#import "Masonry.h"
-#import "MSWeakTimer.h"
-
-#import "NKCommonDefine.h"
-
-#import "NKUtil.h"
-#import "NKNavigationController.h"
-#import "NKBaseViewController.h"
-#import "NKSectionedTableView.h"
-#import "NKSectionedTableViewAdapter.h"
-
-#import "NKServiceManager.h"
 
 #endif /* CLPDemo_Prefix_pch */

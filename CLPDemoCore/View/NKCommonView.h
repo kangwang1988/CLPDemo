@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CLPDemoCore.h"
 
 @interface NKCommonView : UIView
 - (void)commonInit;
 - (void)makeConstraints;
 - (void)initUIComponents;
 - (void)updateUIComponents;
+- (CGFloat)estimatedWidthWithConstraintHeight:(CGFloat)aConstraintHeight;
+- (CGFloat)estimatedHeightWithConstraintWidth:(CGFloat)aConstraintWidth;
 @end

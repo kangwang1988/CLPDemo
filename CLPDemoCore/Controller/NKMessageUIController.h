@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface NKMessageUIController : UIViewController
-
+- (instancetype)initWithDisplayName:(NSString *)aDisplayName content:(id)aContent;
 @end

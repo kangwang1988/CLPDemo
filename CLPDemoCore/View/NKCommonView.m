@@ -24,4 +24,12 @@
 - (void)updateUIComponents{
 
 }
+
+- (CGFloat)estimatedWidthWithConstraintHeight:(CGFloat)aConstraintHeight{
+    return 0;
+}
+
+- (CGFloat)estimatedHeightWithConstraintWidth:(CGFloat)aConstraintWidth{
+    return 0;
+}
 @end

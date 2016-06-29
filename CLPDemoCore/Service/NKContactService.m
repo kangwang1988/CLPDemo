@@ -6,7 +6,10 @@
 //  Copyright © 2016 KyleWong. All rights reserved.
 //
 
+#import "CLPDemoCore.h"
 #import "NKContactService.h"
+#import <Contacts/Contacts.h>
+#import <UIKit/UIKit.h>
 
 @implementation NKContactService
 - (instancetype)init{
@@ -25,7 +28,7 @@
     if (status == CNAuthorizationStatusDenied || status == CNAuthorizationStatusRestricted) {
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"This app previously was refused permissions to contacts; Please go to settings and grant permission to this app so it can use contacts" preferredStyle:UIAlertControllerStyleAlert];
         [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
-        [[[UIApplication sharedApplication].delegate window].rootViewController presentViewController:alert animated:TRUE completion:nil];
+        [extensionContentVC presentViewController:alert animated:TRUE completion:nil];
         return;
     }
     CNContactStore *store = [[CNContactStore alloc] init];

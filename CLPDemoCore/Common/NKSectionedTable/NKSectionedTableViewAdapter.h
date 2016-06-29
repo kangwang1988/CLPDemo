@@ -5,8 +5,8 @@
 //  Created by KyleWong on 12/2/15.
 //  Copyright © 2015 CLPDemo. All rights reserved.
 //
-
-#import "CLPDemo.h"
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 FOUNDATION_EXPORT NSString *kKeySectionedAdapterDataSource;
 FOUNDATION_EXPORT NSString *kKeySectionedAdapterSortedKeys;

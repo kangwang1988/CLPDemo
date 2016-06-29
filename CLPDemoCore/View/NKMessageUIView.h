@@ -10,5 +10,5 @@
 #import "NKCommonView.h"
 
 @interface NKMessageUIView : NKCommonView
-
+- (void)updateWithName:(NSString *)aName content:(NSString *)aContent;
 @end
