@@ -1,5 +1,5 @@
 //
-//  SiriMessageIntentHandler.h
+//  SiriSendMessageIntentHandler.h
 //  CLPDemo
 //
 //  Created by KyleWong on 6/29/16.
@@ -8,6 +8,6 @@
 
 #import <Intents/Intents.h>
 
-@interface SiriMessageIntentHandler : INExtension<INSendMessageIntentHandling>
+@interface SiriSendMessageIntentHandler : INExtension<INSendMessageIntentHandling>
 
 @end

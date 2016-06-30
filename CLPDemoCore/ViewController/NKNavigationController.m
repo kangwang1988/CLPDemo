@@ -7,7 +7,6 @@
 //
 
 #import "NKNavigationController.h"
-
 @interface NKNavigationController ()
 
 @end

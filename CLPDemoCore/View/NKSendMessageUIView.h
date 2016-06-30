@@ -1,5 +1,5 @@
 //
-//  NKMessageUIView.h
+//  NKSendMessageUIView.h
 //  CLPDemo
 //
 //  Created by KyleWong on 6/27/16.
@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "NKCommonView.h"
 
-@interface NKMessageUIView : NKCommonView
+@interface NKSendMessageUIView : NKCommonView
 - (void)updateWithName:(NSString *)aName content:(NSString *)aContent;
 @end

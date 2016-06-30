@@ -17,5 +17,6 @@
 #define FONT(x) [UIFont fontWithName:@"Helvetica" size:(x)]
 #define kPixelFrom750(x) kScreenScale*kScreenWidth/750*(x)
 FOUNDATION_EXPORT NSString *kFeatureSiri;
+FOUNDATION_EXPORT NSString *kAuthorEmail;
 
 #endif /* NKCommonDefine_h */

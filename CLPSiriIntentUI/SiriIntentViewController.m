@@ -8,7 +8,8 @@
 #import <Intents/Intents.h>
 #import "CLPDemoCore.h"
 #import "SiriIntentViewController.h"
-#import "NKMessageUIController.h"
+#import "NKSendMessageUIController.h"
+#import "NKSearchMessageUIController.h"
 // As an example, this extension's Info.plist has been configured to handle interactions for INStartWorkoutIntent.
 // You will want to replace this or add other intents as appropriate.
 // The intents whose interactions you wish to handle must be declared in the extension's Info.plist.
@@ -49,10 +50,22 @@
     CGSize size = CGSizeZero;
     if([interaction.intent isKindOfClass:[INSendMessageIntent class]]){
         INSendMessageIntent *intent = (INSendMessageIntent *) interaction.intent;
-        NKMessageUIController *msgUIController = [[NKMessageUIController alloc] initWithDisplayName:((INPerson *)intent.recipients.firstObject).displayName content:intent.content];
+        NKSendMessageUIController *msgUIController = [[NKSendMessageUIController alloc] initWithRecipientName:((INPerson *)intent.recipients.firstObject).displayName content:intent.content];
         [self presentViewController:msgUIController animated:NO completion:nil];
         size = [self desiredSize];
         NKCommonView *commonView = [NKUtil reinterpretObject:msgUIController.view toClassOrNil:[NKCommonView class]];
+        if(commonView)
+            size.height = MIN(size.height,[commonView estimatedHeightWithConstraintWidth:size.width]);
+    }
+    else if([interaction.intent isKindOfClass:[INSearchForMessagesIntent class]]){
+         INSearchForMessagesIntent *intent = (INSearchForMessagesIntent*)interaction.intent;
+        NSDate *dateFrom = [intent.dateTimeRange.startDateComponents.calendar dateFromComponents:intent.dateTimeRange.startDateComponents];
+        NSDate *dateTo= [intent.dateTimeRange.endDateComponents.calendar dateFromComponents:intent.dateTimeRange.endDateComponents];
+        INSearchForMessagesIntentResponse *response = (INSearchForMessagesIntentResponse *)interaction.intentResponse;
+        NKSearchMessageUIController *searchMsgUIController = [[NKSearchMessageUIController alloc] initWithCriterion:[NSString stringWithFormat:@"%@~%@",dateFrom,dateTo] msgs:response.messages];
+        [self presentViewController:searchMsgUIController animated:NO completion:nil];
+        size = [self desiredSize];
+        NKCommonView *commonView = [NKUtil reinterpretObject:searchMsgUIController.view toClassOrNil:[NKCommonView class]];
         if(commonView)
             size.height = MIN(size.height,[commonView estimatedHeightWithConstraintWidth:size.width]);
     }

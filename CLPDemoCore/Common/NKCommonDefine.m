@@ -9,3 +9,4 @@
 #import "NKCommonDefine.h"
 
 NSString *kFeatureSiri = @"Siri";
+NSString *kAuthorEmail = @"kang.wang1988@gmail.com";
