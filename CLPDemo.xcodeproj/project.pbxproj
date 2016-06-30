@@ -12,12 +12,6 @@
 		2927F6A51D2372280037ED22 /* CLPDemoCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2927F6A31D2372280037ED22 /* CLPDemoCore.m */; };
 		2927F6A61D2372280037ED22 /* CLPDemoCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2927F6A31D2372280037ED22 /* CLPDemoCore.m */; };
 		292E7EF31D23CAB700EB8C96 /* SiriSearchMessageIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 292E7EF21D23CAB700EB8C96 /* SiriSearchMessageIntentHandler.m */; };
-		292E7EF91D241D3100EB8C96 /* NKSearchMessageUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 292E7EF81D241D3100EB8C96 /* NKSearchMessageUIController.m */; };
-		292E7EFA1D241D3100EB8C96 /* NKSearchMessageUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 292E7EF81D241D3100EB8C96 /* NKSearchMessageUIController.m */; };
-		292E7EFB1D241D3100EB8C96 /* NKSearchMessageUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 292E7EF81D241D3100EB8C96 /* NKSearchMessageUIController.m */; };
-		292E7EFE1D241D4C00EB8C96 /* NKSearchMessageUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 292E7EFD1D241D4C00EB8C96 /* NKSearchMessageUIView.m */; };
-		292E7EFF1D241D4C00EB8C96 /* NKSearchMessageUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 292E7EFD1D241D4C00EB8C96 /* NKSearchMessageUIView.m */; };
-		292E7F001D241D4C00EB8C96 /* NKSearchMessageUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 292E7EFD1D241D4C00EB8C96 /* NKSearchMessageUIView.m */; };
 		29525C831D1B848600303F1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29525C821D1B848600303F1D /* main.m */; };
 		29525C861D1B848600303F1D /* NKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29525C851D1B848600303F1D /* NKAppDelegate.m */; };
 		29525C8E1D1B848600303F1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29525C8D1D1B848600303F1D /* Assets.xcassets */; };
@@ -128,10 +122,6 @@
 		292D9B1E1D1FE5C700277A22 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		292E7EF11D23CAB700EB8C96 /* SiriSearchMessageIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriSearchMessageIntentHandler.h; sourceTree = "<group>"; };
 		292E7EF21D23CAB700EB8C96 /* SiriSearchMessageIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriSearchMessageIntentHandler.m; sourceTree = "<group>"; };
-		292E7EF71D241D3100EB8C96 /* NKSearchMessageUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSearchMessageUIController.h; sourceTree = "<group>"; };
-		292E7EF81D241D3100EB8C96 /* NKSearchMessageUIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSearchMessageUIController.m; sourceTree = "<group>"; };
-		292E7EFC1D241D4C00EB8C96 /* NKSearchMessageUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSearchMessageUIView.h; sourceTree = "<group>"; };
-		292E7EFD1D241D4C00EB8C96 /* NKSearchMessageUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSearchMessageUIView.m; sourceTree = "<group>"; };
 		29525C7E1D1B848600303F1D /* CLPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29525C821D1B848600303F1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29525C841D1B848600303F1D /* NKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKAppDelegate.h; sourceTree = "<group>"; };
@@ -359,8 +349,6 @@
 			children = (
 				29D40BDB1D226A7F003F6F7B /* NKSendMessageUIController.h */,
 				29D40BDC1D226A7F003F6F7B /* NKSendMessageUIController.m */,
-				292E7EF71D241D3100EB8C96 /* NKSearchMessageUIController.h */,
-				292E7EF81D241D3100EB8C96 /* NKSearchMessageUIController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -391,8 +379,6 @@
 				29D40BED1D226A7F003F6F7B /* NKHomeView.m */,
 				29D40BEE1D226A7F003F6F7B /* NKSendMessageUIView.h */,
 				29D40BEF1D226A7F003F6F7B /* NKSendMessageUIView.m */,
-				292E7EFC1D241D4C00EB8C96 /* NKSearchMessageUIView.h */,
-				292E7EFD1D241D4C00EB8C96 /* NKSearchMessageUIView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -780,12 +766,10 @@
 				29D40BF81D226A7F003F6F7B /* NKSectionedTableView.m in Sources */,
 				29D40C161D226A7F003F6F7B /* NKHomeView.m in Sources */,
 				29D40BFE1D226A7F003F6F7B /* NKUtil.m in Sources */,
-				292E7EFE1D241D4C00EB8C96 /* NKSearchMessageUIView.m in Sources */,
 				29D40C1C1D226A7F003F6F7B /* NKBaseViewController.m in Sources */,
 				29D40C011D226A7F003F6F7B /* NKSendMessageUIController.m in Sources */,
 				29D40BF51D226A7F003F6F7B /* NKCommonDefine.m in Sources */,
 				29525C861D1B848600303F1D /* NKAppDelegate.m in Sources */,
-				292E7EF91D241D3100EB8C96 /* NKSearchMessageUIController.m in Sources */,
 				29D40C0A1D226A7F003F6F7B /* NKServiceManager.m in Sources */,
 				29D40C131D226A7F003F6F7B /* NKHomeTableViewAdapter.m in Sources */,
 				29D40C1F1D226A7F003F6F7B /* NKNavigationController.m in Sources */,
@@ -812,7 +796,6 @@
 			files = (
 				29D40C211D226A7F003F6F7B /* NKNavigationController.m in Sources */,
 				29D40C031D226A7F003F6F7B /* NKSendMessageUIController.m in Sources */,
-				292E7EFB1D241D3100EB8C96 /* NKSearchMessageUIController.m in Sources */,
 				29D40C091D226A7F003F6F7B /* NKLocationService.m in Sources */,
 				29D40C181D226A7F003F6F7B /* NKHomeView.m in Sources */,
 				2927F6A61D2372280037ED22 /* CLPDemoCore.m in Sources */,
@@ -825,7 +808,6 @@
 				29D40C1E1D226A7F003F6F7B /* NKBaseViewController.m in Sources */,
 				29D40C1B1D226A7F003F6F7B /* NKSendMessageUIView.m in Sources */,
 				29D40C121D226A7F003F6F7B /* NKCommonView.m in Sources */,
-				292E7F001D241D4C00EB8C96 /* NKSearchMessageUIView.m in Sources */,
 				29D40C151D226A7F003F6F7B /* NKHomeTableViewAdapter.m in Sources */,
 				29BD84D51D20FC040015B2F1 /* SiriIntentViewController.m in Sources */,
 				29D40BFD1D226A7F003F6F7B /* NKSectionedTableViewAdapter.m in Sources */,
@@ -846,13 +828,11 @@
 				29D40C051D226A7F003F6F7B /* NKContactService.m in Sources */,
 				29D40BF61D226A7F003F6F7B /* NKCommonDefine.m in Sources */,
 				29D40BF91D226A7F003F6F7B /* NKSectionedTableView.m in Sources */,
-				292E7EFA1D241D3100EB8C96 /* NKSearchMessageUIController.m in Sources */,
 				29D40C0B1D226A7F003F6F7B /* NKServiceManager.m in Sources */,
 				29D40C0E1D226A7F003F6F7B /* NKSiriService.m in Sources */,
 				29CA26CB1D23B47D00EE679B /* SiriSendMessageIntentHandler.m in Sources */,
 				29D40C1D1D226A7F003F6F7B /* NKBaseViewController.m in Sources */,
 				29D40C1A1D226A7F003F6F7B /* NKSendMessageUIView.m in Sources */,
-				292E7EFF1D241D4C00EB8C96 /* NKSearchMessageUIView.m in Sources */,
 				29D40C111D226A7F003F6F7B /* NKCommonView.m in Sources */,
 				29D40C141D226A7F003F6F7B /* NKHomeTableViewAdapter.m in Sources */,
 				29EA8B0D1D20047C00CF2837 /* SiriIntentHandler.m in Sources */,
