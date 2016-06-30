@@ -21,6 +21,9 @@
 		2964681B1D1FF67C004C4C74 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2964681A1D1FF67C004C4C74 /* CoreLocation.framework */; };
 		298246501D1B957700D2054C /* NKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2982464F1D1B957700D2054C /* NKHomeViewController.m */; };
 		29827C921D1BD11B00D4133D /* NKSiriViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29827C911D1BD11B00D4133D /* NKSiriViewController.m */; };
+		299D6D471D2522AC004608AC /* SiriStartAudioCallIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 299D6D461D2522AC004608AC /* SiriStartAudioCallIntentHandler.m */; };
+		299D6D4A1D2522C3004608AC /* SiriStartVideoCallIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 299D6D491D2522C3004608AC /* SiriStartVideoCallIntentHandler.m */; };
+		299D6D4D1D2522DC004608AC /* SiriSearchCallHistoryIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 299D6D4C1D2522DC004608AC /* SiriSearchCallHistoryIntentHandler.m */; };
 		29AC84791D20083900EF9B18 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29827CA21D1C009C00D4133D /* IntentsUI.framework */; };
 		29AC84841D20083900EF9B18 /* CLPSiriIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 29AC84781D20083900EF9B18 /* CLPSiriIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		29BD84D51D20FC040015B2F1 /* SiriIntentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD84D41D20FC040015B2F1 /* SiriIntentViewController.m */; };
@@ -139,6 +142,12 @@
 		29827C901D1BD11B00D4133D /* NKSiriViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSiriViewController.h; sourceTree = "<group>"; };
 		29827C911D1BD11B00D4133D /* NKSiriViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSiriViewController.m; sourceTree = "<group>"; };
 		29827CA21D1C009C00D4133D /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		299D6D451D2522AC004608AC /* SiriStartAudioCallIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriStartAudioCallIntentHandler.h; sourceTree = "<group>"; };
+		299D6D461D2522AC004608AC /* SiriStartAudioCallIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriStartAudioCallIntentHandler.m; sourceTree = "<group>"; };
+		299D6D481D2522C3004608AC /* SiriStartVideoCallIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriStartVideoCallIntentHandler.h; sourceTree = "<group>"; };
+		299D6D491D2522C3004608AC /* SiriStartVideoCallIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriStartVideoCallIntentHandler.m; sourceTree = "<group>"; };
+		299D6D4B1D2522DC004608AC /* SiriSearchCallHistoryIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriSearchCallHistoryIntentHandler.h; sourceTree = "<group>"; };
+		299D6D4C1D2522DC004608AC /* SiriSearchCallHistoryIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriSearchCallHistoryIntentHandler.m; sourceTree = "<group>"; };
 		29AC84781D20083900EF9B18 /* CLPSiriIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CLPSiriIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		29AC84811D20083900EF9B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29BD84D31D20FC040015B2F1 /* SiriIntentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriIntentViewController.h; sourceTree = "<group>"; };
@@ -397,13 +406,19 @@
 		29EA8B0A1D20047C00CF2837 /* CLPSiriIntent */ = {
 			isa = PBXGroup;
 			children = (
+				29EA8B0E1D20047C00CF2837 /* Info.plist */,
 				29EA8B0B1D20047C00CF2837 /* SiriIntentHandler.h */,
 				29EA8B0C1D20047C00CF2837 /* SiriIntentHandler.m */,
-				29EA8B0E1D20047C00CF2837 /* Info.plist */,
-				29CA26C91D23B47D00EE679B /* SiriSendMessageIntentHandler.h */,
-				29CA26CA1D23B47D00EE679B /* SiriSendMessageIntentHandler.m */,
+				299D6D4B1D2522DC004608AC /* SiriSearchCallHistoryIntentHandler.h */,
+				299D6D4C1D2522DC004608AC /* SiriSearchCallHistoryIntentHandler.m */,
 				292E7EF11D23CAB700EB8C96 /* SiriSearchMessageIntentHandler.h */,
 				292E7EF21D23CAB700EB8C96 /* SiriSearchMessageIntentHandler.m */,
+				29CA26C91D23B47D00EE679B /* SiriSendMessageIntentHandler.h */,
+				29CA26CA1D23B47D00EE679B /* SiriSendMessageIntentHandler.m */,
+				299D6D451D2522AC004608AC /* SiriStartAudioCallIntentHandler.h */,
+				299D6D461D2522AC004608AC /* SiriStartAudioCallIntentHandler.m */,
+				299D6D481D2522C3004608AC /* SiriStartVideoCallIntentHandler.h */,
+				299D6D491D2522C3004608AC /* SiriStartVideoCallIntentHandler.m */,
 			);
 			path = CLPSiriIntent;
 			sourceTree = "<group>";
@@ -823,12 +838,15 @@
 				292E7EF31D23CAB700EB8C96 /* SiriSearchMessageIntentHandler.m in Sources */,
 				29D40C081D226A7F003F6F7B /* NKLocationService.m in Sources */,
 				29D40C171D226A7F003F6F7B /* NKHomeView.m in Sources */,
+				299D6D471D2522AC004608AC /* SiriStartAudioCallIntentHandler.m in Sources */,
+				299D6D4D1D2522DC004608AC /* SiriSearchCallHistoryIntentHandler.m in Sources */,
 				2927F6A51D2372280037ED22 /* CLPDemoCore.m in Sources */,
 				29D40BFF1D226A7F003F6F7B /* NKUtil.m in Sources */,
 				29D40C051D226A7F003F6F7B /* NKContactService.m in Sources */,
 				29D40BF61D226A7F003F6F7B /* NKCommonDefine.m in Sources */,
 				29D40BF91D226A7F003F6F7B /* NKSectionedTableView.m in Sources */,
 				29D40C0B1D226A7F003F6F7B /* NKServiceManager.m in Sources */,
+				299D6D4A1D2522C3004608AC /* SiriStartVideoCallIntentHandler.m in Sources */,
 				29D40C0E1D226A7F003F6F7B /* NKSiriService.m in Sources */,
 				29CA26CB1D23B47D00EE679B /* SiriSendMessageIntentHandler.m in Sources */,
 				29D40C1D1D226A7F003F6F7B /* NKBaseViewController.m in Sources */,

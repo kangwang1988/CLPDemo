@@ -17,9 +17,9 @@
 }
 
 - (void)resolveRecipientsForSendMessage:(INSendMessageIntent *)intent withCompletion:(void (^)(NSArray<INPersonResolutionResult *> *resolutionResults))completion NS_SWIFT_NAME(resolveRecipients(forSendMessage:with:)){
-    [SiriIntentHandler searchContactWithCategory:NKSiriIntentHandlerContactCategoryFullname value:((INPerson *)intent.recipients.firstObject).displayName completionBlock:^(INPerson *aPerson) {
-        if(aPerson)
-            completion(@[[INPersonResolutionResult successWithResolvedPerson:aPerson]]);
+    [NKUtil searchContactWithCategory:NKContactCategoryFullname value:((INPerson *)intent.recipients.firstObject).displayName completionBlock:^(CNContact *aContact) {
+        if(aContact)
+            completion(@[[INPersonResolutionResult successWithResolvedPerson:[[INPerson alloc]  initWithHandle:@"" displayName:[NSString stringWithFormat:@"%@%@",aContact.familyName,aContact.givenName] contactIdentifier:aContact.identifier]] ]);
         else
             completion(nil);
     }];

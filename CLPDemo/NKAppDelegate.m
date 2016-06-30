@@ -29,6 +29,20 @@
     return YES;
 }
 
+- (BOOL)application:(UIApplication *)application continueUserActivity:(nonnull NSUserActivity *)userActivity restorationHandler:(nonnull void (^)(NSArray * _Nullable))restorationHandler{
+    NSString *activityType = userActivity.activityType;
+    if([activityType isEqualToString:kKeyActivityTypeAudioCall]){
+        NSString *contactId = userActivity.userInfo[kKeyActivityUserInfoContactIdentifier];
+        [NKUtil searchContactWithCategory:NKContactCategoryIdentifier value:contactId completionBlock:^(CNContact *aContact) {
+            CNPhoneNumber *phoneNo = ((CNLabeledValue*)aContact.phoneNumbers.firstObject).value;
+            NSString *url = [NSString stringWithFormat:@"tel:%@",phoneNo.stringValue];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url] options:@{} completionHandler:^(BOOL success) {
+            }];
+        }];
+    }
+    return YES;
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
