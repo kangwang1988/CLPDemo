@@ -7,7 +7,7 @@
 //
 
 #import <Intents/Intents.h>
-
+//调用举例:用app-name告诉contact-name我一会就到
 @interface SiriSendMessageIntentHandler : INExtension<INSendMessageIntentHandling>
 
 @end
