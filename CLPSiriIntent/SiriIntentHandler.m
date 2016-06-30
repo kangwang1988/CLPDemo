@@ -33,43 +33,44 @@
     return handler;
 }
 
-+ (void)searchContactWithName:(NSString *)aName completionBlock:(SiriIntentHandlerBlock)aCompletionBlock{
++ (void)searchContactWithCategory:(NKSiriIntentHandlerContactCategory)aCategory value:(NSString *)aValue completionBlock:(SiriIntentHandlerBlock)aCompletionBlock{
     CNContactStore *store = [[CNContactStore alloc] init];
     [store requestAccessForEntityType:CNEntityTypeContacts completionHandler:^(BOOL granted, NSError * _Nullable error) {
         if (!granted) {
             return;
         }
         NSError *fetchError;
-        CNContactFetchRequest *request = [[CNContactFetchRequest alloc] initWithKeysToFetch:@[CNContactIdentifierKey,CNContactFamilyNameKey,CNContactGivenNameKey]];
         __block INPerson *matchedPerson = nil;
-        [store enumerateContactsWithFetchRequest:request error:&fetchError usingBlock:^(CNContact *contact, BOOL *stop) {
-            NSString *fullName = [NSString stringWithFormat:@"%@%@",contact.familyName,contact.givenName];
-            if([fullName isEqualToString:aName]){
-                matchedPerson = [[INPerson alloc] initWithHandle:@"" displayName:fullName contactIdentifier:contact.identifier];
-                *stop = YES;
+        CNContactFetchRequest *request = nil;
+        switch (aCategory) {
+            case NKSiriIntentHandlerContactCategoryFullname:
+            {
+                request = [[CNContactFetchRequest alloc] initWithKeysToFetch:@[CNContactIdentifierKey,CNContactFamilyNameKey,CNContactGivenNameKey]];
+                [store enumerateContactsWithFetchRequest:request error:&fetchError usingBlock:^(CNContact *contact, BOOL *stop) {
+                    NSString *fullName = [NSString stringWithFormat:@"%@%@",contact.familyName,contact.givenName];
+                    if([fullName isEqualToString:aValue]){
+                        matchedPerson = [[INPerson alloc] initWithHandle:@"" displayName:fullName contactIdentifier:contact.identifier];
+                        *stop = YES;
+                    }
+                }];
+                break;
             }
-        }];
-        if(aCompletionBlock)
-            aCompletionBlock(matchedPerson);
-    }];
-}
-
-+ (void)searchContactWithEmail:(NSString *)aEmail completionBlock:(SiriIntentHandlerBlock)aCompletionBlock{
-    CNContactStore *store = [[CNContactStore alloc] init];
-    [store requestAccessForEntityType:CNEntityTypeContacts completionHandler:^(BOOL granted, NSError * _Nullable error) {
-        if (!granted) {
-            return;
+            case NKSiriIntentHandlerContactCategoryEmail:
+            {
+                request = [[CNContactFetchRequest alloc] initWithKeysToFetch:@[CNContactIdentifierKey,CNContactFamilyNameKey,CNContactGivenNameKey,CNContactEmailAddressesKey]];
+                [store enumerateContactsWithFetchRequest:request error:&fetchError usingBlock:^(CNContact *contact, BOOL *stop) {
+                    NSString *fullName = [NSString stringWithFormat:@"%@%@",contact.familyName,contact.givenName];
+                    CNLabeledValue<NSString*> *emailValue = contact.emailAddresses.firstObject;
+                    if([emailValue.value isEqualToString:aValue]){
+                        matchedPerson = [[INPerson alloc] initWithHandle:@"" displayName:fullName contactIdentifier:contact.identifier];
+                        *stop = YES;
+                    }
+                }];
+                break;
+            }
+            default:
+                break;
         }
-        NSError *fetchError;
-        CNContactFetchRequest *request = [[CNContactFetchRequest alloc] initWithKeysToFetch:@[CNContactIdentifierKey,CNContactFamilyNameKey,CNContactGivenNameKey,CNContactEmailAddressesKey]];
-        __block INPerson *matchedPerson = nil;
-        [store enumerateContactsWithFetchRequest:request error:&fetchError usingBlock:^(CNContact *contact, BOOL *stop) {
-            CNLabeledValue<NSString*> *emailValue = contact.emailAddresses.firstObject;
-            if([emailValue.value isEqualToString:aEmail]){
-                matchedPerson = [[INPerson alloc] initWithHandle:@"" displayName:[NSString stringWithFormat:@"%@-%@",contact.familyName,contact.givenName] contactIdentifier:contact.identifier];
-                *stop = YES;
-            }
-        }];
         if(aCompletionBlock)
             aCompletionBlock(matchedPerson);
     }];

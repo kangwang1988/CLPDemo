@@ -17,7 +17,7 @@
 }
 
 - (void)resolveRecipientsForSendMessage:(INSendMessageIntent *)intent withCompletion:(void (^)(NSArray<INPersonResolutionResult *> *resolutionResults))completion NS_SWIFT_NAME(resolveRecipients(forSendMessage:with:)){
-    [SiriIntentHandler searchContactWithName:((INPerson *)intent.recipients.firstObject).displayName completionBlock:^(INPerson *aPerson){
+    [SiriIntentHandler searchContactWithCategory:NKSiriIntentHandlerContactCategoryFullname value:((INPerson *)intent.recipients.firstObject).displayName completionBlock:^(INPerson *aPerson) {
         if(aPerson)
             completion(@[[INPersonResolutionResult successWithResolvedPerson:aPerson]]);
         else

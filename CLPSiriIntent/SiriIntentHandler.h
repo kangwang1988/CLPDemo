@@ -11,7 +11,11 @@
 
 typedef void (^SiriIntentHandlerBlock)(INPerson *);
 
+typedef NS_ENUM(NSInteger,NKSiriIntentHandlerContactCategory){
+    NKSiriIntentHandlerContactCategoryFullname,
+    NKSiriIntentHandlerContactCategoryEmail
+};
+
 @interface SiriIntentHandler : INExtension
-+ (void)searchContactWithName:(NSString *)aName completionBlock:(SiriIntentHandlerBlock)aCompletionBlock;
-+ (void)searchContactWithEmail:(NSString *)aEmail completionBlock:(SiriIntentHandlerBlock)aCompletionBlock;
++ (void)searchContactWithCategory:(NKSiriIntentHandlerContactCategory)aCategory value:(NSString *)aValue completionBlock:(SiriIntentHandlerBlock)aCompletionBlock;
 @end

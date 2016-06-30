@@ -13,18 +13,19 @@
 - (void)handleSearchForMessages:(INSearchForMessagesIntent *)intent completion:(void (^)(INSearchForMessagesIntentResponse * _Nonnull))completion{
     INSearchForMessagesIntentResponse *response = [[INSearchForMessagesIntentResponse alloc] initWithCode:INSearchForMessagesIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@"activityType"]];
     __block INPerson *authorContact = nil, *buddyContact = nil;
-    [SiriIntentHandler searchContactWithEmail:kAuthorEmail completionBlock:^(INPerson * aPerson) {
+    [SiriIntentHandler searchContactWithCategory:NKSiriIntentHandlerContactCategoryEmail value:kAuthorEmail completionBlock:^(INPerson * aPerson) {
         authorContact = aPerson;
-        [SiriIntentHandler searchContactWithEmail:kBuddyEmail completionBlock:^(INPerson * aPerson) {
+        [SiriIntentHandler searchContactWithCategory:NKSiriIntentHandlerContactCategoryEmail value:kBuddyEmail completionBlock:^(INPerson *aPerson) {
             buddyContact = aPerson;
             [response setMessages:@[[[INMessage alloc] initWithIdentifier:@"Identifier" content:@"测试内容" dateSent:[NSDate dateWithTimeIntervalSinceNow:-86400] sender:buddyContact recipients:@[authorContact]]]];
             completion(response);
         }];
     }];
 }
-//
+
 //- (void)resolveRecipientsForSearchForMessages:(INSearchForMessagesIntent *)intent
 //                               withCompletion:(void (^)(NSArray<INPersonResolutionResult *> *resolutionResults))completion NS_SWIFT_NAME(resolveRecipients(forSearchForMessages:with:)){
+//    
 //    [SiriIntentHandler searchContactWithName:((INPerson *)intent.recipients.firstObject).displayName completionBlock:^(INPerson *aPerson){
 //        if(aPerson)
 //            completion(@[[INPersonResolutionResult successWithResolvedPerson:aPerson]]);
