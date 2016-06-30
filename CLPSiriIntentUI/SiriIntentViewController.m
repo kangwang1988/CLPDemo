@@ -57,8 +57,9 @@
         if(commonView)
             size.height = MIN(size.height,[commonView estimatedHeightWithConstraintWidth:size.width]);
     }
+    //似乎不可用，Intent partially OK,IntentUI not working.
     else if([interaction.intent isKindOfClass:[INSearchForMessagesIntent class]]){
-         INSearchForMessagesIntent *intent = (INSearchForMessagesIntent*)interaction.intent;
+        INSearchForMessagesIntent *intent = (INSearchForMessagesIntent*)interaction.intent;
         NSDate *dateFrom = [intent.dateTimeRange.startDateComponents.calendar dateFromComponents:intent.dateTimeRange.startDateComponents];
         NSDate *dateTo= [intent.dateTimeRange.endDateComponents.calendar dateFromComponents:intent.dateTimeRange.endDateComponents];
         INSearchForMessagesIntentResponse *response = (INSearchForMessagesIntentResponse *)interaction.intentResponse;
