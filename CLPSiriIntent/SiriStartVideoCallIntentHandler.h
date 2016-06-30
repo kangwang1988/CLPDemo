@@ -7,7 +7,7 @@
 //
 
 #import <Intents/Intents.h>
-
+//似乎进不了自定义的Intent，会默认调起系统Facetime.
 @interface SiriStartVideoCallIntentHandler : INExtension<INStartVideoCallIntentHandling>
 
 @end
