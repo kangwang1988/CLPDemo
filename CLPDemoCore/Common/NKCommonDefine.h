@@ -18,5 +18,6 @@
 #define kPixelFrom750(x) kScreenScale*kScreenWidth/750*(x)
 FOUNDATION_EXPORT NSString *kFeatureSiri;
 FOUNDATION_EXPORT NSString *kAuthorEmail;
+FOUNDATION_EXPORT NSString *kBuddyEmail;
 
 #endif /* NKCommonDefine_h */

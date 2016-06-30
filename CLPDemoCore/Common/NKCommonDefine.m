@@ -10,3 +10,4 @@
 
 NSString *kFeatureSiri = @"Siri";
 NSString *kAuthorEmail = @"kang.wang1988@gmail.com";
+NSString *kBuddyEmail = @"lj1234@163.com";
