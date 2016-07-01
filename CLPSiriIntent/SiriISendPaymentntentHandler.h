@@ -7,7 +7,7 @@
 //
 
 #import <Intents/Intents.h>
-
+//调用举例:用app-name支付contact-name amount unit
 @interface SiriISendPaymentntentHandler : INExtension<INSendPaymentIntentHandling>
 
 @end
