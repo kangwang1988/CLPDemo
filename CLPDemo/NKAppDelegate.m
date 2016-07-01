@@ -33,12 +33,14 @@
     NSString *activityType = userActivity.activityType;
     if([activityType isEqualToString:kKeyActivityTypeAudioCall]){
         NSString *contactId = userActivity.userInfo[kKeyActivityUserInfoContactIdentifier];
-        [NKUtil searchContactWithCategory:NKContactCategoryIdentifier value:contactId completionBlock:^(CNContact *aContact) {
-            CNPhoneNumber *phoneNo = ((CNLabeledValue*)aContact.phoneNumbers.firstObject).value;
-            NSString *url = [NSString stringWithFormat:@"tel:%@",phoneNo.stringValue];
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url] options:@{} completionHandler:^(BOOL success) {
+        if(contactId){
+            [NKUtil searchContactWithCategory:NKContactCategoryIdentifier value:contactId completionBlock:^(CNContact *aContact) {
+                CNPhoneNumber *phoneNo = ((CNLabeledValue*)aContact.phoneNumbers.firstObject).value;
+                NSString *url = [NSString stringWithFormat:@"tel:%@",phoneNo.stringValue];
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url] options:@{} completionHandler:^(BOOL success) {
+                }];
             }];
-        }];
+        }
     }
     return YES;
 }

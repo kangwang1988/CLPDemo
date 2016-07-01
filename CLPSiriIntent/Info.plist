@@ -35,6 +35,8 @@
 				<string>INStartAudioCallIntent</string>
 				<string>INStartVideoCallIntent</string>
 				<string>INSearchCallHistoryIntent</string>
+				<string>INSearchForPhotosIntent</string>
+				<string>INStartPhotoPlaybackIntent</string>
 			</array>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>

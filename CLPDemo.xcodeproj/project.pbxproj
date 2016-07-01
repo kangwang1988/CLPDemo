@@ -12,6 +12,8 @@
 		2927F6A51D2372280037ED22 /* CLPDemoCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2927F6A31D2372280037ED22 /* CLPDemoCore.m */; };
 		2927F6A61D2372280037ED22 /* CLPDemoCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2927F6A31D2372280037ED22 /* CLPDemoCore.m */; };
 		292E7EF31D23CAB700EB8C96 /* SiriSearchMessageIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 292E7EF21D23CAB700EB8C96 /* SiriSearchMessageIntentHandler.m */; };
+		294A25901D26191D003E607B /* SiriSearchPhotosIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 294A258F1D26191D003E607B /* SiriSearchPhotosIntentHandler.m */; };
+		294A25931D26193B003E607B /* SiriStartPhotoPlaybackIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 294A25921D26193B003E607B /* SiriStartPhotoPlaybackIntentHandler.m */; };
 		29525C831D1B848600303F1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29525C821D1B848600303F1D /* main.m */; };
 		29525C861D1B848600303F1D /* NKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29525C851D1B848600303F1D /* NKAppDelegate.m */; };
 		29525C8E1D1B848600303F1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29525C8D1D1B848600303F1D /* Assets.xcassets */; };
@@ -125,6 +127,10 @@
 		292D9B1E1D1FE5C700277A22 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		292E7EF11D23CAB700EB8C96 /* SiriSearchMessageIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriSearchMessageIntentHandler.h; sourceTree = "<group>"; };
 		292E7EF21D23CAB700EB8C96 /* SiriSearchMessageIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriSearchMessageIntentHandler.m; sourceTree = "<group>"; };
+		294A258E1D26191D003E607B /* SiriSearchPhotosIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriSearchPhotosIntentHandler.h; sourceTree = "<group>"; };
+		294A258F1D26191D003E607B /* SiriSearchPhotosIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriSearchPhotosIntentHandler.m; sourceTree = "<group>"; };
+		294A25911D26193B003E607B /* SiriStartPhotoPlaybackIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriStartPhotoPlaybackIntentHandler.h; sourceTree = "<group>"; };
+		294A25921D26193B003E607B /* SiriStartPhotoPlaybackIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriStartPhotoPlaybackIntentHandler.m; sourceTree = "<group>"; };
 		29525C7E1D1B848600303F1D /* CLPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29525C821D1B848600303F1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29525C841D1B848600303F1D /* NKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKAppDelegate.h; sourceTree = "<group>"; };
@@ -419,6 +425,10 @@
 				299D6D461D2522AC004608AC /* SiriStartAudioCallIntentHandler.m */,
 				299D6D481D2522C3004608AC /* SiriStartVideoCallIntentHandler.h */,
 				299D6D491D2522C3004608AC /* SiriStartVideoCallIntentHandler.m */,
+				294A258E1D26191D003E607B /* SiriSearchPhotosIntentHandler.h */,
+				294A258F1D26191D003E607B /* SiriSearchPhotosIntentHandler.m */,
+				294A25911D26193B003E607B /* SiriStartPhotoPlaybackIntentHandler.h */,
+				294A25921D26193B003E607B /* SiriStartPhotoPlaybackIntentHandler.m */,
 			);
 			path = CLPSiriIntent;
 			sourceTree = "<group>";
@@ -845,6 +855,7 @@
 				29D40C051D226A7F003F6F7B /* NKContactService.m in Sources */,
 				29D40BF61D226A7F003F6F7B /* NKCommonDefine.m in Sources */,
 				29D40BF91D226A7F003F6F7B /* NKSectionedTableView.m in Sources */,
+				294A25931D26193B003E607B /* SiriStartPhotoPlaybackIntentHandler.m in Sources */,
 				29D40C0B1D226A7F003F6F7B /* NKServiceManager.m in Sources */,
 				299D6D4A1D2522C3004608AC /* SiriStartVideoCallIntentHandler.m in Sources */,
 				29D40C0E1D226A7F003F6F7B /* NKSiriService.m in Sources */,
@@ -854,6 +865,7 @@
 				29D40C111D226A7F003F6F7B /* NKCommonView.m in Sources */,
 				29D40C141D226A7F003F6F7B /* NKHomeTableViewAdapter.m in Sources */,
 				29EA8B0D1D20047C00CF2837 /* SiriIntentHandler.m in Sources */,
+				294A25901D26191D003E607B /* SiriSearchPhotosIntentHandler.m in Sources */,
 				29D40BFC1D226A7F003F6F7B /* NKSectionedTableViewAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

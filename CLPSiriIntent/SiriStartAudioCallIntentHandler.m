@@ -14,7 +14,8 @@
                   completion:(void (^)(INStartAudioCallIntentResponse *response))completion NS_SWIFT_NAME(handle(startAudioCall:completion:)){
     NSUserActivity *activity = [[NSUserActivity alloc] initWithActivityType:kKeyActivityTypeAudioCall];
     [NKUtil searchContactWithCategory:NKContactCategoryFullname value:((INPerson *)intent.contacts.firstObject).displayName completionBlock:^(CNContact *aContact) {
-         [activity setUserInfo:@{kKeyActivityUserInfoContactIdentifier:aContact.identifier}];
+        if(aContact.identifier)
+            [activity setUserInfo:@{kKeyActivityUserInfoContactIdentifier:aContact.identifier}];
         completion([[INStartAudioCallIntentResponse alloc] initWithCode:INStartAudioCallIntentResponseCodeSuccess userActivity:activity]);
     }];
 }

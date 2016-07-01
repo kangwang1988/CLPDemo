@@ -13,6 +13,8 @@
 #import "SiriStartAudioCallIntentHandler.h"
 #import "SiriStartVideoCallIntentHandler.h"
 #import "SiriSearchCallHistoryIntentHandler.h"
+#import "SiriSearchPhotosIntentHandler.h"
+#import "SiriStartPhotoPlaybackIntentHandler.h"
 
 // As an example, this class is set up to handle the Workout intents.
 // You will want to replace this or add other intents as appropriate.
@@ -41,6 +43,12 @@
     }
     else if ([intent isKindOfClass:[INSearchCallHistoryIntent class]]) {
         handler = [SiriSearchCallHistoryIntentHandler new];
+    }
+    else if ([intent isKindOfClass:[INSearchForPhotosIntent class]]) {
+        handler = [SiriSearchPhotosIntentHandler new];
+    }
+    else if ([intent isKindOfClass:[INStartPhotoPlaybackIntent class]]) {
+        handler = [SiriStartPhotoPlaybackIntentHandler new];
     }
     return handler;
 }
