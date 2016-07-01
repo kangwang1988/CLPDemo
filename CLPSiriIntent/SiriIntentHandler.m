@@ -17,6 +17,9 @@
 #import "SiriStartPhotoPlaybackIntentHandler.h"
 #import "SiriISendPaymentntentHandler.h"
 #import "SiriIRequestPaymentntentHandler.h"
+#import "SiriListRideOptionsIntentHandler.h"
+#import "SiriRequestRideIntentHandler.h"
+#import "SiriGetRideStatusIntentHandler.h"
 
 // As an example, this class is set up to handle the Workout intents.
 // You will want to replace this or add other intents as appropriate.
@@ -57,6 +60,15 @@
     }
     else if ([intent isKindOfClass:[INRequestPaymentIntent class]]) {
         handler = [SiriIRequestPaymentntentHandler new];
+    }
+    else if ([intent isKindOfClass:[INListRideOptionsIntent class]]) {
+        handler = [SiriListRideOptionsIntentHandler new];
+    }
+    else if ([intent isKindOfClass:[INRequestRideIntent class]]) {
+        handler = [SiriRequestRideIntentHandler new];
+    }
+    else if ([intent isKindOfClass:[INGetRideStatusIntent class]]) {
+        handler = [SiriGetRideStatusIntentHandler new];
     }
     return handler;
 }

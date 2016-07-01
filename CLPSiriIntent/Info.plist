@@ -39,6 +39,9 @@
 				<string>INStartPhotoPlaybackIntent</string>
 				<string>INSendPaymentIntent</string>
 				<string>INRequestPaymentIntent</string>
+				<string>INListRideOptionsIntent</string>
+				<string>INRequestRideIntent</string>
+				<string>INGetRideStatusIntent</string>
 			</array>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>

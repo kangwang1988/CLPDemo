@@ -16,6 +16,9 @@
 		290360791D268EE000B4798C /* NKSendPaymentUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 290360771D268EE000B4798C /* NKSendPaymentUIView.m */; };
 		2903607C1D268EEE00B4798C /* NKRequestPaymentUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2903607B1D268EEE00B4798C /* NKRequestPaymentUIView.m */; };
 		2903607D1D268EEE00B4798C /* NKRequestPaymentUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2903607B1D268EEE00B4798C /* NKRequestPaymentUIView.m */; };
+		29107A511D26A25E001C85B2 /* SiriListRideOptionsIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 29107A501D26A25E001C85B2 /* SiriListRideOptionsIntentHandler.m */; };
+		29107A541D26A275001C85B2 /* SiriRequestRideIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 29107A531D26A275001C85B2 /* SiriRequestRideIntentHandler.m */; };
+		29107A571D26A28D001C85B2 /* SiriGetRideStatusIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 29107A561D26A28D001C85B2 /* SiriGetRideStatusIntentHandler.m */; };
 		2927F6A41D2372280037ED22 /* CLPDemoCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2927F6A31D2372280037ED22 /* CLPDemoCore.m */; };
 		2927F6A51D2372280037ED22 /* CLPDemoCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2927F6A31D2372280037ED22 /* CLPDemoCore.m */; };
 		2927F6A61D2372280037ED22 /* CLPDemoCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2927F6A31D2372280037ED22 /* CLPDemoCore.m */; };
@@ -140,6 +143,12 @@
 		290360771D268EE000B4798C /* NKSendPaymentUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSendPaymentUIView.m; sourceTree = "<group>"; };
 		2903607A1D268EEE00B4798C /* NKRequestPaymentUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKRequestPaymentUIView.h; sourceTree = "<group>"; };
 		2903607B1D268EEE00B4798C /* NKRequestPaymentUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKRequestPaymentUIView.m; sourceTree = "<group>"; };
+		29107A4F1D26A25E001C85B2 /* SiriListRideOptionsIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriListRideOptionsIntentHandler.h; sourceTree = "<group>"; };
+		29107A501D26A25E001C85B2 /* SiriListRideOptionsIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriListRideOptionsIntentHandler.m; sourceTree = "<group>"; };
+		29107A521D26A275001C85B2 /* SiriRequestRideIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriRequestRideIntentHandler.h; sourceTree = "<group>"; };
+		29107A531D26A275001C85B2 /* SiriRequestRideIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriRequestRideIntentHandler.m; sourceTree = "<group>"; };
+		29107A551D26A28D001C85B2 /* SiriGetRideStatusIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriGetRideStatusIntentHandler.h; sourceTree = "<group>"; };
+		29107A561D26A28D001C85B2 /* SiriGetRideStatusIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriGetRideStatusIntentHandler.m; sourceTree = "<group>"; };
 		2927F6A31D2372280037ED22 /* CLPDemoCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPDemoCore.m; sourceTree = "<group>"; };
 		292D9B1C1D1FD17300277A22 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		292D9B1E1D1FE5C700277A22 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
@@ -443,26 +452,32 @@
 			isa = PBXGroup;
 			children = (
 				29EA8B0E1D20047C00CF2837 /* Info.plist */,
+				29107A551D26A28D001C85B2 /* SiriGetRideStatusIntentHandler.h */,
+				29107A561D26A28D001C85B2 /* SiriGetRideStatusIntentHandler.m */,
 				29EA8B0B1D20047C00CF2837 /* SiriIntentHandler.h */,
 				29EA8B0C1D20047C00CF2837 /* SiriIntentHandler.m */,
+				294A25971D2650CF003E607B /* SiriIRequestPaymentntentHandler.h */,
+				294A25981D2650CF003E607B /* SiriIRequestPaymentntentHandler.m */,
+				294A25941D2650C1003E607B /* SiriISendPaymentntentHandler.h */,
+				294A25951D2650C1003E607B /* SiriISendPaymentntentHandler.m */,
+				29107A4F1D26A25E001C85B2 /* SiriListRideOptionsIntentHandler.h */,
+				29107A501D26A25E001C85B2 /* SiriListRideOptionsIntentHandler.m */,
+				29107A521D26A275001C85B2 /* SiriRequestRideIntentHandler.h */,
+				29107A531D26A275001C85B2 /* SiriRequestRideIntentHandler.m */,
 				299D6D4B1D2522DC004608AC /* SiriSearchCallHistoryIntentHandler.h */,
 				299D6D4C1D2522DC004608AC /* SiriSearchCallHistoryIntentHandler.m */,
 				292E7EF11D23CAB700EB8C96 /* SiriSearchMessageIntentHandler.h */,
 				292E7EF21D23CAB700EB8C96 /* SiriSearchMessageIntentHandler.m */,
+				294A258E1D26191D003E607B /* SiriSearchPhotosIntentHandler.h */,
+				294A258F1D26191D003E607B /* SiriSearchPhotosIntentHandler.m */,
 				29CA26C91D23B47D00EE679B /* SiriSendMessageIntentHandler.h */,
 				29CA26CA1D23B47D00EE679B /* SiriSendMessageIntentHandler.m */,
 				299D6D451D2522AC004608AC /* SiriStartAudioCallIntentHandler.h */,
 				299D6D461D2522AC004608AC /* SiriStartAudioCallIntentHandler.m */,
-				299D6D481D2522C3004608AC /* SiriStartVideoCallIntentHandler.h */,
-				299D6D491D2522C3004608AC /* SiriStartVideoCallIntentHandler.m */,
-				294A258E1D26191D003E607B /* SiriSearchPhotosIntentHandler.h */,
-				294A258F1D26191D003E607B /* SiriSearchPhotosIntentHandler.m */,
 				294A25911D26193B003E607B /* SiriStartPhotoPlaybackIntentHandler.h */,
 				294A25921D26193B003E607B /* SiriStartPhotoPlaybackIntentHandler.m */,
-				294A25941D2650C1003E607B /* SiriISendPaymentntentHandler.h */,
-				294A25951D2650C1003E607B /* SiriISendPaymentntentHandler.m */,
-				294A25971D2650CF003E607B /* SiriIRequestPaymentntentHandler.h */,
-				294A25981D2650CF003E607B /* SiriIRequestPaymentntentHandler.m */,
+				299D6D481D2522C3004608AC /* SiriStartVideoCallIntentHandler.h */,
+				299D6D491D2522C3004608AC /* SiriStartVideoCallIntentHandler.m */,
 			);
 			path = CLPSiriIntent;
 			sourceTree = "<group>";
@@ -887,6 +902,7 @@
 			files = (
 				29D40C201D226A7F003F6F7B /* NKNavigationController.m in Sources */,
 				29D40C021D226A7F003F6F7B /* NKSendMessageUIController.m in Sources */,
+				29107A571D26A28D001C85B2 /* SiriGetRideStatusIntentHandler.m in Sources */,
 				292E7EF31D23CAB700EB8C96 /* SiriSearchMessageIntentHandler.m in Sources */,
 				29D40C081D226A7F003F6F7B /* NKLocationService.m in Sources */,
 				29D40C171D226A7F003F6F7B /* NKHomeView.m in Sources */,
@@ -910,6 +926,8 @@
 				294A25991D2650CF003E607B /* SiriIRequestPaymentntentHandler.m in Sources */,
 				294A25961D2650C1003E607B /* SiriISendPaymentntentHandler.m in Sources */,
 				294A25901D26191D003E607B /* SiriSearchPhotosIntentHandler.m in Sources */,
+				29107A541D26A275001C85B2 /* SiriRequestRideIntentHandler.m in Sources */,
+				29107A511D26A25E001C85B2 /* SiriListRideOptionsIntentHandler.m in Sources */,
 				29D40BFC1D226A7F003F6F7B /* NKSectionedTableViewAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

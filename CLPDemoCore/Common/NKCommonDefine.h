@@ -17,10 +17,15 @@
 #define FONT(x) [UIFont fontWithName:@"Helvetica" size:(x)]
 #define kPixelFrom750(x) kScreenScale*kScreenWidth/750*(x)
 FOUNDATION_EXPORT NSString *kFeatureSiri;
+FOUNDATION_EXPORT NSString *kDriverNickname;
+FOUNDATION_EXPORT NSString *kDriverMob;
 FOUNDATION_EXPORT NSString *kAuthorEmail;
 FOUNDATION_EXPORT NSString *kBuddyEmail;
 FOUNDATION_EXPORT NSString *kActivityTypeAudioCall;
 FOUNDATION_EXPORT NSString *kActivityTypeSendPayment;
+FOUNDATION_EXPORT NSString *kActivityTypeListRideOptions;
+FOUNDATION_EXPORT NSString *kActivityTypeRequestRide;
+FOUNDATION_EXPORT NSString *kActivityTypeGetRideStatus;
 FOUNDATION_EXPORT NSString *kActivityTypeRequestPayment;
 FOUNDATION_EXPORT NSString *kKeyActivityUserInfoContactIdentifier;
 FOUNDATION_EXPORT NSString *kURLSampleSmallPng ;
