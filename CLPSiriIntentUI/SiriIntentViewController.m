@@ -9,6 +9,7 @@
 #import "CLPDemoCore.h"
 #import "SiriIntentViewController.h"
 #import "NKSendMessageUIController.h"
+#import "NKSendPaymentUIController.h"
 // As an example, this extension's Info.plist has been configured to handle interactions for INStartWorkoutIntent.
 // You will want to replace this or add other intents as appropriate.
 // The intents whose interactions you wish to handle must be declared in the extension's Info.plist.
@@ -53,6 +54,15 @@
         [self presentViewController:msgUIController animated:NO completion:nil];
         size = [self desiredSize];
         NKCommonView *commonView = [NKUtil reinterpretObject:msgUIController.view toClassOrNil:[NKCommonView class]];
+        if(commonView)
+            size.height = MIN(size.height,[commonView estimatedHeightWithConstraintWidth:size.width]);
+    }
+    else if([interaction.intent isKindOfClass:[INSendPaymentIntent class]]){
+        INSendPaymentIntent *intent = (INSendPaymentIntent *) interaction.intent;
+        NKSendPaymentUIController *sendPaymentUIController = [[NKSendPaymentUIController alloc] initWithPayee:intent.payee.displayName amount:[intent.currencyAmount.amount stringValue] note:intent.note];
+        [self presentViewController:sendPaymentUIController animated:NO completion:nil];
+        size = [self desiredSize];
+        NKCommonView *commonView = [NKUtil reinterpretObject:sendPaymentUIController.view toClassOrNil:[NKCommonView class]];
         if(commonView)
             size.height = MIN(size.height,[commonView estimatedHeightWithConstraintWidth:size.width]);
     }

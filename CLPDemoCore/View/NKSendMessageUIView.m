@@ -17,8 +17,10 @@
 @end
 
 @implementation NKSendMessageUIView
-- (instancetype)init{
+- (instancetype)initWithName:(NSString *)aName content:(NSString *)aContent{
     if(self = [super init]){
+        _name = aName;
+        _content = aContent;
         [self commonInit];
         [self makeConstraints];
         [self updateUIComponents];
@@ -74,8 +76,7 @@
 
 - (CGFloat)estimatedHeightWithConstraintWidth:(CGFloat)aConstraintWidth{
     UIView *fakeSupView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, aConstraintWidth, CGFLOAT_MAX)];
-    NKSendMessageUIView *msgView = [NKSendMessageUIView new];
-    [msgView updateWithName:self.name content:self.content];
+    NKSendMessageUIView *msgView = [[NKSendMessageUIView alloc] initWithName:self.name content:self.content];
     [fakeSupView addSubview:msgView];
     [msgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.width.equalTo(fakeSupView);
@@ -83,11 +84,5 @@
     [fakeSupView setNeedsLayout];
     [fakeSupView layoutIfNeeded];
     return msgView.bounds.size.height;
-}
-
-- (void)updateWithName:(NSString *)aName content:(NSString *)aContent{
-    [self setName:aName];
-    [self setContent:aContent];
-    [self updateUIComponents];
 }
 @end

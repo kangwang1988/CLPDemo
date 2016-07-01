@@ -19,6 +19,9 @@
 FOUNDATION_EXPORT NSString *kFeatureSiri;
 FOUNDATION_EXPORT NSString *kAuthorEmail;
 FOUNDATION_EXPORT NSString *kBuddyEmail;
-FOUNDATION_EXPORT NSString *kKeyActivityTypeAudioCall;
+FOUNDATION_EXPORT NSString *kActivityTypeAudioCall;
+FOUNDATION_EXPORT NSString *kActivityTypeSendPayment;
+FOUNDATION_EXPORT NSString *kActivityTypeRequestPayment;
 FOUNDATION_EXPORT NSString *kKeyActivityUserInfoContactIdentifier;
+FOUNDATION_EXPORT NSString *kURLSampleSmallPng ;
 #endif /* NKCommonDefine_h */

@@ -10,5 +10,5 @@
 #import "NKCommonView.h"
 
 @interface NKSendMessageUIView : NKCommonView
-- (void)updateWithName:(NSString *)aName content:(NSString *)aContent;
+- (instancetype)initWithName:(NSString *)aName content:(NSString *)aContent;
 @end

@@ -31,7 +31,7 @@
 
 - (BOOL)application:(UIApplication *)application continueUserActivity:(nonnull NSUserActivity *)userActivity restorationHandler:(nonnull void (^)(NSArray * _Nullable))restorationHandler{
     NSString *activityType = userActivity.activityType;
-    if([activityType isEqualToString:kKeyActivityTypeAudioCall]){
+    if([activityType isEqualToString:kActivityTypeAudioCall]){
         NSString *contactId = userActivity.userInfo[kKeyActivityUserInfoContactIdentifier];
         if(contactId){
             [NKUtil searchContactWithCategory:NKContactCategoryIdentifier value:contactId completionBlock:^(CNContact *aContact) {
@@ -41,6 +41,9 @@
                 }];
             }];
         }
+    }
+    else if([activityType isEqualToString:kActivityTypeSendPayment]){
+        
     }
     return YES;
 }

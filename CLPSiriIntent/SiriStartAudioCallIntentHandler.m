@@ -12,7 +12,7 @@
 @implementation SiriStartAudioCallIntentHandler
 - (void)handleStartAudioCall:(INStartAudioCallIntent *)intent
                   completion:(void (^)(INStartAudioCallIntentResponse *response))completion NS_SWIFT_NAME(handle(startAudioCall:completion:)){
-    NSUserActivity *activity = [[NSUserActivity alloc] initWithActivityType:kKeyActivityTypeAudioCall];
+    NSUserActivity *activity = [[NSUserActivity alloc] initWithActivityType:kActivityTypeAudioCall];
     [NKUtil searchContactWithCategory:NKContactCategoryFullname value:((INPerson *)intent.contacts.firstObject).displayName completionBlock:^(CNContact *aContact) {
         if(aContact.identifier)
             [activity setUserInfo:@{kKeyActivityUserInfoContactIdentifier:aContact.identifier}];
@@ -22,7 +22,7 @@
 
 - (void)confirmStartAudioCall:(INStartAudioCallIntent *)intent
                    completion:(void (^)(INStartAudioCallIntentResponse *response))completion NS_SWIFT_NAME(confirm(startAudioCall:completion:)){
-    completion([[INStartAudioCallIntentResponse alloc] initWithCode:INStartAudioCallIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:kKeyActivityTypeAudioCall]]);
+    completion([[INStartAudioCallIntentResponse alloc] initWithCode:INStartAudioCallIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:kActivityTypeAudioCall]]);
 }
 
 - (void)resolveContactsForStartAudioCall:(INStartAudioCallIntent *)intent

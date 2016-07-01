@@ -37,6 +37,8 @@
 				<string>INSearchCallHistoryIntent</string>
 				<string>INSearchForPhotosIntent</string>
 				<string>INStartPhotoPlaybackIntent</string>
+				<string>INSendPaymentIntent</string>
+				<string>INRequestPaymentIntent</string>
 			</array>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
@@ -47,6 +49,8 @@
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>com.wecoop.audiocall</string>
+		<string>com.wecoop.sendpayment</string>
+		<string>com.wecoop.requestpayment</string>
 	</array>
 </dict>
 </plist>
