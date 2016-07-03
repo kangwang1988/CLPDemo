@@ -20,6 +20,11 @@
 #import "SiriListRideOptionsIntentHandler.h"
 #import "SiriRequestRideIntentHandler.h"
 #import "SiriGetRideStatusIntentHandler.h"
+#import "SiriStartWorkoutIntentHandler.h"
+#import "SiriEndWorkoutIntentHandler.h"
+#import "SiriCancelWorkoutIntentHandler.h"
+#import "SiriPauseWorkoutIntentHandler.h"
+#import "SiriResumeWorkoutIntentHandler.h"
 
 // As an example, this class is set up to handle the Workout intents.
 // You will want to replace this or add other intents as appropriate.
@@ -69,6 +74,21 @@
     }
     else if ([intent isKindOfClass:[INGetRideStatusIntent class]]) {
         handler = [SiriGetRideStatusIntentHandler new];
+    }
+    else if ([intent isKindOfClass:[INStartWorkoutIntent class]]) {
+        handler = [SiriStartWorkoutIntentHandler new];
+    }
+    else if([intent isKindOfClass:[INEndWorkoutIntent class]]){
+        handler = [SiriEndWorkoutIntentHandler new];
+    }
+    else if([intent isKindOfClass:[INCancelWorkoutIntent class]]){
+        handler = [SiriCancelWorkoutIntentHandler new];
+    }
+    else if([intent isKindOfClass:[INPauseWorkoutIntent class]]){
+        handler = [SiriPauseWorkoutIntentHandler new];
+    }
+    else if([intent isKindOfClass:[INResumeWorkoutIntent class]]){
+        handler = [SiriResumeWorkoutIntentHandler new];
     }
     return handler;
 }

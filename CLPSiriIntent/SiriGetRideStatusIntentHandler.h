@@ -7,7 +7,7 @@
 //
 
 #import <Intents/Intents.h>
-
+//调用举例:用app-name叫车去poi
 @interface SiriGetRideStatusIntentHandler : INExtension<INGetRideStatusIntentHandling>
 
 @end

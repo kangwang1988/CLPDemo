@@ -32,6 +32,11 @@
 		29525C8E1D1B848600303F1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29525C8D1D1B848600303F1D /* Assets.xcassets */; };
 		29525C911D1B848600303F1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29525C8F1D1B848600303F1D /* LaunchScreen.storyboard */; };
 		29525C9C1D1B848600303F1D /* CLPDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29525C9B1D1B848600303F1D /* CLPDemoTests.m */; };
+		2953C2E71D2950DF004725A3 /* SiriStartWorkoutIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2953C2E61D2950DF004725A3 /* SiriStartWorkoutIntentHandler.m */; };
+		2953C2EA1D295160004725A3 /* SiriPauseWorkoutIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2953C2E91D295160004725A3 /* SiriPauseWorkoutIntentHandler.m */; };
+		2953C2ED1D295171004725A3 /* SiriResumeWorkoutIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2953C2EC1D295171004725A3 /* SiriResumeWorkoutIntentHandler.m */; };
+		2953C2F01D295180004725A3 /* SiriEndWorkoutIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2953C2EF1D295180004725A3 /* SiriEndWorkoutIntentHandler.m */; };
+		2953C2F31D29518D004725A3 /* SiriCancelWorkoutIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2953C2F21D29518D004725A3 /* SiriCancelWorkoutIntentHandler.m */; };
 		2955B0981D1BC26B002AC741 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2955B0971D1BC26B002AC741 /* Podfile */; };
 		2964681B1D1FF67C004C4C74 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2964681A1D1FF67C004C4C74 /* CoreLocation.framework */; };
 		298246501D1B957700D2054C /* NKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2982464F1D1B957700D2054C /* NKHomeViewController.m */; };
@@ -172,6 +177,16 @@
 		29525C971D1B848600303F1D /* CLPDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLPDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29525C9B1D1B848600303F1D /* CLPDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLPDemoTests.m; sourceTree = "<group>"; };
 		29525C9D1D1B848600303F1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2953C2E51D2950DF004725A3 /* SiriStartWorkoutIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriStartWorkoutIntentHandler.h; sourceTree = "<group>"; };
+		2953C2E61D2950DF004725A3 /* SiriStartWorkoutIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriStartWorkoutIntentHandler.m; sourceTree = "<group>"; };
+		2953C2E81D295160004725A3 /* SiriPauseWorkoutIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriPauseWorkoutIntentHandler.h; sourceTree = "<group>"; };
+		2953C2E91D295160004725A3 /* SiriPauseWorkoutIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriPauseWorkoutIntentHandler.m; sourceTree = "<group>"; };
+		2953C2EB1D295171004725A3 /* SiriResumeWorkoutIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriResumeWorkoutIntentHandler.h; sourceTree = "<group>"; };
+		2953C2EC1D295171004725A3 /* SiriResumeWorkoutIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriResumeWorkoutIntentHandler.m; sourceTree = "<group>"; };
+		2953C2EE1D295180004725A3 /* SiriEndWorkoutIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriEndWorkoutIntentHandler.h; sourceTree = "<group>"; };
+		2953C2EF1D295180004725A3 /* SiriEndWorkoutIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriEndWorkoutIntentHandler.m; sourceTree = "<group>"; };
+		2953C2F11D29518D004725A3 /* SiriCancelWorkoutIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriCancelWorkoutIntentHandler.h; sourceTree = "<group>"; };
+		2953C2F21D29518D004725A3 /* SiriCancelWorkoutIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriCancelWorkoutIntentHandler.m; sourceTree = "<group>"; };
 		2955B0971D1BC26B002AC741 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2964681A1D1FF67C004C4C74 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2982464E1D1B957700D2054C /* NKHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKHomeViewController.h; sourceTree = "<group>"; };
@@ -452,6 +467,10 @@
 			isa = PBXGroup;
 			children = (
 				29EA8B0E1D20047C00CF2837 /* Info.plist */,
+				2953C2F11D29518D004725A3 /* SiriCancelWorkoutIntentHandler.h */,
+				2953C2F21D29518D004725A3 /* SiriCancelWorkoutIntentHandler.m */,
+				2953C2EE1D295180004725A3 /* SiriEndWorkoutIntentHandler.h */,
+				2953C2EF1D295180004725A3 /* SiriEndWorkoutIntentHandler.m */,
 				29107A551D26A28D001C85B2 /* SiriGetRideStatusIntentHandler.h */,
 				29107A561D26A28D001C85B2 /* SiriGetRideStatusIntentHandler.m */,
 				29EA8B0B1D20047C00CF2837 /* SiriIntentHandler.h */,
@@ -462,8 +481,12 @@
 				294A25951D2650C1003E607B /* SiriISendPaymentntentHandler.m */,
 				29107A4F1D26A25E001C85B2 /* SiriListRideOptionsIntentHandler.h */,
 				29107A501D26A25E001C85B2 /* SiriListRideOptionsIntentHandler.m */,
+				2953C2E81D295160004725A3 /* SiriPauseWorkoutIntentHandler.h */,
+				2953C2E91D295160004725A3 /* SiriPauseWorkoutIntentHandler.m */,
 				29107A521D26A275001C85B2 /* SiriRequestRideIntentHandler.h */,
 				29107A531D26A275001C85B2 /* SiriRequestRideIntentHandler.m */,
+				2953C2EB1D295171004725A3 /* SiriResumeWorkoutIntentHandler.h */,
+				2953C2EC1D295171004725A3 /* SiriResumeWorkoutIntentHandler.m */,
 				299D6D4B1D2522DC004608AC /* SiriSearchCallHistoryIntentHandler.h */,
 				299D6D4C1D2522DC004608AC /* SiriSearchCallHistoryIntentHandler.m */,
 				292E7EF11D23CAB700EB8C96 /* SiriSearchMessageIntentHandler.h */,
@@ -478,6 +501,8 @@
 				294A25921D26193B003E607B /* SiriStartPhotoPlaybackIntentHandler.m */,
 				299D6D481D2522C3004608AC /* SiriStartVideoCallIntentHandler.h */,
 				299D6D491D2522C3004608AC /* SiriStartVideoCallIntentHandler.m */,
+				2953C2E51D2950DF004725A3 /* SiriStartWorkoutIntentHandler.h */,
+				2953C2E61D2950DF004725A3 /* SiriStartWorkoutIntentHandler.m */,
 			);
 			path = CLPSiriIntent;
 			sourceTree = "<group>";
@@ -910,6 +935,7 @@
 				299D6D4D1D2522DC004608AC /* SiriSearchCallHistoryIntentHandler.m in Sources */,
 				2927F6A51D2372280037ED22 /* CLPDemoCore.m in Sources */,
 				29D40BFF1D226A7F003F6F7B /* NKUtil.m in Sources */,
+				2953C2EA1D295160004725A3 /* SiriPauseWorkoutIntentHandler.m in Sources */,
 				29D40C051D226A7F003F6F7B /* NKContactService.m in Sources */,
 				29D40BF61D226A7F003F6F7B /* NKCommonDefine.m in Sources */,
 				29D40BF91D226A7F003F6F7B /* NKSectionedTableView.m in Sources */,
@@ -920,12 +946,16 @@
 				29CA26CB1D23B47D00EE679B /* SiriSendMessageIntentHandler.m in Sources */,
 				29D40C1D1D226A7F003F6F7B /* NKBaseViewController.m in Sources */,
 				29D40C1A1D226A7F003F6F7B /* NKSendMessageUIView.m in Sources */,
+				2953C2E71D2950DF004725A3 /* SiriStartWorkoutIntentHandler.m in Sources */,
 				29D40C111D226A7F003F6F7B /* NKCommonView.m in Sources */,
+				2953C2F01D295180004725A3 /* SiriEndWorkoutIntentHandler.m in Sources */,
 				29D40C141D226A7F003F6F7B /* NKHomeTableViewAdapter.m in Sources */,
 				29EA8B0D1D20047C00CF2837 /* SiriIntentHandler.m in Sources */,
 				294A25991D2650CF003E607B /* SiriIRequestPaymentntentHandler.m in Sources */,
 				294A25961D2650C1003E607B /* SiriISendPaymentntentHandler.m in Sources */,
 				294A25901D26191D003E607B /* SiriSearchPhotosIntentHandler.m in Sources */,
+				2953C2ED1D295171004725A3 /* SiriResumeWorkoutIntentHandler.m in Sources */,
+				2953C2F31D29518D004725A3 /* SiriCancelWorkoutIntentHandler.m in Sources */,
 				29107A541D26A275001C85B2 /* SiriRequestRideIntentHandler.m in Sources */,
 				29107A511D26A25E001C85B2 /* SiriListRideOptionsIntentHandler.m in Sources */,
 				29D40BFC1D226A7F003F6F7B /* NKSectionedTableViewAdapter.m in Sources */,
