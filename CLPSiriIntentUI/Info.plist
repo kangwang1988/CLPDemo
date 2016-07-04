@@ -13,13 +13,11 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>开发</string>
+	<string>Lyft</string>
 	<key>CFBundlePackageType</key>
 	<string>XPC!</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>NSExtension</key>
@@ -32,6 +30,10 @@
 			<array>
 				<string>INSendMessageIntent</string>
 				<string>INSendPaymentIntent</string>
+				<string>INRequestPaymentIntent</string>
+				<string>INListRideOptionsIntent</string>
+				<string>INRequestRideIntent</string>
+				<string>INGetRideStatusIntent</string>
 			</array>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>

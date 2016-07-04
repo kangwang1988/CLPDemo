@@ -66,6 +66,15 @@
         if(commonView)
             size.height = MIN(size.height,[commonView estimatedHeightWithConstraintWidth:size.width]);
     }
+    else if([interaction.intent isKindOfClass:[INRequestRideIntent class]]){
+        
+    }
+    else if([interaction.intent isKindOfClass:[INListRideOptionsIntent class]]){
+        
+    }
+    else if([interaction.intent isKindOfClass:[INGetRideStatusIntent class]]){
+        
+    }
     if (completion) {
         completion(size);
     }
@@ -78,4 +87,8 @@
 - (BOOL)displaysMessage{
     return TRUE;
 }
+
+//- (BOOL)displaysMap{
+//    return TRUE;
+//}
 @end
