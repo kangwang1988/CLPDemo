@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "29525C7D1D1B848600303F1D"
-               BuildableName = "CLPDemo.app"
-               BlueprintName = "CLPDemo"
+               BlueprintIdentifier = "29E82DBB1D2A3C500083E948"
+               BuildableName = "CLPDemoCore.framework"
+               BlueprintName = "CLPDemoCore"
                ReferencedContainer = "container:CLPDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "29E82DC41D2A3C510083E948"
-               BuildableName = "CLPDemoCoreTests.xctest"
-               BlueprintName = "CLPDemoCoreTests"
-               ReferencedContainer = "container:CLPDemo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "29525C7D1D1B848600303F1D"
-            BuildableName = "CLPDemo.app"
-            BlueprintName = "CLPDemo"
-            ReferencedContainer = "container:CLPDemo.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -61,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "29525C7D1D1B848600303F1D"
-            BuildableName = "CLPDemo.app"
-            BlueprintName = "CLPDemo"
+            BlueprintIdentifier = "29E82DBB1D2A3C500083E948"
+            BuildableName = "CLPDemoCore.framework"
+            BlueprintName = "CLPDemoCore"
             ReferencedContainer = "container:CLPDemo.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -80,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "29525C7D1D1B848600303F1D"
-            BuildableName = "CLPDemo.app"
-            BlueprintName = "CLPDemo"
+            BlueprintIdentifier = "29E82DBB1D2A3C500083E948"
+            BuildableName = "CLPDemoCore.framework"
+            BlueprintName = "CLPDemoCore"
             ReferencedContainer = "container:CLPDemo.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

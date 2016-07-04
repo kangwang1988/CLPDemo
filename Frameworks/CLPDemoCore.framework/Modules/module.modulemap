@@ -1,0 +1,6 @@
+framework module CLPDemoCore {
+  umbrella header "CLPDemoCore.h"
+
+  export *
+  module * { export * }
+}

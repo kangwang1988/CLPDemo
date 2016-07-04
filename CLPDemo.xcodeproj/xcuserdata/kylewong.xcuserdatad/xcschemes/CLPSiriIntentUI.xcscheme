@@ -15,7 +15,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "29EA8B121D20047C00CF2837"
+               BlueprintIdentifier = "29AC84771D20083900EF9B18"
                BuildableName = "CLPSiriIntentUI.appex"
                BlueprintName = "CLPSiriIntentUI"
                ReferencedContainer = "container:CLPDemo.xcodeproj">
@@ -43,13 +43,23 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "29E82DC41D2A3C510083E948"
+               BuildableName = "CLPDemoCoreTests.xctest"
+               BlueprintName = "CLPDemoCoreTests"
+               ReferencedContainer = "container:CLPDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "29EA8B121D20047C00CF2837"
-            BuildableName = "CLPSiriIntentUI.appex"
-            BlueprintName = "CLPSiriIntentUI"
+            BlueprintIdentifier = "29525C7D1D1B848600303F1D"
+            BuildableName = "CLPDemo.app"
+            BlueprintName = "CLPDemo"
             ReferencedContainer = "container:CLPDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

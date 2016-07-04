@@ -14,17 +14,22 @@
 		<key>CLPDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>1</integer>
 		</dict>
-		<key>CLPSiriIntent.xcscheme</key>
+		<key>CLPDemoCore.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>CLPSiriIntent.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>CLPSiriIntentUI.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -55,6 +60,16 @@
 			<true/>
 		</dict>
 		<key>29AC84771D20083900EF9B18</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>29E82DBB1D2A3C500083E948</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>29E82DC41D2A3C510083E948</key>
 		<dict>
 			<key>primary</key>
 			<true/>

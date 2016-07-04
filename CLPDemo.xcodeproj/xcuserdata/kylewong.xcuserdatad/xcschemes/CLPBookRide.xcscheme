@@ -53,6 +53,16 @@
                ReferencedContainer = "container:CLPDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "29E82DC41D2A3C510083E948"
+               BuildableName = "CLPDemoCoreTests.xctest"
+               BlueprintName = "CLPDemoCoreTests"
+               ReferencedContainer = "container:CLPDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

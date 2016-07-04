@@ -1,13 +1,10 @@
 //
 //  CLPDemoCore.h
-//  CLPDemo
+//  CLPDemoCore
 //
-//  Created by KyleWong on 6/27/16.
+//  Created by KyleWong on 7/4/16.
 //  Copyright © 2016 KyleWong. All rights reserved.
 //
-
-#ifndef CLPDemo_h
-#define CLPDemo_h
 
 #import<Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -20,6 +17,13 @@
 #import "NKNavigationController.h"
 #import "NKServiceManager.h"
 
-extern UIViewController *extensionContentVC;
+//! Project version number for CLPDemoCore.
+FOUNDATION_EXPORT double CLPDemoCoreVersionNumber;
 
-#endif /* CLPDemo_h */
+//! Project version string for CLPDemoCore.
+FOUNDATION_EXPORT const unsigned char CLPDemoCoreVersionString[];
+
+extern UIViewController *extensionContentVC;
+// In this header, you should import all the public headers of your framework using statements like #import <CLPDemoCore/PublicHeader.h>
+
+
