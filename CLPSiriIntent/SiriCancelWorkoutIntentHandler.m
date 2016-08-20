@@ -11,12 +11,12 @@
 @implementation SiriCancelWorkoutIntentHandler
 - (void)handleCancelWorkout:(INCancelWorkoutIntent *)intent
                  completion:(void (^)(INCancelWorkoutIntentResponse *response))completion NS_SWIFT_NAME(handle(cancelWorkout:completion:)){
-    completion([[INCancelWorkoutIntentResponse alloc] initWithCode:INCancelWorkoutIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
+    completion([[INCancelWorkoutIntentResponse alloc] initWithCode:INCancelWorkoutIntentResponseCodeReady userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
 }
 
 - (void)confirmCancelWorkout:(INCancelWorkoutIntent *)intent
                   completion:(void (^)(INCancelWorkoutIntentResponse *response))completion NS_SWIFT_NAME(confirm(cancelWorkout:completion:)){
-        completion([[INCancelWorkoutIntentResponse alloc] initWithCode:INCancelWorkoutIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
+        completion([[INCancelWorkoutIntentResponse alloc] initWithCode:INCancelWorkoutIntentResponseCodeContinueInApp userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
 }
 
 - (void)resolveWorkoutNameForCancelWorkout:(INCancelWorkoutIntent *)intent

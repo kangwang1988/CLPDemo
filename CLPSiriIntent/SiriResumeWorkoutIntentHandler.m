@@ -11,12 +11,12 @@
 @implementation SiriResumeWorkoutIntentHandler
 - (void)handleResumeWorkout:(INResumeWorkoutIntent *)intent
                  completion:(void (^)(INResumeWorkoutIntentResponse *response))completion NS_SWIFT_NAME(handle(resumeWorkout:completion:)){
-    completion([[INResumeWorkoutIntentResponse alloc] initWithCode:INResumeWorkoutIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
+    completion([[INResumeWorkoutIntentResponse alloc] initWithCode:INResumeWorkoutIntentResponseCodeReady userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
 }
 
 - (void)confirmResumeWorkout:(INResumeWorkoutIntent *)intent
                   completion:(void (^)(INResumeWorkoutIntentResponse *response))completion NS_SWIFT_NAME(confirm(resumeWorkout:completion:)){
-    completion([[INResumeWorkoutIntentResponse alloc] initWithCode:INResumeWorkoutIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
+    completion([[INResumeWorkoutIntentResponse alloc] initWithCode:INResumeWorkoutIntentResponseCodeContinueInApp userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
 }
 
 - (void)resolveWorkoutNameForResumeWorkout:(INResumeWorkoutIntent *)intent

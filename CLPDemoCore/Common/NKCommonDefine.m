@@ -9,6 +9,7 @@
 #import "NKCommonDefine.h"
 
 NSString *kFeatureSiri = @"Siri";
+NSString *kFeatureAutohome = @"Autohome";
 NSString *kDriverNickname = @"王师傅";
 NSString *kDriverMob = @"13709226665";
 NSString *kAuthorEmail = @"kang.wang1988@gmail.com";

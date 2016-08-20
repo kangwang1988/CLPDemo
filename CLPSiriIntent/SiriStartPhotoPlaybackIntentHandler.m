@@ -11,14 +11,14 @@
 @implementation SiriStartPhotoPlaybackIntentHandler
 - (void)handleStartPhotoPlayback:(INStartPhotoPlaybackIntent *)intent
                       completion:(void (^)(INStartPhotoPlaybackIntentResponse *response))completion NS_SWIFT_NAME(handle(startPhotoPlayback:completion:)){
-    INStartPhotoPlaybackIntentResponse *response = [[INStartPhotoPlaybackIntentResponse alloc] initWithCode:INStartPhotoPlaybackIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@""]];
+    INStartPhotoPlaybackIntentResponse *response = [[INStartPhotoPlaybackIntentResponse alloc] initWithCode:INStartPhotoPlaybackIntentResponseCodeReady userActivity:[[NSUserActivity alloc] initWithActivityType:@""]];
     [response setSearchResultsCount:@(1)];
     completion(response);
 }
 
 - (void)confirmStartPhotoPlayback:(INStartPhotoPlaybackIntent *)intent
                        completion:(void (^)(INStartPhotoPlaybackIntentResponse *response))completion NS_SWIFT_NAME(confirm(startPhotoPlayback:completion:)){
-    INStartPhotoPlaybackIntentResponse *response = [[INStartPhotoPlaybackIntentResponse alloc] initWithCode:INStartPhotoPlaybackIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@""]];
+    INStartPhotoPlaybackIntentResponse *response = [[INStartPhotoPlaybackIntentResponse alloc] initWithCode:INStartPhotoPlaybackIntentResponseCodeContinueInApp userActivity:[[NSUserActivity alloc] initWithActivityType:@""]];
     [response setSearchResultsCount:@(1)];
     completion(response);
 }

@@ -11,6 +11,7 @@
 #import "NKHomeTableViewAdapter.h"
 #import "NKSiriViewController.h"
 #import "CLPDemoCore.h"
+#import "NKAutohomeController.h"
 
 @interface NKHomeViewController ()<NKSectionedTableViewAdapterDelegate>
 @property (nonatomic,strong) NKHomeView *homeView;
@@ -28,7 +29,7 @@
     [super viewDidLoad];
     [self setTitle:@"Features"];
     self.adapter = [[NKHomeTableViewAdapter alloc] init];
-    [self.adapter setDataSource:[@{@"0":@[kFeatureSiri]} mutableCopy]];
+    [self.adapter setDataSource:[@{@"0":@[kFeatureSiri,kFeatureAutohome]} mutableCopy]];
     [self.homeView.tableView setTableViewAdapter:self.adapter];
     [self.adapter setDelegate:self];
     // Do any additional setup after loading the view.
@@ -42,8 +43,12 @@
 #pragma mark - NKSectionedTableViewAdapterDelegate
 - (void)tableViewAdapter:(NKSectionedTableViewAdapter *)aAdapter didSelectRowAtIndexPath:(NSIndexPath *)aIndexPath{
     NKBaseViewController *vc = nil;
-    if([[self.adapter dataAtIndexPath:aIndexPath] isEqualToString:kFeatureSiri]){
+    NSString *featureName = [self.adapter dataAtIndexPath:aIndexPath];
+    if([featureName isEqualToString:kFeatureSiri]){
         vc = [NKSiriViewController new];
+    }
+    else if([featureName isEqualToString:kFeatureAutohome]){
+        vc = [NKAutohomeController new];
     }
     [self.navigationController pushViewController:vc animated:YES];
 }

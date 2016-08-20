@@ -7,9 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14419AB1B6CFB044669DA523 /* Pods_CLPSiriIntentUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0A46256C8CA42F294108BB /* Pods_CLPSiriIntentUI.framework */; };
+		290360701D268EB100B4798C /* NKSendPaymentUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2903606F1D268EB100B4798C /* NKSendPaymentUIController.m */; };
+		290360711D268EB100B4798C /* NKSendPaymentUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2903606F1D268EB100B4798C /* NKSendPaymentUIController.m */; };
+		290360741D268EC200B4798C /* NKRequestPaymentUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290360731D268EC200B4798C /* NKRequestPaymentUIController.m */; };
+		290360751D268EC200B4798C /* NKRequestPaymentUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290360731D268EC200B4798C /* NKRequestPaymentUIController.m */; };
+		290360781D268EE000B4798C /* NKSendPaymentUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 290360771D268EE000B4798C /* NKSendPaymentUIView.m */; };
+		290360791D268EE000B4798C /* NKSendPaymentUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 290360771D268EE000B4798C /* NKSendPaymentUIView.m */; };
+		2903607C1D268EEE00B4798C /* NKRequestPaymentUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2903607B1D268EEE00B4798C /* NKRequestPaymentUIView.m */; };
+		2903607D1D268EEE00B4798C /* NKRequestPaymentUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2903607B1D268EEE00B4798C /* NKRequestPaymentUIView.m */; };
 		29107A511D26A25E001C85B2 /* SiriListRideOptionsIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 29107A501D26A25E001C85B2 /* SiriListRideOptionsIntentHandler.m */; };
 		29107A541D26A275001C85B2 /* SiriRequestRideIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 29107A531D26A275001C85B2 /* SiriRequestRideIntentHandler.m */; };
 		29107A571D26A28D001C85B2 /* SiriGetRideStatusIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 29107A561D26A28D001C85B2 /* SiriGetRideStatusIntentHandler.m */; };
+		291527B21D6891E90062E74F /* NKAutohomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 291527B11D6891E90062E74F /* NKAutohomeController.m */; };
+		291527B61D6892B30062E74F /* NKAutohomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291527B51D6892B30062E74F /* NKAutohomeView.m */; };
+		2927F6A41D2372280037ED22 /* CLPDemoCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2927F6A31D2372280037ED22 /* CLPDemoCore.m */; };
+		2927F6A51D2372280037ED22 /* CLPDemoCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2927F6A31D2372280037ED22 /* CLPDemoCore.m */; };
+		2927F6A61D2372280037ED22 /* CLPDemoCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2927F6A31D2372280037ED22 /* CLPDemoCore.m */; };
 		292E7EF31D23CAB700EB8C96 /* SiriSearchMessageIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 292E7EF21D23CAB700EB8C96 /* SiriSearchMessageIntentHandler.m */; };
 		294A25901D26191D003E607B /* SiriSearchPhotosIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 294A258F1D26191D003E607B /* SiriSearchPhotosIntentHandler.m */; };
 		294A25931D26193B003E607B /* SiriStartPhotoPlaybackIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 294A25921D26193B003E607B /* SiriStartPhotoPlaybackIntentHandler.m */; };
@@ -25,6 +39,7 @@
 		2953C2ED1D295171004725A3 /* SiriResumeWorkoutIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2953C2EC1D295171004725A3 /* SiriResumeWorkoutIntentHandler.m */; };
 		2953C2F01D295180004725A3 /* SiriEndWorkoutIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2953C2EF1D295180004725A3 /* SiriEndWorkoutIntentHandler.m */; };
 		2953C2F31D29518D004725A3 /* SiriCancelWorkoutIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2953C2F21D29518D004725A3 /* SiriCancelWorkoutIntentHandler.m */; };
+		2955B0981D1BC26B002AC741 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2955B0971D1BC26B002AC741 /* Podfile */; };
 		2964681B1D1FF67C004C4C74 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2964681A1D1FF67C004C4C74 /* CoreLocation.framework */; };
 		298246501D1B957700D2054C /* NKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2982464F1D1B957700D2054C /* NKHomeViewController.m */; };
 		29827C921D1BD11B00D4133D /* NKSiriViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29827C911D1BD11B00D4133D /* NKSiriViewController.m */; };
@@ -35,60 +50,55 @@
 		29AC84841D20083900EF9B18 /* CLPSiriIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 29AC84781D20083900EF9B18 /* CLPSiriIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		29BD84D51D20FC040015B2F1 /* SiriIntentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD84D41D20FC040015B2F1 /* SiriIntentViewController.m */; };
 		29CA26CB1D23B47D00EE679B /* SiriSendMessageIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CA26CA1D23B47D00EE679B /* SiriSendMessageIntentHandler.m */; };
-		29E82DC61D2A3C510083E948 /* CLPDemoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E82DBC1D2A3C500083E948 /* CLPDemoCore.framework */; };
-		29E82DCD1D2A3C510083E948 /* CLPDemoCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82DCC1D2A3C510083E948 /* CLPDemoCoreTests.m */; };
-		29E82DD21D2A3C510083E948 /* CLPDemoCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29E82DBC1D2A3C500083E948 /* CLPDemoCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		29E82EBE1D2A47A40083E948 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E82EBD1D2A47A40083E948 /* Masonry.framework */; };
-		29E82EBF1D2A47B20083E948 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E82EBD1D2A47A40083E948 /* Masonry.framework */; };
-		29E82EC01D2A47C10083E948 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E82EBD1D2A47A40083E948 /* Masonry.framework */; };
-		29E82F521D2A4AB90083E948 /* CLPDemoCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F261D2A4AB90083E948 /* CLPDemoCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F531D2A4AB90083E948 /* NKBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F271D2A4AB90083E948 /* NKBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F541D2A4AB90083E948 /* NKCommonDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F281D2A4AB90083E948 /* NKCommonDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F551D2A4AB90083E948 /* NKCommonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F291D2A4AB90083E948 /* NKCommonView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F561D2A4AB90083E948 /* NKContactService.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F2A1D2A4AB90083E948 /* NKContactService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F571D2A4AB90083E948 /* NKHomeTableViewAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F2B1D2A4AB90083E948 /* NKHomeTableViewAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F581D2A4AB90083E948 /* NKHomeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F2C1D2A4AB90083E948 /* NKHomeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F591D2A4AB90083E948 /* NKLocationService.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F2D1D2A4AB90083E948 /* NKLocationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F5A1D2A4AB90083E948 /* NKNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F2E1D2A4AB90083E948 /* NKNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F5B1D2A4AB90083E948 /* NKRequestPaymentUIController.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F2F1D2A4AB90083E948 /* NKRequestPaymentUIController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F5C1D2A4AB90083E948 /* NKRequestPaymentUIView.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F301D2A4AB90083E948 /* NKRequestPaymentUIView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F5D1D2A4AB90083E948 /* NKSectionedTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F311D2A4AB90083E948 /* NKSectionedTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F5E1D2A4AB90083E948 /* NKSectionedTableViewAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F321D2A4AB90083E948 /* NKSectionedTableViewAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F5F1D2A4AB90083E948 /* NKSendMessageUIController.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F331D2A4AB90083E948 /* NKSendMessageUIController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F601D2A4AB90083E948 /* NKSendMessageUIView.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F341D2A4AB90083E948 /* NKSendMessageUIView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F611D2A4AB90083E948 /* NKSendPaymentUIController.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F351D2A4AB90083E948 /* NKSendPaymentUIController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F621D2A4AB90083E948 /* NKSendPaymentUIView.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F361D2A4AB90083E948 /* NKSendPaymentUIView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F631D2A4AB90083E948 /* NKServiceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F371D2A4AB90083E948 /* NKServiceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F641D2A4AB90083E948 /* NKSiriService.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F381D2A4AB90083E948 /* NKSiriService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F651D2A4AB90083E948 /* NKUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E82F391D2A4AB90083E948 /* NKUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29E82F661D2A4AB90083E948 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29E82F3A1D2A4AB90083E948 /* Info.plist */; };
-		29E82F731D2A4AFA0083E948 /* CLPDemoCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F1A1D2A4AB90083E948 /* CLPDemoCore.m */; };
-		29E82F741D2A4AFA0083E948 /* NKCommonDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F1C1D2A4AB90083E948 /* NKCommonDefine.m */; };
-		29E82F751D2A4AFA0083E948 /* NKSectionedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F1E1D2A4AB90083E948 /* NKSectionedTableView.m */; };
-		29E82F761D2A4AFA0083E948 /* NKSectionedTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F1F1D2A4AB90083E948 /* NKSectionedTableViewAdapter.m */; };
-		29E82F771D2A4AFA0083E948 /* NKUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F201D2A4AB90083E948 /* NKUtil.m */; };
-		29E82F781D2A4AFA0083E948 /* NKRequestPaymentUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F221D2A4AB90083E948 /* NKRequestPaymentUIController.m */; };
-		29E82F791D2A4AFA0083E948 /* NKSendMessageUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F231D2A4AB90083E948 /* NKSendMessageUIController.m */; };
-		29E82F7A1D2A4AFA0083E948 /* NKSendPaymentUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F241D2A4AB90083E948 /* NKSendPaymentUIController.m */; };
-		29E82F7B1D2A4AFA0083E948 /* NKContactService.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F3C1D2A4AB90083E948 /* NKContactService.m */; };
-		29E82F7C1D2A4AFA0083E948 /* NKLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F3D1D2A4AB90083E948 /* NKLocationService.m */; };
-		29E82F7D1D2A4AFA0083E948 /* NKServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F3E1D2A4AB90083E948 /* NKServiceManager.m */; };
-		29E82F7E1D2A4AFA0083E948 /* NKSiriService.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F3F1D2A4AB90083E948 /* NKSiriService.m */; };
-		29E82F7F1D2A4AFA0083E948 /* NKCommonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F411D2A4AB90083E948 /* NKCommonView.m */; };
-		29E82F801D2A4AFA0083E948 /* NKHomeTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F421D2A4AB90083E948 /* NKHomeTableViewAdapter.m */; };
-		29E82F811D2A4AFA0083E948 /* NKHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F431D2A4AB90083E948 /* NKHomeView.m */; };
-		29E82F821D2A4AFA0083E948 /* NKRequestPaymentUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F441D2A4AB90083E948 /* NKRequestPaymentUIView.m */; };
-		29E82F831D2A4AFA0083E948 /* NKSendMessageUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F451D2A4AB90083E948 /* NKSendMessageUIView.m */; };
-		29E82F841D2A4AFA0083E948 /* NKSendPaymentUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F461D2A4AB90083E948 /* NKSendPaymentUIView.m */; };
-		29E82F851D2A4AFA0083E948 /* NKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F481D2A4AB90083E948 /* NKBaseViewController.m */; };
-		29E82F861D2A4AFA0083E948 /* NKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E82F491D2A4AB90083E948 /* NKNavigationController.m */; };
-		29E82F871D2A4B820083E948 /* CLPDemoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E82EB81D2A45C70083E948 /* CLPDemoCore.framework */; };
-		29E82F881D2A4B950083E948 /* CLPDemoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E82EB81D2A45C70083E948 /* CLPDemoCore.framework */; };
-		29E82F891D2A4BA30083E948 /* CLPDemoCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E82EB81D2A45C70083E948 /* CLPDemoCore.framework */; };
-		29E82F8A1D2A4F510083E948 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E82EBD1D2A47A40083E948 /* Masonry.framework */; };
-		29E82F8C1D2A50DF0083E948 /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29E82F8B1D2A50DF0083E948 /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		29D40BF51D226A7F003F6F7B /* NKCommonDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BD21D226A7F003F6F7B /* NKCommonDefine.m */; };
+		29D40BF61D226A7F003F6F7B /* NKCommonDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BD21D226A7F003F6F7B /* NKCommonDefine.m */; };
+		29D40BF71D226A7F003F6F7B /* NKCommonDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BD21D226A7F003F6F7B /* NKCommonDefine.m */; };
+		29D40BF81D226A7F003F6F7B /* NKSectionedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BD51D226A7F003F6F7B /* NKSectionedTableView.m */; };
+		29D40BF91D226A7F003F6F7B /* NKSectionedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BD51D226A7F003F6F7B /* NKSectionedTableView.m */; };
+		29D40BFA1D226A7F003F6F7B /* NKSectionedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BD51D226A7F003F6F7B /* NKSectionedTableView.m */; };
+		29D40BFB1D226A7F003F6F7B /* NKSectionedTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BD71D226A7F003F6F7B /* NKSectionedTableViewAdapter.m */; };
+		29D40BFC1D226A7F003F6F7B /* NKSectionedTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BD71D226A7F003F6F7B /* NKSectionedTableViewAdapter.m */; };
+		29D40BFD1D226A7F003F6F7B /* NKSectionedTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BD71D226A7F003F6F7B /* NKSectionedTableViewAdapter.m */; };
+		29D40BFE1D226A7F003F6F7B /* NKUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BD91D226A7F003F6F7B /* NKUtil.m */; };
+		29D40BFF1D226A7F003F6F7B /* NKUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BD91D226A7F003F6F7B /* NKUtil.m */; };
+		29D40C001D226A7F003F6F7B /* NKUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BD91D226A7F003F6F7B /* NKUtil.m */; };
+		29D40C011D226A7F003F6F7B /* NKSendMessageUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BDC1D226A7F003F6F7B /* NKSendMessageUIController.m */; };
+		29D40C021D226A7F003F6F7B /* NKSendMessageUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BDC1D226A7F003F6F7B /* NKSendMessageUIController.m */; };
+		29D40C031D226A7F003F6F7B /* NKSendMessageUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BDC1D226A7F003F6F7B /* NKSendMessageUIController.m */; };
+		29D40C041D226A7F003F6F7B /* NKContactService.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BDF1D226A7F003F6F7B /* NKContactService.m */; };
+		29D40C051D226A7F003F6F7B /* NKContactService.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BDF1D226A7F003F6F7B /* NKContactService.m */; };
+		29D40C061D226A7F003F6F7B /* NKContactService.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BDF1D226A7F003F6F7B /* NKContactService.m */; };
+		29D40C071D226A7F003F6F7B /* NKLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BE11D226A7F003F6F7B /* NKLocationService.m */; };
+		29D40C081D226A7F003F6F7B /* NKLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BE11D226A7F003F6F7B /* NKLocationService.m */; };
+		29D40C091D226A7F003F6F7B /* NKLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BE11D226A7F003F6F7B /* NKLocationService.m */; };
+		29D40C0A1D226A7F003F6F7B /* NKServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BE31D226A7F003F6F7B /* NKServiceManager.m */; };
+		29D40C0B1D226A7F003F6F7B /* NKServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BE31D226A7F003F6F7B /* NKServiceManager.m */; };
+		29D40C0C1D226A7F003F6F7B /* NKServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BE31D226A7F003F6F7B /* NKServiceManager.m */; };
+		29D40C0D1D226A7F003F6F7B /* NKSiriService.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BE51D226A7F003F6F7B /* NKSiriService.m */; };
+		29D40C0E1D226A7F003F6F7B /* NKSiriService.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BE51D226A7F003F6F7B /* NKSiriService.m */; };
+		29D40C0F1D226A7F003F6F7B /* NKSiriService.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BE51D226A7F003F6F7B /* NKSiriService.m */; };
+		29D40C101D226A7F003F6F7B /* NKCommonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BE91D226A7F003F6F7B /* NKCommonView.m */; };
+		29D40C111D226A7F003F6F7B /* NKCommonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BE91D226A7F003F6F7B /* NKCommonView.m */; };
+		29D40C121D226A7F003F6F7B /* NKCommonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BE91D226A7F003F6F7B /* NKCommonView.m */; };
+		29D40C131D226A7F003F6F7B /* NKHomeTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BEB1D226A7F003F6F7B /* NKHomeTableViewAdapter.m */; };
+		29D40C141D226A7F003F6F7B /* NKHomeTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BEB1D226A7F003F6F7B /* NKHomeTableViewAdapter.m */; };
+		29D40C151D226A7F003F6F7B /* NKHomeTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BEB1D226A7F003F6F7B /* NKHomeTableViewAdapter.m */; };
+		29D40C161D226A7F003F6F7B /* NKHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BED1D226A7F003F6F7B /* NKHomeView.m */; };
+		29D40C171D226A7F003F6F7B /* NKHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BED1D226A7F003F6F7B /* NKHomeView.m */; };
+		29D40C181D226A7F003F6F7B /* NKHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BED1D226A7F003F6F7B /* NKHomeView.m */; };
+		29D40C191D226A7F003F6F7B /* NKSendMessageUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BEF1D226A7F003F6F7B /* NKSendMessageUIView.m */; };
+		29D40C1A1D226A7F003F6F7B /* NKSendMessageUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BEF1D226A7F003F6F7B /* NKSendMessageUIView.m */; };
+		29D40C1B1D226A7F003F6F7B /* NKSendMessageUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BEF1D226A7F003F6F7B /* NKSendMessageUIView.m */; };
+		29D40C1C1D226A7F003F6F7B /* NKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BF21D226A7F003F6F7B /* NKBaseViewController.m */; };
+		29D40C1D1D226A7F003F6F7B /* NKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BF21D226A7F003F6F7B /* NKBaseViewController.m */; };
+		29D40C1E1D226A7F003F6F7B /* NKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BF21D226A7F003F6F7B /* NKBaseViewController.m */; };
+		29D40C1F1D226A7F003F6F7B /* NKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BF41D226A7F003F6F7B /* NKNavigationController.m */; };
+		29D40C201D226A7F003F6F7B /* NKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BF41D226A7F003F6F7B /* NKNavigationController.m */; };
+		29D40C211D226A7F003F6F7B /* NKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D40BF41D226A7F003F6F7B /* NKNavigationController.m */; };
 		29EA8B0D1D20047C00CF2837 /* SiriIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EA8B0C1D20047C00CF2837 /* SiriIntentHandler.m */; };
 		29EA8B221D20047D00CF2837 /* CLPSiriIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 29EA8B091D20047C00CF2837 /* CLPSiriIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6341D59906C57C99D5171EEE /* Pods_CLPSiriIntent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E5A0AB10351F1038DA46F7D /* Pods_CLPSiriIntent.framework */; };
+		C08302184846BAB5F514F27E /* Pods_CLPDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E03B1ABEB964094F59B0D82 /* Pods_CLPDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,27 +115,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 29AC84771D20083900EF9B18;
 			remoteInfo = CLPSiriIntentUI;
-		};
-		29E82DC71D2A3C510083E948 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29525C761D1B848600303F1D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 29E82DBB1D2A3C500083E948;
-			remoteInfo = CLPDemoCore;
-		};
-		29E82DC91D2A3C510083E948 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29525C761D1B848600303F1D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 29525C7D1D1B848600303F1D;
-			remoteInfo = CLPDemo;
-		};
-		29E82DCF1D2A3C510083E948 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29525C761D1B848600303F1D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 29E82DBB1D2A3C500083E948;
-			remoteInfo = CLPDemoCore;
 		};
 		29EA8B201D20047D00CF2837 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -149,28 +138,30 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29E82DD61D2A3C510083E948 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				29E82F8C1D2A50DF0083E948 /* Masonry.framework in Embed Frameworks */,
-				29E82DD21D2A3C510083E948 /* CLPDemoCore.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		20EDEA6F13316A2E45433E81 /* Pods-CLPSiriIntentUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLPSiriIntentUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CLPSiriIntentUI/Pods-CLPSiriIntentUI.debug.xcconfig"; sourceTree = "<group>"; };
+		2903606E1D268EB100B4798C /* NKSendPaymentUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSendPaymentUIController.h; sourceTree = "<group>"; };
+		2903606F1D268EB100B4798C /* NKSendPaymentUIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSendPaymentUIController.m; sourceTree = "<group>"; };
+		290360721D268EC200B4798C /* NKRequestPaymentUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKRequestPaymentUIController.h; sourceTree = "<group>"; };
+		290360731D268EC200B4798C /* NKRequestPaymentUIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKRequestPaymentUIController.m; sourceTree = "<group>"; };
+		290360761D268EE000B4798C /* NKSendPaymentUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSendPaymentUIView.h; sourceTree = "<group>"; };
+		290360771D268EE000B4798C /* NKSendPaymentUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSendPaymentUIView.m; sourceTree = "<group>"; };
+		2903607A1D268EEE00B4798C /* NKRequestPaymentUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKRequestPaymentUIView.h; sourceTree = "<group>"; };
+		2903607B1D268EEE00B4798C /* NKRequestPaymentUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKRequestPaymentUIView.m; sourceTree = "<group>"; };
 		29107A4F1D26A25E001C85B2 /* SiriListRideOptionsIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriListRideOptionsIntentHandler.h; sourceTree = "<group>"; };
 		29107A501D26A25E001C85B2 /* SiriListRideOptionsIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriListRideOptionsIntentHandler.m; sourceTree = "<group>"; };
 		29107A521D26A275001C85B2 /* SiriRequestRideIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriRequestRideIntentHandler.h; sourceTree = "<group>"; };
 		29107A531D26A275001C85B2 /* SiriRequestRideIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriRequestRideIntentHandler.m; sourceTree = "<group>"; };
 		29107A551D26A28D001C85B2 /* SiriGetRideStatusIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriGetRideStatusIntentHandler.h; sourceTree = "<group>"; };
 		29107A561D26A28D001C85B2 /* SiriGetRideStatusIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriGetRideStatusIntentHandler.m; sourceTree = "<group>"; };
+		291527AF1D688ED10062E74F /* CLPDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CLPDemo.entitlements; sourceTree = "<group>"; };
+		291527B01D6891E90062E74F /* NKAutohomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKAutohomeController.h; sourceTree = "<group>"; };
+		291527B11D6891E90062E74F /* NKAutohomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKAutohomeController.m; sourceTree = "<group>"; };
+		291527B41D6892B30062E74F /* NKAutohomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKAutohomeView.h; sourceTree = "<group>"; };
+		291527B51D6892B30062E74F /* NKAutohomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKAutohomeView.m; sourceTree = "<group>"; };
+		2927F6A31D2372280037ED22 /* CLPDemoCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPDemoCore.m; sourceTree = "<group>"; };
 		292D9B1C1D1FD17300277A22 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		292D9B1E1D1FE5C700277A22 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		292E7EF11D23CAB700EB8C96 /* SiriSearchMessageIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriSearchMessageIntentHandler.h; sourceTree = "<group>"; };
@@ -203,6 +194,7 @@
 		2953C2EF1D295180004725A3 /* SiriEndWorkoutIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriEndWorkoutIntentHandler.m; sourceTree = "<group>"; };
 		2953C2F11D29518D004725A3 /* SiriCancelWorkoutIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriCancelWorkoutIntentHandler.h; sourceTree = "<group>"; };
 		2953C2F21D29518D004725A3 /* SiriCancelWorkoutIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriCancelWorkoutIntentHandler.m; sourceTree = "<group>"; };
+		2955B0971D1BC26B002AC741 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2964681A1D1FF67C004C4C74 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2982464E1D1B957700D2054C /* NKHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKHomeViewController.h; sourceTree = "<group>"; };
 		2982464F1D1B957700D2054C /* NKHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKHomeViewController.m; sourceTree = "<group>"; };
@@ -221,55 +213,38 @@
 		29BD84D41D20FC040015B2F1 /* SiriIntentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriIntentViewController.m; sourceTree = "<group>"; };
 		29CA26C91D23B47D00EE679B /* SiriSendMessageIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriSendMessageIntentHandler.h; sourceTree = "<group>"; };
 		29CA26CA1D23B47D00EE679B /* SiriSendMessageIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriSendMessageIntentHandler.m; sourceTree = "<group>"; };
+		29D40BCF1D226A7F003F6F7B /* CLPDemoCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPDemoCore.h; sourceTree = "<group>"; };
+		29D40BD11D226A7F003F6F7B /* NKCommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKCommonDefine.h; sourceTree = "<group>"; };
+		29D40BD21D226A7F003F6F7B /* NKCommonDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKCommonDefine.m; sourceTree = "<group>"; };
+		29D40BD41D226A7F003F6F7B /* NKSectionedTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSectionedTableView.h; sourceTree = "<group>"; };
+		29D40BD51D226A7F003F6F7B /* NKSectionedTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSectionedTableView.m; sourceTree = "<group>"; };
+		29D40BD61D226A7F003F6F7B /* NKSectionedTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSectionedTableViewAdapter.h; sourceTree = "<group>"; };
+		29D40BD71D226A7F003F6F7B /* NKSectionedTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSectionedTableViewAdapter.m; sourceTree = "<group>"; };
+		29D40BD81D226A7F003F6F7B /* NKUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKUtil.h; sourceTree = "<group>"; };
+		29D40BD91D226A7F003F6F7B /* NKUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKUtil.m; sourceTree = "<group>"; };
+		29D40BDB1D226A7F003F6F7B /* NKSendMessageUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSendMessageUIController.h; sourceTree = "<group>"; };
+		29D40BDC1D226A7F003F6F7B /* NKSendMessageUIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSendMessageUIController.m; sourceTree = "<group>"; };
+		29D40BDE1D226A7F003F6F7B /* NKContactService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKContactService.h; sourceTree = "<group>"; };
+		29D40BDF1D226A7F003F6F7B /* NKContactService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKContactService.m; sourceTree = "<group>"; };
+		29D40BE01D226A7F003F6F7B /* NKLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKLocationService.h; sourceTree = "<group>"; };
+		29D40BE11D226A7F003F6F7B /* NKLocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKLocationService.m; sourceTree = "<group>"; };
+		29D40BE21D226A7F003F6F7B /* NKServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKServiceManager.h; sourceTree = "<group>"; };
+		29D40BE31D226A7F003F6F7B /* NKServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKServiceManager.m; sourceTree = "<group>"; };
+		29D40BE41D226A7F003F6F7B /* NKSiriService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSiriService.h; sourceTree = "<group>"; };
+		29D40BE51D226A7F003F6F7B /* NKSiriService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSiriService.m; sourceTree = "<group>"; };
+		29D40BE81D226A7F003F6F7B /* NKCommonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKCommonView.h; sourceTree = "<group>"; };
+		29D40BE91D226A7F003F6F7B /* NKCommonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKCommonView.m; sourceTree = "<group>"; };
+		29D40BEA1D226A7F003F6F7B /* NKHomeTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKHomeTableViewAdapter.h; sourceTree = "<group>"; };
+		29D40BEB1D226A7F003F6F7B /* NKHomeTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKHomeTableViewAdapter.m; sourceTree = "<group>"; };
+		29D40BEC1D226A7F003F6F7B /* NKHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKHomeView.h; sourceTree = "<group>"; };
+		29D40BED1D226A7F003F6F7B /* NKHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKHomeView.m; sourceTree = "<group>"; };
+		29D40BEE1D226A7F003F6F7B /* NKSendMessageUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSendMessageUIView.h; sourceTree = "<group>"; };
+		29D40BEF1D226A7F003F6F7B /* NKSendMessageUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSendMessageUIView.m; sourceTree = "<group>"; };
+		29D40BF11D226A7F003F6F7B /* NKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKBaseViewController.h; sourceTree = "<group>"; };
+		29D40BF21D226A7F003F6F7B /* NKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKBaseViewController.m; sourceTree = "<group>"; };
+		29D40BF31D226A7F003F6F7B /* NKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKNavigationController.h; sourceTree = "<group>"; };
+		29D40BF41D226A7F003F6F7B /* NKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKNavigationController.m; sourceTree = "<group>"; };
 		29D40C221D227657003F6F7B /* CLPDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLPDemo-Prefix.pch"; sourceTree = "<group>"; };
-		29E82DBC1D2A3C500083E948 /* CLPDemoCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CLPDemoCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		29E82DC51D2A3C510083E948 /* CLPDemoCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLPDemoCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		29E82DCC1D2A3C510083E948 /* CLPDemoCoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLPDemoCoreTests.m; sourceTree = "<group>"; };
-		29E82DCE1D2A3C510083E948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29E82EB81D2A45C70083E948 /* CLPDemoCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CLPDemoCore.framework; path = Frameworks/CLPDemoCore.framework; sourceTree = "<group>"; };
-		29E82EBD1D2A47A40083E948 /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = Frameworks/Masonry.framework; sourceTree = "<group>"; };
-		29E82F1A1D2A4AB90083E948 /* CLPDemoCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPDemoCore.m; sourceTree = "<group>"; };
-		29E82F1C1D2A4AB90083E948 /* NKCommonDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKCommonDefine.m; sourceTree = "<group>"; };
-		29E82F1E1D2A4AB90083E948 /* NKSectionedTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSectionedTableView.m; sourceTree = "<group>"; };
-		29E82F1F1D2A4AB90083E948 /* NKSectionedTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSectionedTableViewAdapter.m; sourceTree = "<group>"; };
-		29E82F201D2A4AB90083E948 /* NKUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKUtil.m; sourceTree = "<group>"; };
-		29E82F221D2A4AB90083E948 /* NKRequestPaymentUIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKRequestPaymentUIController.m; sourceTree = "<group>"; };
-		29E82F231D2A4AB90083E948 /* NKSendMessageUIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSendMessageUIController.m; sourceTree = "<group>"; };
-		29E82F241D2A4AB90083E948 /* NKSendPaymentUIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSendPaymentUIController.m; sourceTree = "<group>"; };
-		29E82F261D2A4AB90083E948 /* CLPDemoCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPDemoCore.h; sourceTree = "<group>"; };
-		29E82F271D2A4AB90083E948 /* NKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKBaseViewController.h; sourceTree = "<group>"; };
-		29E82F281D2A4AB90083E948 /* NKCommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKCommonDefine.h; sourceTree = "<group>"; };
-		29E82F291D2A4AB90083E948 /* NKCommonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKCommonView.h; sourceTree = "<group>"; };
-		29E82F2A1D2A4AB90083E948 /* NKContactService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKContactService.h; sourceTree = "<group>"; };
-		29E82F2B1D2A4AB90083E948 /* NKHomeTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKHomeTableViewAdapter.h; sourceTree = "<group>"; };
-		29E82F2C1D2A4AB90083E948 /* NKHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKHomeView.h; sourceTree = "<group>"; };
-		29E82F2D1D2A4AB90083E948 /* NKLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKLocationService.h; sourceTree = "<group>"; };
-		29E82F2E1D2A4AB90083E948 /* NKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKNavigationController.h; sourceTree = "<group>"; };
-		29E82F2F1D2A4AB90083E948 /* NKRequestPaymentUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKRequestPaymentUIController.h; sourceTree = "<group>"; };
-		29E82F301D2A4AB90083E948 /* NKRequestPaymentUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKRequestPaymentUIView.h; sourceTree = "<group>"; };
-		29E82F311D2A4AB90083E948 /* NKSectionedTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSectionedTableView.h; sourceTree = "<group>"; };
-		29E82F321D2A4AB90083E948 /* NKSectionedTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSectionedTableViewAdapter.h; sourceTree = "<group>"; };
-		29E82F331D2A4AB90083E948 /* NKSendMessageUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSendMessageUIController.h; sourceTree = "<group>"; };
-		29E82F341D2A4AB90083E948 /* NKSendMessageUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSendMessageUIView.h; sourceTree = "<group>"; };
-		29E82F351D2A4AB90083E948 /* NKSendPaymentUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSendPaymentUIController.h; sourceTree = "<group>"; };
-		29E82F361D2A4AB90083E948 /* NKSendPaymentUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSendPaymentUIView.h; sourceTree = "<group>"; };
-		29E82F371D2A4AB90083E948 /* NKServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKServiceManager.h; sourceTree = "<group>"; };
-		29E82F381D2A4AB90083E948 /* NKSiriService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKSiriService.h; sourceTree = "<group>"; };
-		29E82F391D2A4AB90083E948 /* NKUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKUtil.h; sourceTree = "<group>"; };
-		29E82F3A1D2A4AB90083E948 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29E82F3C1D2A4AB90083E948 /* NKContactService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKContactService.m; sourceTree = "<group>"; };
-		29E82F3D1D2A4AB90083E948 /* NKLocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKLocationService.m; sourceTree = "<group>"; };
-		29E82F3E1D2A4AB90083E948 /* NKServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKServiceManager.m; sourceTree = "<group>"; };
-		29E82F3F1D2A4AB90083E948 /* NKSiriService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSiriService.m; sourceTree = "<group>"; };
-		29E82F411D2A4AB90083E948 /* NKCommonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKCommonView.m; sourceTree = "<group>"; };
-		29E82F421D2A4AB90083E948 /* NKHomeTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKHomeTableViewAdapter.m; sourceTree = "<group>"; };
-		29E82F431D2A4AB90083E948 /* NKHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKHomeView.m; sourceTree = "<group>"; };
-		29E82F441D2A4AB90083E948 /* NKRequestPaymentUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKRequestPaymentUIView.m; sourceTree = "<group>"; };
-		29E82F451D2A4AB90083E948 /* NKSendMessageUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSendMessageUIView.m; sourceTree = "<group>"; };
-		29E82F461D2A4AB90083E948 /* NKSendPaymentUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKSendPaymentUIView.m; sourceTree = "<group>"; };
-		29E82F481D2A4AB90083E948 /* NKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKBaseViewController.m; sourceTree = "<group>"; };
-		29E82F491D2A4AB90083E948 /* NKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKNavigationController.m; sourceTree = "<group>"; };
-		29E82F8B1D2A50DF0083E948 /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = Frameworks/Masonry.framework; sourceTree = "<group>"; };
 		29EA8B091D20047C00CF2837 /* CLPSiriIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CLPSiriIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		29EA8B0B1D20047C00CF2837 /* SiriIntentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SiriIntentHandler.h; sourceTree = "<group>"; };
 		29EA8B0C1D20047C00CF2837 /* SiriIntentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SiriIntentHandler.m; sourceTree = "<group>"; };
@@ -289,9 +264,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29E82F871D2A4B820083E948 /* CLPDemoCore.framework in Frameworks */,
 				2964681B1D1FF67C004C4C74 /* CoreLocation.framework in Frameworks */,
-				29E82EBE1D2A47A40083E948 /* Masonry.framework in Frameworks */,
+				C08302184846BAB5F514F27E /* Pods_CLPDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,25 +280,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29E82F891D2A4BA30083E948 /* CLPDemoCore.framework in Frameworks */,
-				29E82EC01D2A47C10083E948 /* Masonry.framework in Frameworks */,
 				29AC84791D20083900EF9B18 /* IntentsUI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29E82DB81D2A3C500083E948 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29E82F8A1D2A4F510083E948 /* Masonry.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29E82DC21D2A3C510083E948 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29E82DC61D2A3C510083E948 /* CLPDemoCore.framework in Frameworks */,
+				14419AB1B6CFB044669DA523 /* Pods_CLPSiriIntentUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,24 +289,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29E82F881D2A4B950083E948 /* CLPDemoCore.framework in Frameworks */,
-				29E82EBF1D2A47B20083E948 /* Masonry.framework in Frameworks */,
+				6341D59906C57C99D5171EEE /* Pods_CLPSiriIntent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		291527B31D6892800062E74F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				291527B41D6892B30062E74F /* NKAutohomeView.h */,
+				291527B51D6892B30062E74F /* NKAutohomeView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		29525C751D1B848600303F1D = {
 			isa = PBXGroup;
 			children = (
-				29E82F8B1D2A50DF0083E948 /* Masonry.framework */,
-				29E82F191D2A4AB90083E948 /* CLPDemoCore */,
+				29D40BCE1D226A7F003F6F7B /* CLPDemoCore */,
+				2955B0971D1BC26B002AC741 /* Podfile */,
 				29525C801D1B848600303F1D /* CLPDemo */,
 				29525C9A1D1B848600303F1D /* CLPDemoTests */,
 				29EA8B0A1D20047C00CF2837 /* CLPSiriIntent */,
 				29AC847A1D20083900EF9B18 /* CLPSiriIntentUI */,
-				29E82DCB1D2A3C510083E948 /* CLPDemoCoreTests */,
 				29525C7F1D1B848600303F1D /* Products */,
 				CFC14CB7B5A8885D3127AD4A /* Pods */,
 				EC9D336AB0AEE3B7758D036B /* Frameworks */,
@@ -363,8 +327,6 @@
 				29525C971D1B848600303F1D /* CLPDemoTests.xctest */,
 				29EA8B091D20047C00CF2837 /* CLPSiriIntent.appex */,
 				29AC84781D20083900EF9B18 /* CLPSiriIntentUI.appex */,
-				29E82DBC1D2A3C500083E948 /* CLPDemoCore.framework */,
-				29E82DC51D2A3C510083E948 /* CLPDemoCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -372,6 +334,8 @@
 		29525C801D1B848600303F1D /* CLPDemo */ = {
 			isa = PBXGroup;
 			children = (
+				291527B31D6892800062E74F /* View */,
+				291527AF1D688ED10062E74F /* CLPDemo.entitlements */,
 				29525CA61D1B94E000303F1D /* ViewController */,
 				29525C841D1B848600303F1D /* NKAppDelegate.h */,
 				29525C851D1B848600303F1D /* NKAppDelegate.m */,
@@ -408,6 +372,8 @@
 				2982464F1D1B957700D2054C /* NKHomeViewController.m */,
 				29827C901D1BD11B00D4133D /* NKSiriViewController.h */,
 				29827C911D1BD11B00D4133D /* NKSiriViewController.m */,
+				291527B01D6891E90062E74F /* NKAutohomeController.h */,
+				291527B11D6891E90062E74F /* NKAutohomeController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -422,115 +388,97 @@
 			path = CLPSiriIntentUI;
 			sourceTree = "<group>";
 		};
-		29E82DCB1D2A3C510083E948 /* CLPDemoCoreTests */ = {
+		29D40BCE1D226A7F003F6F7B /* CLPDemoCore */ = {
 			isa = PBXGroup;
 			children = (
-				29E82DCC1D2A3C510083E948 /* CLPDemoCoreTests.m */,
-				29E82DCE1D2A3C510083E948 /* Info.plist */,
-			);
-			path = CLPDemoCoreTests;
-			sourceTree = "<group>";
-		};
-		29E82F191D2A4AB90083E948 /* CLPDemoCore */ = {
-			isa = PBXGroup;
-			children = (
-				29E82F1A1D2A4AB90083E948 /* CLPDemoCore.m */,
-				29E82F1B1D2A4AB90083E948 /* Common */,
-				29E82F211D2A4AB90083E948 /* Controller */,
-				29E82F251D2A4AB90083E948 /* Headers */,
-				29E82F3A1D2A4AB90083E948 /* Info.plist */,
-				29E82F3B1D2A4AB90083E948 /* Service */,
-				29E82F401D2A4AB90083E948 /* View */,
-				29E82F471D2A4AB90083E948 /* ViewController */,
+				29D40BCF1D226A7F003F6F7B /* CLPDemoCore.h */,
+				29D40BD01D226A7F003F6F7B /* Common */,
+				29D40BDA1D226A7F003F6F7B /* Controller */,
+				29D40BDD1D226A7F003F6F7B /* Service */,
+				29D40BE71D226A7F003F6F7B /* View */,
+				29D40BF01D226A7F003F6F7B /* ViewController */,
+				2927F6A31D2372280037ED22 /* CLPDemoCore.m */,
 			);
 			path = CLPDemoCore;
 			sourceTree = "<group>";
 		};
-		29E82F1B1D2A4AB90083E948 /* Common */ = {
+		29D40BD01D226A7F003F6F7B /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				29E82F1C1D2A4AB90083E948 /* NKCommonDefine.m */,
-				29E82F1D1D2A4AB90083E948 /* NKSectionedTable */,
-				29E82F201D2A4AB90083E948 /* NKUtil.m */,
+				29D40BD11D226A7F003F6F7B /* NKCommonDefine.h */,
+				29D40BD21D226A7F003F6F7B /* NKCommonDefine.m */,
+				29D40BD31D226A7F003F6F7B /* NKSectionedTable */,
+				29D40BD81D226A7F003F6F7B /* NKUtil.h */,
+				29D40BD91D226A7F003F6F7B /* NKUtil.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
-		29E82F1D1D2A4AB90083E948 /* NKSectionedTable */ = {
+		29D40BD31D226A7F003F6F7B /* NKSectionedTable */ = {
 			isa = PBXGroup;
 			children = (
-				29E82F1E1D2A4AB90083E948 /* NKSectionedTableView.m */,
-				29E82F1F1D2A4AB90083E948 /* NKSectionedTableViewAdapter.m */,
+				29D40BD41D226A7F003F6F7B /* NKSectionedTableView.h */,
+				29D40BD51D226A7F003F6F7B /* NKSectionedTableView.m */,
+				29D40BD61D226A7F003F6F7B /* NKSectionedTableViewAdapter.h */,
+				29D40BD71D226A7F003F6F7B /* NKSectionedTableViewAdapter.m */,
 			);
 			path = NKSectionedTable;
 			sourceTree = "<group>";
 		};
-		29E82F211D2A4AB90083E948 /* Controller */ = {
+		29D40BDA1D226A7F003F6F7B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				29E82F221D2A4AB90083E948 /* NKRequestPaymentUIController.m */,
-				29E82F231D2A4AB90083E948 /* NKSendMessageUIController.m */,
-				29E82F241D2A4AB90083E948 /* NKSendPaymentUIController.m */,
+				29D40BDB1D226A7F003F6F7B /* NKSendMessageUIController.h */,
+				29D40BDC1D226A7F003F6F7B /* NKSendMessageUIController.m */,
+				2903606E1D268EB100B4798C /* NKSendPaymentUIController.h */,
+				2903606F1D268EB100B4798C /* NKSendPaymentUIController.m */,
+				290360721D268EC200B4798C /* NKRequestPaymentUIController.h */,
+				290360731D268EC200B4798C /* NKRequestPaymentUIController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		29E82F251D2A4AB90083E948 /* Headers */ = {
+		29D40BDD1D226A7F003F6F7B /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				29E82F261D2A4AB90083E948 /* CLPDemoCore.h */,
-				29E82F271D2A4AB90083E948 /* NKBaseViewController.h */,
-				29E82F281D2A4AB90083E948 /* NKCommonDefine.h */,
-				29E82F291D2A4AB90083E948 /* NKCommonView.h */,
-				29E82F2A1D2A4AB90083E948 /* NKContactService.h */,
-				29E82F2B1D2A4AB90083E948 /* NKHomeTableViewAdapter.h */,
-				29E82F2C1D2A4AB90083E948 /* NKHomeView.h */,
-				29E82F2D1D2A4AB90083E948 /* NKLocationService.h */,
-				29E82F2E1D2A4AB90083E948 /* NKNavigationController.h */,
-				29E82F2F1D2A4AB90083E948 /* NKRequestPaymentUIController.h */,
-				29E82F301D2A4AB90083E948 /* NKRequestPaymentUIView.h */,
-				29E82F311D2A4AB90083E948 /* NKSectionedTableView.h */,
-				29E82F321D2A4AB90083E948 /* NKSectionedTableViewAdapter.h */,
-				29E82F331D2A4AB90083E948 /* NKSendMessageUIController.h */,
-				29E82F341D2A4AB90083E948 /* NKSendMessageUIView.h */,
-				29E82F351D2A4AB90083E948 /* NKSendPaymentUIController.h */,
-				29E82F361D2A4AB90083E948 /* NKSendPaymentUIView.h */,
-				29E82F371D2A4AB90083E948 /* NKServiceManager.h */,
-				29E82F381D2A4AB90083E948 /* NKSiriService.h */,
-				29E82F391D2A4AB90083E948 /* NKUtil.h */,
-			);
-			path = Headers;
-			sourceTree = "<group>";
-		};
-		29E82F3B1D2A4AB90083E948 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				29E82F3C1D2A4AB90083E948 /* NKContactService.m */,
-				29E82F3D1D2A4AB90083E948 /* NKLocationService.m */,
-				29E82F3E1D2A4AB90083E948 /* NKServiceManager.m */,
-				29E82F3F1D2A4AB90083E948 /* NKSiriService.m */,
+				29D40BDE1D226A7F003F6F7B /* NKContactService.h */,
+				29D40BDF1D226A7F003F6F7B /* NKContactService.m */,
+				29D40BE01D226A7F003F6F7B /* NKLocationService.h */,
+				29D40BE11D226A7F003F6F7B /* NKLocationService.m */,
+				29D40BE21D226A7F003F6F7B /* NKServiceManager.h */,
+				29D40BE31D226A7F003F6F7B /* NKServiceManager.m */,
+				29D40BE41D226A7F003F6F7B /* NKSiriService.h */,
+				29D40BE51D226A7F003F6F7B /* NKSiriService.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
 		};
-		29E82F401D2A4AB90083E948 /* View */ = {
+		29D40BE71D226A7F003F6F7B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				29E82F411D2A4AB90083E948 /* NKCommonView.m */,
-				29E82F421D2A4AB90083E948 /* NKHomeTableViewAdapter.m */,
-				29E82F431D2A4AB90083E948 /* NKHomeView.m */,
-				29E82F441D2A4AB90083E948 /* NKRequestPaymentUIView.m */,
-				29E82F451D2A4AB90083E948 /* NKSendMessageUIView.m */,
-				29E82F461D2A4AB90083E948 /* NKSendPaymentUIView.m */,
+				29D40BE81D226A7F003F6F7B /* NKCommonView.h */,
+				29D40BE91D226A7F003F6F7B /* NKCommonView.m */,
+				29D40BEA1D226A7F003F6F7B /* NKHomeTableViewAdapter.h */,
+				29D40BEB1D226A7F003F6F7B /* NKHomeTableViewAdapter.m */,
+				29D40BEC1D226A7F003F6F7B /* NKHomeView.h */,
+				29D40BED1D226A7F003F6F7B /* NKHomeView.m */,
+				2903607A1D268EEE00B4798C /* NKRequestPaymentUIView.h */,
+				2903607B1D268EEE00B4798C /* NKRequestPaymentUIView.m */,
+				29D40BEE1D226A7F003F6F7B /* NKSendMessageUIView.h */,
+				29D40BEF1D226A7F003F6F7B /* NKSendMessageUIView.m */,
+				290360761D268EE000B4798C /* NKSendPaymentUIView.h */,
+				290360771D268EE000B4798C /* NKSendPaymentUIView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		29E82F471D2A4AB90083E948 /* ViewController */ = {
+		29D40BF01D226A7F003F6F7B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				29E82F481D2A4AB90083E948 /* NKBaseViewController.m */,
-				29E82F491D2A4AB90083E948 /* NKNavigationController.m */,
+				29D40BF11D226A7F003F6F7B /* NKBaseViewController.h */,
+				29D40BF21D226A7F003F6F7B /* NKBaseViewController.m */,
+				29D40BF31D226A7F003F6F7B /* NKNavigationController.h */,
+				29D40BF41D226A7F003F6F7B /* NKNavigationController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -595,8 +543,6 @@
 		EC9D336AB0AEE3B7758D036B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				29E82EBD1D2A47A40083E948 /* Masonry.framework */,
-				29E82EB81D2A45C70083E948 /* CLPDemoCore.framework */,
 				2964681A1D1FF67C004C4C74 /* CoreLocation.framework */,
 				292D9B1E1D1FE5C700277A22 /* Contacts.framework */,
 				292D9B1C1D1FD17300277A22 /* Intents.framework */,
@@ -610,36 +556,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		29E82DB91D2A3C500083E948 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29E82F521D2A4AB90083E948 /* CLPDemoCore.h in Headers */,
-				29E82F531D2A4AB90083E948 /* NKBaseViewController.h in Headers */,
-				29E82F541D2A4AB90083E948 /* NKCommonDefine.h in Headers */,
-				29E82F551D2A4AB90083E948 /* NKCommonView.h in Headers */,
-				29E82F561D2A4AB90083E948 /* NKContactService.h in Headers */,
-				29E82F571D2A4AB90083E948 /* NKHomeTableViewAdapter.h in Headers */,
-				29E82F581D2A4AB90083E948 /* NKHomeView.h in Headers */,
-				29E82F591D2A4AB90083E948 /* NKLocationService.h in Headers */,
-				29E82F5A1D2A4AB90083E948 /* NKNavigationController.h in Headers */,
-				29E82F5B1D2A4AB90083E948 /* NKRequestPaymentUIController.h in Headers */,
-				29E82F5C1D2A4AB90083E948 /* NKRequestPaymentUIView.h in Headers */,
-				29E82F5D1D2A4AB90083E948 /* NKSectionedTableView.h in Headers */,
-				29E82F5E1D2A4AB90083E948 /* NKSectionedTableViewAdapter.h in Headers */,
-				29E82F5F1D2A4AB90083E948 /* NKSendMessageUIController.h in Headers */,
-				29E82F601D2A4AB90083E948 /* NKSendMessageUIView.h in Headers */,
-				29E82F611D2A4AB90083E948 /* NKSendPaymentUIController.h in Headers */,
-				29E82F621D2A4AB90083E948 /* NKSendPaymentUIView.h in Headers */,
-				29E82F631D2A4AB90083E948 /* NKServiceManager.h in Headers */,
-				29E82F641D2A4AB90083E948 /* NKSiriService.h in Headers */,
-				29E82F651D2A4AB90083E948 /* NKUtil.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		29525C7D1D1B848600303F1D /* CLPDemo */ = {
 			isa = PBXNativeTarget;
@@ -649,16 +565,15 @@
 				29525C7A1D1B848600303F1D /* Sources */,
 				29525C7B1D1B848600303F1D /* Frameworks */,
 				29525C7C1D1B848600303F1D /* Resources */,
+				B7A6C3E9981B3E2C118BF6DF /* Embed Pods Frameworks */,
 				3756391A57427EF788D1DD0C /* Copy Pods Resources */,
 				29827CB81D1C009D00D4133D /* Embed App Extensions */,
-				29E82DD61D2A3C510083E948 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				29EA8B211D20047D00CF2837 /* PBXTargetDependency */,
 				29AC84831D20083900EF9B18 /* PBXTargetDependency */,
-				29E82DD01D2A3C510083E948 /* PBXTargetDependency */,
 			);
 			name = CLPDemo;
 			productName = CLPDemo;
@@ -691,6 +606,7 @@
 				29AC84741D20083900EF9B18 /* Sources */,
 				29AC84751D20083900EF9B18 /* Frameworks */,
 				29AC84761D20083900EF9B18 /* Resources */,
+				844B45EA0F4FDA17026B77C3 /* Embed Pods Frameworks */,
 				B61069F374541F283DEA99EC /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -702,43 +618,6 @@
 			productReference = 29AC84781D20083900EF9B18 /* CLPSiriIntentUI.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		29E82DBB1D2A3C500083E948 /* CLPDemoCore */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 29E82DD31D2A3C510083E948 /* Build configuration list for PBXNativeTarget "CLPDemoCore" */;
-			buildPhases = (
-				29E82DB71D2A3C500083E948 /* Sources */,
-				29E82DB81D2A3C500083E948 /* Frameworks */,
-				29E82DB91D2A3C500083E948 /* Headers */,
-				29E82DBA1D2A3C500083E948 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CLPDemoCore;
-			productName = CLPDemoCore;
-			productReference = 29E82DBC1D2A3C500083E948 /* CLPDemoCore.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		29E82DC41D2A3C510083E948 /* CLPDemoCoreTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 29E82DD71D2A3C510083E948 /* Build configuration list for PBXNativeTarget "CLPDemoCoreTests" */;
-			buildPhases = (
-				29E82DC11D2A3C510083E948 /* Sources */,
-				29E82DC21D2A3C510083E948 /* Frameworks */,
-				29E82DC31D2A3C510083E948 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				29E82DC81D2A3C510083E948 /* PBXTargetDependency */,
-				29E82DCA1D2A3C510083E948 /* PBXTargetDependency */,
-			);
-			name = CLPDemoCoreTests;
-			productName = CLPDemoCoreTests;
-			productReference = 29E82DC51D2A3C510083E948 /* CLPDemoCoreTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		29EA8B081D20047C00CF2837 /* CLPSiriIntent */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29EA8B261D20047D00CF2837 /* Build configuration list for PBXNativeTarget "CLPSiriIntent" */;
@@ -747,6 +626,7 @@
 				29EA8B051D20047C00CF2837 /* Sources */,
 				29EA8B061D20047C00CF2837 /* Frameworks */,
 				29EA8B071D20047C00CF2837 /* Resources */,
+				FC9409DB415C5E37487E4098 /* Embed Pods Frameworks */,
 				9DD31651849E6B436629819D /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -772,9 +652,12 @@
 						DevelopmentTeam = 97279NM794;
 						DevelopmentTeamName = "Wong Kyle (Personal Team)";
 						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
 								enabled = 1;
 							};
 						};
@@ -789,27 +672,14 @@
 						DevelopmentTeam = 97279NM794;
 						DevelopmentTeamName = "Wong Kyle (Personal Team)";
 						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
-					};
-					29E82DBB1D2A3C500083E948 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 97279NM794;
-						DevelopmentTeamName = "Wong Kyle (Personal Team)";
-						ProvisioningStyle = Automatic;
-					};
-					29E82DC41D2A3C510083E948 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 97279NM794;
-						DevelopmentTeamName = "Wong Kyle (Personal Team)";
-						ProvisioningStyle = Automatic;
-						TestTargetID = 29525C7D1D1B848600303F1D;
+						ProvisioningStyle = Manual;
 					};
 					29EA8B081D20047C00CF2837 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 97279NM794;
 						DevelopmentTeamName = "Wong Kyle (Personal Team)";
 						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -830,8 +700,6 @@
 				29525C961D1B848600303F1D /* CLPDemoTests */,
 				29EA8B081D20047C00CF2837 /* CLPSiriIntent */,
 				29AC84771D20083900EF9B18 /* CLPSiriIntentUI */,
-				29E82DBB1D2A3C500083E948 /* CLPDemoCore */,
-				29E82DC41D2A3C510083E948 /* CLPDemoCoreTests */,
 			);
 		};
 /* End PBXProject section */
@@ -841,6 +709,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2955B0981D1BC26B002AC741 /* Podfile in Resources */,
 				29525C911D1B848600303F1D /* LaunchScreen.storyboard in Resources */,
 				29525C8E1D1B848600303F1D /* Assets.xcassets in Resources */,
 			);
@@ -854,21 +723,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		29AC84761D20083900EF9B18 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29E82DBA1D2A3C500083E948 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29E82F661D2A4AB90083E948 /* Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29E82DC31D2A3C510083E948 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -913,6 +767,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		844B45EA0F4FDA17026B77C3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CLPSiriIntentUI/Pods-CLPSiriIntentUI-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8729DFFE7E1EC69EFF4A9677 /* Check Pods Manifest.lock */ = {
@@ -975,6 +844,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CLPSiriIntentUI/Pods-CLPSiriIntentUI-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B7A6C3E9981B3E2C118BF6DF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CLPDemo/Pods-CLPDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC9409DB415C5E37487E4098 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CLPSiriIntent/Pods-CLPSiriIntent-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -982,8 +881,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29D40C101D226A7F003F6F7B /* NKCommonView.m in Sources */,
+				291527B21D6891E90062E74F /* NKAutohomeController.m in Sources */,
+				2927F6A41D2372280037ED22 /* CLPDemoCore.m in Sources */,
 				29827C921D1BD11B00D4133D /* NKSiriViewController.m in Sources */,
+				290360781D268EE000B4798C /* NKSendPaymentUIView.m in Sources */,
+				290360741D268EC200B4798C /* NKRequestPaymentUIController.m in Sources */,
+				29D40C0D1D226A7F003F6F7B /* NKSiriService.m in Sources */,
+				29D40BF81D226A7F003F6F7B /* NKSectionedTableView.m in Sources */,
+				29D40C161D226A7F003F6F7B /* NKHomeView.m in Sources */,
+				29D40BFE1D226A7F003F6F7B /* NKUtil.m in Sources */,
+				29D40C1C1D226A7F003F6F7B /* NKBaseViewController.m in Sources */,
+				29D40C011D226A7F003F6F7B /* NKSendMessageUIController.m in Sources */,
+				29D40BF51D226A7F003F6F7B /* NKCommonDefine.m in Sources */,
 				29525C861D1B848600303F1D /* NKAppDelegate.m in Sources */,
+				29D40C0A1D226A7F003F6F7B /* NKServiceManager.m in Sources */,
+				29D40C131D226A7F003F6F7B /* NKHomeTableViewAdapter.m in Sources */,
+				29D40C1F1D226A7F003F6F7B /* NKNavigationController.m in Sources */,
+				29D40BFB1D226A7F003F6F7B /* NKSectionedTableViewAdapter.m in Sources */,
+				29D40C191D226A7F003F6F7B /* NKSendMessageUIView.m in Sources */,
+				29D40C041D226A7F003F6F7B /* NKContactService.m in Sources */,
+				290360701D268EB100B4798C /* NKSendPaymentUIController.m in Sources */,
+				291527B61D6892B30062E74F /* NKAutohomeView.m in Sources */,
+				2903607C1D268EEE00B4798C /* NKRequestPaymentUIView.m in Sources */,
+				29D40C071D226A7F003F6F7B /* NKLocationService.m in Sources */,
 				298246501D1B957700D2054C /* NKHomeViewController.m in Sources */,
 				29525C831D1B848600303F1D /* main.m in Sources */,
 			);
@@ -1001,42 +922,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29D40C211D226A7F003F6F7B /* NKNavigationController.m in Sources */,
+				29D40C031D226A7F003F6F7B /* NKSendMessageUIController.m in Sources */,
+				290360791D268EE000B4798C /* NKSendPaymentUIView.m in Sources */,
+				29D40C091D226A7F003F6F7B /* NKLocationService.m in Sources */,
+				29D40C181D226A7F003F6F7B /* NKHomeView.m in Sources */,
+				2927F6A61D2372280037ED22 /* CLPDemoCore.m in Sources */,
+				290360711D268EB100B4798C /* NKSendPaymentUIController.m in Sources */,
+				290360751D268EC200B4798C /* NKRequestPaymentUIController.m in Sources */,
+				29D40C001D226A7F003F6F7B /* NKUtil.m in Sources */,
+				29D40C061D226A7F003F6F7B /* NKContactService.m in Sources */,
+				29D40BF71D226A7F003F6F7B /* NKCommonDefine.m in Sources */,
+				2903607D1D268EEE00B4798C /* NKRequestPaymentUIView.m in Sources */,
+				29D40BFA1D226A7F003F6F7B /* NKSectionedTableView.m in Sources */,
+				29D40C0C1D226A7F003F6F7B /* NKServiceManager.m in Sources */,
+				29D40C0F1D226A7F003F6F7B /* NKSiriService.m in Sources */,
+				29D40C1E1D226A7F003F6F7B /* NKBaseViewController.m in Sources */,
+				29D40C1B1D226A7F003F6F7B /* NKSendMessageUIView.m in Sources */,
+				29D40C121D226A7F003F6F7B /* NKCommonView.m in Sources */,
+				29D40C151D226A7F003F6F7B /* NKHomeTableViewAdapter.m in Sources */,
 				29BD84D51D20FC040015B2F1 /* SiriIntentViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29E82DB71D2A3C500083E948 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29E82F731D2A4AFA0083E948 /* CLPDemoCore.m in Sources */,
-				29E82F741D2A4AFA0083E948 /* NKCommonDefine.m in Sources */,
-				29E82F751D2A4AFA0083E948 /* NKSectionedTableView.m in Sources */,
-				29E82F761D2A4AFA0083E948 /* NKSectionedTableViewAdapter.m in Sources */,
-				29E82F771D2A4AFA0083E948 /* NKUtil.m in Sources */,
-				29E82F781D2A4AFA0083E948 /* NKRequestPaymentUIController.m in Sources */,
-				29E82F791D2A4AFA0083E948 /* NKSendMessageUIController.m in Sources */,
-				29E82F7A1D2A4AFA0083E948 /* NKSendPaymentUIController.m in Sources */,
-				29E82F7B1D2A4AFA0083E948 /* NKContactService.m in Sources */,
-				29E82F7C1D2A4AFA0083E948 /* NKLocationService.m in Sources */,
-				29E82F7D1D2A4AFA0083E948 /* NKServiceManager.m in Sources */,
-				29E82F7E1D2A4AFA0083E948 /* NKSiriService.m in Sources */,
-				29E82F7F1D2A4AFA0083E948 /* NKCommonView.m in Sources */,
-				29E82F801D2A4AFA0083E948 /* NKHomeTableViewAdapter.m in Sources */,
-				29E82F811D2A4AFA0083E948 /* NKHomeView.m in Sources */,
-				29E82F821D2A4AFA0083E948 /* NKRequestPaymentUIView.m in Sources */,
-				29E82F831D2A4AFA0083E948 /* NKSendMessageUIView.m in Sources */,
-				29E82F841D2A4AFA0083E948 /* NKSendPaymentUIView.m in Sources */,
-				29E82F851D2A4AFA0083E948 /* NKBaseViewController.m in Sources */,
-				29E82F861D2A4AFA0083E948 /* NKNavigationController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29E82DC11D2A3C510083E948 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29E82DCD1D2A3C510083E948 /* CLPDemoCoreTests.m in Sources */,
+				29D40BFD1D226A7F003F6F7B /* NKSectionedTableViewAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1044,16 +950,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29D40C201D226A7F003F6F7B /* NKNavigationController.m in Sources */,
+				29D40C021D226A7F003F6F7B /* NKSendMessageUIController.m in Sources */,
 				29107A571D26A28D001C85B2 /* SiriGetRideStatusIntentHandler.m in Sources */,
 				292E7EF31D23CAB700EB8C96 /* SiriSearchMessageIntentHandler.m in Sources */,
+				29D40C081D226A7F003F6F7B /* NKLocationService.m in Sources */,
+				29D40C171D226A7F003F6F7B /* NKHomeView.m in Sources */,
 				299D6D471D2522AC004608AC /* SiriStartAudioCallIntentHandler.m in Sources */,
 				299D6D4D1D2522DC004608AC /* SiriSearchCallHistoryIntentHandler.m in Sources */,
+				2927F6A51D2372280037ED22 /* CLPDemoCore.m in Sources */,
+				29D40BFF1D226A7F003F6F7B /* NKUtil.m in Sources */,
 				2953C2EA1D295160004725A3 /* SiriPauseWorkoutIntentHandler.m in Sources */,
+				29D40C051D226A7F003F6F7B /* NKContactService.m in Sources */,
+				29D40BF61D226A7F003F6F7B /* NKCommonDefine.m in Sources */,
+				29D40BF91D226A7F003F6F7B /* NKSectionedTableView.m in Sources */,
 				294A25931D26193B003E607B /* SiriStartPhotoPlaybackIntentHandler.m in Sources */,
+				29D40C0B1D226A7F003F6F7B /* NKServiceManager.m in Sources */,
 				299D6D4A1D2522C3004608AC /* SiriStartVideoCallIntentHandler.m in Sources */,
+				29D40C0E1D226A7F003F6F7B /* NKSiriService.m in Sources */,
 				29CA26CB1D23B47D00EE679B /* SiriSendMessageIntentHandler.m in Sources */,
+				29D40C1D1D226A7F003F6F7B /* NKBaseViewController.m in Sources */,
+				29D40C1A1D226A7F003F6F7B /* NKSendMessageUIView.m in Sources */,
 				2953C2E71D2950DF004725A3 /* SiriStartWorkoutIntentHandler.m in Sources */,
+				29D40C111D226A7F003F6F7B /* NKCommonView.m in Sources */,
 				2953C2F01D295180004725A3 /* SiriEndWorkoutIntentHandler.m in Sources */,
+				29D40C141D226A7F003F6F7B /* NKHomeTableViewAdapter.m in Sources */,
 				29EA8B0D1D20047C00CF2837 /* SiriIntentHandler.m in Sources */,
 				294A25991D2650CF003E607B /* SiriIRequestPaymentntentHandler.m in Sources */,
 				294A25961D2650C1003E607B /* SiriISendPaymentntentHandler.m in Sources */,
@@ -1062,6 +983,7 @@
 				2953C2F31D29518D004725A3 /* SiriCancelWorkoutIntentHandler.m in Sources */,
 				29107A541D26A275001C85B2 /* SiriRequestRideIntentHandler.m in Sources */,
 				29107A511D26A25E001C85B2 /* SiriListRideOptionsIntentHandler.m in Sources */,
+				29D40BFC1D226A7F003F6F7B /* NKSectionedTableViewAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1077,21 +999,6 @@
 			isa = PBXTargetDependency;
 			target = 29AC84771D20083900EF9B18 /* CLPSiriIntentUI */;
 			targetProxy = 29AC84821D20083900EF9B18 /* PBXContainerItemProxy */;
-		};
-		29E82DC81D2A3C510083E948 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 29E82DBB1D2A3C500083E948 /* CLPDemoCore */;
-			targetProxy = 29E82DC71D2A3C510083E948 /* PBXContainerItemProxy */;
-		};
-		29E82DCA1D2A3C510083E948 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 29525C7D1D1B848600303F1D /* CLPDemo */;
-			targetProxy = 29E82DC91D2A3C510083E948 /* PBXContainerItemProxy */;
-		};
-		29E82DD01D2A3C510083E948 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 29E82DBB1D2A3C500083E948 /* CLPDemoCore */;
-			targetProxy = 29E82DCF1D2A3C510083E948 /* PBXContainerItemProxy */;
 		};
 		29EA8B211D20047D00CF2837 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1201,24 +1108,18 @@
 			baseConfigurationReference = 5A6EA71FC0B0B423623AFC72 /* Pods-CLPDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: kang.wang1988@gmail.com (Q46TB99BQ8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				CODE_SIGN_ENTITLEMENTS = CLPDemo/CLPDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kang Wang (39S29P74A8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kang Wang (39S29P74A8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CLPDemo/CLPDemo-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Frameworks/CLPDemoCore.framework/Headers",
-					"$(PROJECT_DIR)/Frameworks/Masonry.framework/Headers",
-				);
 				INFOPLIST_FILE = CLPDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wecoop.CLPDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "70585802-5323-46b8-9aff-5f591f6d0a36";
+				PROVISIONING_PROFILE_SPECIFIER = VP3AM7E5ZL/DevProvisionWithWildCardBundleId;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -1230,24 +1131,18 @@
 			baseConfigurationReference = B9169BA8FF89C533BAEBE78D /* Pods-CLPDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: kang.wang1988@gmail.com (Q46TB99BQ8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				CODE_SIGN_ENTITLEMENTS = CLPDemo/CLPDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kang Wang (39S29P74A8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kang Wang (39S29P74A8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CLPDemo/CLPDemo-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Frameworks/CLPDemoCore.framework/Headers",
-					"$(PROJECT_DIR)/Frameworks/Masonry.framework/Headers",
-				);
 				INFOPLIST_FILE = CLPDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wecoop.CLPDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "70585802-5323-46b8-9aff-5f591f6d0a36";
+				PROVISIONING_PROFILE_SPECIFIER = VP3AM7E5ZL/DevProvisionWithWildCardBundleId;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1281,22 +1176,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 20EDEA6F13316A2E45433E81 /* Pods-CLPSiriIntentUI.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: kang.wang1988@gmail.com (Q46TB99BQ8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Frameworks/CLPDemoCore.framework/Headers",
-					"$(PROJECT_DIR)/Frameworks/Masonry.framework/Headers",
-				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kang Wang (39S29P74A8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kang Wang (39S29P74A8)";
 				INFOPLIST_FILE = CLPSiriIntentUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wecoop.CLPDemo.CLPSiriIntentUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "70585802-5323-46b8-9aff-5f591f6d0a36";
+				PROVISIONING_PROFILE_SPECIFIER = VP3AM7E5ZL/DevProvisionWithWildCardBundleId;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1308,103 +1196,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BDD646C19EB0B02C7D0DB64B /* Pods-CLPSiriIntentUI.release.xcconfig */;
 			buildSettings = {
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: kang.wang1988@gmail.com (Q46TB99BQ8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Frameworks/CLPDemoCore.framework/Headers",
-					"$(PROJECT_DIR)/Frameworks/Masonry.framework/Headers",
-				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kang Wang (39S29P74A8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kang Wang (39S29P74A8)";
 				INFOPLIST_FILE = CLPSiriIntentUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wecoop.CLPDemo.CLPSiriIntentUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "70585802-5323-46b8-9aff-5f591f6d0a36";
+				PROVISIONING_PROFILE_SPECIFIER = VP3AM7E5ZL/DevProvisionWithWildCardBundleId;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		29E82DD41D2A3C510083E948 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: kang.wang1988@gmail.com (Q46TB99BQ8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/Masonry.framework/Headers";
-				INFOPLIST_FILE = CLPDemoCore/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wecoop.CLPDemoCore;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		29E82DD51D2A3C510083E948 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: kang.wang1988@gmail.com (Q46TB99BQ8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/Masonry.framework/Headers";
-				INFOPLIST_FILE = CLPDemoCore/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wecoop.CLPDemoCore;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		29E82DD81D2A3C510083E948 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CLPDemoCoreTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wecoop.CLPDemoCoreTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CLPDemo.app/CLPDemo";
-			};
-			name = Debug;
-		};
-		29E82DD91D2A3C510083E948 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CLPDemoCoreTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wecoop.CLPDemoCoreTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CLPDemo.app/CLPDemo";
 			};
 			name = Release;
 		};
@@ -1412,23 +1215,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D7A75213C12E09B10FA68C63 /* Pods-CLPSiriIntent.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: kang.wang1988@gmail.com (Q46TB99BQ8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kang Wang (39S29P74A8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kang Wang (39S29P74A8)";
 				GCC_PREFIX_HEADER = "CLPDemo/CLPDemo-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Frameworks/CLPDemoCore.framework/Headers",
-					"$(PROJECT_DIR)/Frameworks/Masonry.framework/Headers",
-				);
 				INFOPLIST_FILE = CLPSiriIntent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wecoop.CLPDemo.CLPSiriIntent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "70585802-5323-46b8-9aff-5f591f6d0a36";
+				PROVISIONING_PROFILE_SPECIFIER = VP3AM7E5ZL/DevProvisionWithWildCardBundleId;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1440,23 +1236,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9277C8E2A28231A991590865 /* Pods-CLPSiriIntent.release.xcconfig */;
 			buildSettings = {
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: kang.wang1988@gmail.com (Q46TB99BQ8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kang Wang (39S29P74A8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kang Wang (39S29P74A8)";
 				GCC_PREFIX_HEADER = "CLPDemo/CLPDemo-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Frameworks/CLPDemoCore.framework/Headers",
-					"$(PROJECT_DIR)/Frameworks/Masonry.framework/Headers",
-				);
 				INFOPLIST_FILE = CLPSiriIntent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wecoop.CLPDemo.CLPSiriIntent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "70585802-5323-46b8-9aff-5f591f6d0a36";
+				PROVISIONING_PROFILE_SPECIFIER = VP3AM7E5ZL/DevProvisionWithWildCardBundleId;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
@@ -1498,24 +1287,6 @@
 			buildConfigurations = (
 				29AC84851D20083A00EF9B18 /* Debug */,
 				29AC84861D20083A00EF9B18 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		29E82DD31D2A3C510083E948 /* Build configuration list for PBXNativeTarget "CLPDemoCore" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				29E82DD41D2A3C510083E948 /* Debug */,
-				29E82DD51D2A3C510083E948 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		29E82DD71D2A3C510083E948 /* Build configuration list for PBXNativeTarget "CLPDemoCoreTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				29E82DD81D2A3C510083E948 /* Debug */,
-				29E82DD91D2A3C510083E948 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

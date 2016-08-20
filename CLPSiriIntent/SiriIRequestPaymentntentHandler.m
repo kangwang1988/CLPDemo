@@ -14,7 +14,7 @@
                   completion:(void (^)(INRequestPaymentIntentResponse *response))completion NS_SWIFT_NAME(handle(requestPayment:completion:)){
     INRequestPaymentIntentResponse *resp = [[INRequestPaymentIntentResponse alloc] initWithCode:INRequestPaymentIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:kActivityTypeRequestPayment]];
     [NKUtil searchContactWithCategory:NKContactCategoryEmail value:kAuthorEmail completionBlock:^(CNContact *aContact) {
-        [resp setPaymentRecord:[[INPaymentRecord alloc] initWithPayee:[[INPerson alloc] initWithHandle:@"" displayName:kAuthorEmail contactIdentifier:aContact.identifier] payer:intent.payer currencyAmount:intent.currencyAmount paymentMethod:intent.paymentMethod note:intent.note status:INPaymentStatusCompleted]];
+        [resp setPaymentRecord:[[INPaymentRecord alloc] initWithPayee:[[INPerson alloc] initWithHandle:@"" displayName:kAuthorEmail contactIdentifier:aContact.identifier] payer:intent.payer currencyAmount:intent.currencyAmount paymentMethod:nil note:intent.note status:INPaymentStatusCompleted]];
         completion(resp);
     }];
 }
@@ -23,7 +23,7 @@
                    completion:(void (^)(INRequestPaymentIntentResponse *response))completion NS_SWIFT_NAME(confirm(requestPayment:completion:)){
     INRequestPaymentIntentResponse *resp = [[INRequestPaymentIntentResponse alloc] initWithCode:INRequestPaymentIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:kActivityTypeRequestPayment]];
     [NKUtil searchContactWithCategory:NKContactCategoryEmail value:kAuthorEmail completionBlock:^(CNContact *aContact) {
-        [resp setPaymentRecord:[[INPaymentRecord alloc] initWithPayee:[[INPerson alloc] initWithHandle:@"" displayName:kAuthorEmail contactIdentifier:aContact.identifier] payer:intent.payer currencyAmount:intent.currencyAmount paymentMethod:intent.paymentMethod note:intent.note status:INPaymentStatusCompleted]];
+        [resp setPaymentRecord:[[INPaymentRecord alloc] initWithPayee:[[INPerson alloc] initWithHandle:@"" displayName:kAuthorEmail contactIdentifier:aContact.identifier] payer:intent.payer currencyAmount:intent.currencyAmount paymentMethod:nil note:intent.note status:INPaymentStatusCompleted]];
         completion(resp);
     }];
 }
@@ -42,10 +42,5 @@
 - (void)resolveNoteForRequestPayment:(INRequestPaymentIntent *)intent
                       withCompletion:(void (^)(INStringResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolveNote(forRequestPayment:with:)){
     completion([INStringResolutionResult successWithResolvedString:intent.note.length?intent.note:@"收账"]);
-}
-
-- (void)resolvePaymentMethodForRequestPayment:(INRequestPaymentIntent *)intent
-                               withCompletion:(void (^)(INPaymentMethodResolutionResult *resolutionResult))completion NS_SWIFT_NAME(resolvePaymentMethod(forRequestPayment:with:)){
-    completion([INPaymentMethodResolutionResult successWithResolvedPaymentMethod:intent.paymentMethod]);
 }
 @end

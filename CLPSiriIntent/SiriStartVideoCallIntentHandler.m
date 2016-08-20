@@ -11,12 +11,12 @@
 @implementation SiriStartVideoCallIntentHandler
 - (void)handleStartVideoCall:(INStartVideoCallIntent *)intent
                   completion:(void (^)(INStartVideoCallIntentResponse *response))completion NS_SWIFT_NAME(handle(startVideoCall:completion:)){
-    completion([[INStartVideoCallIntentResponse alloc] initWithCode:INStartVideoCallIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
+    completion([[INStartVideoCallIntentResponse alloc] initWithCode:INStartVideoCallIntentResponseCodeReady userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
 }
 
 - (void)confirmStartVideoCall:(INStartVideoCallIntent *)intent
                    completion:(void (^)(INStartVideoCallIntentResponse *response))completion NS_SWIFT_NAME(confirm(startVideoCall:completion:)){
-    completion([[INStartVideoCallIntentResponse alloc] initWithCode:INStartVideoCallIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
+    completion([[INStartVideoCallIntentResponse alloc] initWithCode:INStartVideoCallIntentResponseCodeContinueInApp userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
 }
 
 - (void)resolveContactsForStartVideoCall:(INStartVideoCallIntent *)intent

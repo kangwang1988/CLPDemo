@@ -10,12 +10,12 @@
 @implementation SiriSearchCallHistoryIntentHandler
 - (void)handleSearchCallHistory:(INSearchCallHistoryIntent *)intent
                      completion:(void (^)(INSearchCallHistoryIntentResponse *response))completion NS_SWIFT_NAME(handle(searchCallHistory:completion:)){
-    completion([[INSearchCallHistoryIntentResponse alloc] initWithCode:INSearchCallHistoryIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
+    completion([[INSearchCallHistoryIntentResponse alloc] initWithCode:INSearchCallHistoryIntentResponseCodeReady userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
 }
 
 - (void)confirmSearchCallHistory:(INSearchCallHistoryIntent *)intent
                       completion:(void (^)(INSearchCallHistoryIntentResponse *response))completion NS_SWIFT_NAME(confirm(searchCallHistory:completion:)){
-        completion([[INSearchCallHistoryIntentResponse alloc] initWithCode:INSearchCallHistoryIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
+        completion([[INSearchCallHistoryIntentResponse alloc] initWithCode:INSearchCallHistoryIntentResponseCodeContinueInApp userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
 }
 
 - (void)resolveCallTypeForSearchCallHistory:(INSearchCallHistoryIntent *)intent

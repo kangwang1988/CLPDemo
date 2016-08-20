@@ -16,13 +16,13 @@
     [NKUtil searchContactWithCategory:NKContactCategoryFullname value:((INPerson *)intent.contacts.firstObject).displayName completionBlock:^(CNContact *aContact) {
         if(aContact.identifier)
             [activity setUserInfo:@{kKeyActivityUserInfoContactIdentifier:aContact.identifier}];
-        completion([[INStartAudioCallIntentResponse alloc] initWithCode:INStartAudioCallIntentResponseCodeSuccess userActivity:activity]);
+        completion([[INStartAudioCallIntentResponse alloc] initWithCode:INStartAudioCallIntentResponseCodeReady userActivity:activity]);
     }];
 }
 
 - (void)confirmStartAudioCall:(INStartAudioCallIntent *)intent
                    completion:(void (^)(INStartAudioCallIntentResponse *response))completion NS_SWIFT_NAME(confirm(startAudioCall:completion:)){
-    completion([[INStartAudioCallIntentResponse alloc] initWithCode:INStartAudioCallIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:kActivityTypeAudioCall]]);
+    completion([[INStartAudioCallIntentResponse alloc] initWithCode:INStartAudioCallIntentResponseCodeContinueInApp userActivity:[[NSUserActivity alloc] initWithActivityType:kActivityTypeAudioCall]]);
 }
 
 - (void)resolveContactsForStartAudioCall:(INStartAudioCallIntent *)intent

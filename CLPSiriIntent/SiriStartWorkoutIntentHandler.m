@@ -11,12 +11,12 @@
 @implementation SiriStartWorkoutIntentHandler
 - (void)handleStartWorkout:(INStartWorkoutIntent *)intent
                 completion:(void (^)(INStartWorkoutIntentResponse *response))completion NS_SWIFT_NAME(handle(startWorkout:completion:)){
-    completion([[INStartWorkoutIntentResponse alloc] initWithCode:INStartWorkoutIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
+    completion([[INStartWorkoutIntentResponse alloc] initWithCode:INStartWorkoutIntentResponseCodeReady userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
 }
 
 - (void)confirmStartWorkout:(INStartWorkoutIntent *)intent
                  completion:(void (^)(INStartWorkoutIntentResponse *response))completion NS_SWIFT_NAME(confirm(startWorkout:completion:)){
-        completion([[INStartWorkoutIntentResponse alloc] initWithCode:INStartWorkoutIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
+        completion([[INStartWorkoutIntentResponse alloc] initWithCode:INStartWorkoutIntentResponseCodeContinueInApp userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
 }
 
 - (void)resolveWorkoutNameForStartWorkout:(INStartWorkoutIntent *)intent

@@ -11,12 +11,12 @@
 @implementation SiriPauseWorkoutIntentHandler
 - (void)handlePauseWorkout:(INPauseWorkoutIntent *)intent
                 completion:(void (^)(INPauseWorkoutIntentResponse *response))completion NS_SWIFT_NAME(handle(pauseWorkout:completion:)){
-    completion([[INPauseWorkoutIntentResponse alloc] initWithCode:INPauseWorkoutIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
+    completion([[INPauseWorkoutIntentResponse alloc] initWithCode:INPauseWorkoutIntentResponseCodeReady userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
 }
 
 - (void)confirmPauseWorkout:(INPauseWorkoutIntent *)intent
                  completion:(void (^)(INPauseWorkoutIntentResponse *response))completion NS_SWIFT_NAME(confirm(pauseWorkout:completion:)){
-        completion([[INPauseWorkoutIntentResponse alloc] initWithCode:INPauseWorkoutIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
+        completion([[INPauseWorkoutIntentResponse alloc] initWithCode:INPauseWorkoutIntentResponseCodeContinueInApp userActivity:[[NSUserActivity alloc] initWithActivityType:@""]]);
 }
 
 - (void)resolveWorkoutNameForPauseWorkout:(INPauseWorkoutIntent *)intent

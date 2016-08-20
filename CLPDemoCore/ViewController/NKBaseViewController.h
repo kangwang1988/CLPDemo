@@ -10,4 +10,3 @@
 
 @interface NKBaseViewController : UIViewController
 @end
-

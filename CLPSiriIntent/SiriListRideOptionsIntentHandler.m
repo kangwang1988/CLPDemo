@@ -15,7 +15,7 @@
     INListRideOptionsIntentResponse *resp = [[INListRideOptionsIntentResponse alloc] initWithCode:INListRideOptionsIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:kActivityTypeListRideOptions]];
     resp.expirationDate = [NSDate dateWithTimeIntervalSinceNow:1200];
     resp.supportsApplePayForPayment = @(YES);
-    INPaymentMethod *paymentMethod = [[INPaymentMethod alloc] initWithType:INPaymentMethodTypeCredit name:kAuthorEmail icon:[INImage imageWithURL:[NSURL URLWithString:kURLSampleSmallPng]]];
+    INPaymentMethod *paymentMethod = [[INPaymentMethod alloc] initWithType:INPaymentMethodTypeCredit name:kAuthorEmail identificationHint:@"hint" icon:[INImage imageWithURL:[NSURL URLWithString:kURLSampleSmallPng]]];
     INRideOption *option = [[INRideOption alloc] initWithName:kDriverNickname estimatedPickupDate:[NSDate dateWithTimeIntervalSinceNow:120]];
     [resp setRideOptions:@[option]];
     [resp setPaymentMethods:@[paymentMethod]];
@@ -27,7 +27,7 @@
     INListRideOptionsIntentResponse *resp = [[INListRideOptionsIntentResponse alloc] initWithCode:INListRideOptionsIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:kActivityTypeListRideOptions]];
     resp.expirationDate = [NSDate dateWithTimeIntervalSinceNow:1200];
     resp.supportsApplePayForPayment = @(YES);
-    INPaymentMethod *paymentMethod = [[INPaymentMethod alloc] initWithType:INPaymentMethodTypeCredit name:kAuthorEmail icon:[INImage imageWithURL:[NSURL URLWithString:kURLSampleSmallPng]]];
+    INPaymentMethod *paymentMethod = [[INPaymentMethod alloc] initWithType:INPaymentMethodTypeCredit name:kAuthorEmail identificationHint:@"hint" icon:[INImage imageWithURL:[NSURL URLWithString:kURLSampleSmallPng]]];
     INRideOption *option = [[INRideOption alloc] initWithName:kDriverNickname estimatedPickupDate:[NSDate dateWithTimeIntervalSinceNow:120]];
     [resp setRideOptions:@[option]];
     [resp setPaymentMethods:@[paymentMethod]];

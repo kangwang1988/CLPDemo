@@ -11,14 +11,14 @@
 @implementation SiriSearchPhotosIntentHandler
 - (void)handleSearchForPhotos:(INSearchForPhotosIntent *)intent
                    completion:(void (^)(INSearchForPhotosIntentResponse *response))completion NS_SWIFT_NAME(handle(searchForPhotos:completion:)){
-    INSearchForPhotosIntentResponse *response = [[INSearchForPhotosIntentResponse alloc] initWithCode:INSearchForPhotosIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@""]];
+    INSearchForPhotosIntentResponse *response = [[INSearchForPhotosIntentResponse alloc] initWithCode:INSearchForPhotosIntentResponseCodeReady userActivity:[[NSUserActivity alloc] initWithActivityType:@""]];
     [response setSearchResultsCount:@(1)];
     completion(response);
 }
 
 - (void)confirmSearchForPhotos:(INSearchForPhotosIntent *)intent
                     completion:(void (^)(INSearchForPhotosIntentResponse *response))completion NS_SWIFT_NAME(confirm(searchForPhotos:completion:)){
-    INSearchForPhotosIntentResponse *response = [[INSearchForPhotosIntentResponse alloc] initWithCode:INSearchForPhotosIntentResponseCodeSuccess userActivity:[[NSUserActivity alloc] initWithActivityType:@""]];
+    INSearchForPhotosIntentResponse *response = [[INSearchForPhotosIntentResponse alloc] initWithCode:INSearchForPhotosIntentResponseCodeContinueInApp userActivity:[[NSUserActivity alloc] initWithActivityType:@""]];
     [response setSearchResultsCount:@(1)];
     completion(response);
 }
